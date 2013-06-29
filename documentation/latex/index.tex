@@ -1,0 +1,30 @@
+\hypertarget{index_LZ78_Compression}{}\section{Compressore/decompressore basato sull'algoritmo L\-Z78}\label{index_LZ78_Compression}
+{\bfseries Autore\-:} Tamburini Matteo \href{mailto:mattetambu@gmail.com}{\tt mattetambu@gmail.\-com} \par
+ {\bfseries Data\-:} 25/06/2013 \par
+ {\bfseries Versione\-:} 1.\-0 \par
+ \par
+\hypertarget{index_Descrizione}{}\subsection{Descrizione dell'applicazione}\label{index_Descrizione}
+Realizzare un compressore/decompressore basato sull'algoritmo L\-Z78. \par
+ \par
+\hypertarget{index_Compilazione}{}\subsection{Compilazione dell'applicazione}\label{index_Compilazione}
+Per la compilazione è presente un makefile quindi è sufficiente eseguire il comando \char`\"{}make\char`\"{}. \par
+ La lista degli obiettivi presenti nel makefile risulta\-:
+\begin{DoxyItemize}
+\item {\itshape make} {\itshape }\mbox{[}all\mbox{]}\-: Build the executable
+\item {\itshape make} {\itshape archive\-:} Archive the executable, the makefile and all $\ast$.c and $\ast$.h files
+\item {\itshape make} {\itshape clean\-:} Remove the excutable, $\ast$.lz78 and $\ast$.o files
+\item {\itshape make} {\itshape help\-:} Show this info \par
+ \par
+
+\end{DoxyItemize}\hypertarget{index_Esecuzione}{}\subsection{Esecuzione dell'applicazione}\label{index_Esecuzione}
+Per lanciare l'applicazione è necessario avviare l'eseguibile \char`\"{}lz78\char`\"{} utilizzando le seguenti opzioni\-:
+\begin{DoxyItemize}
+\item -\/{\itshape c} --{\itshape compress\-:} Compress specified file
+\item -\/{\itshape d} -\/{\itshape u} --{\itshape decompress} --{\itshape uncompress\-:} Uncompress specified file
+\item -\/{\itshape o} -\/{\itshape n} --{\itshape output} --{\itshape name\-:} Set the name for the output file
+\item -\/{\itshape h} --{\itshape help\-:} Show the help
+\item -\/{\itshape v} --{\itshape verbose\-:} Display more messages
+\item -\/{\itshape f} --{\itshape force\-:} Silent overwrite if the output file already exists
+\item -\/{\itshape e} --{\itshape extension\-:} Use the input file extension for the output file
+\item -\/{\itshape p} --{\itshape path\-:} Use the input file path for the output file 
+\end{DoxyItemize}

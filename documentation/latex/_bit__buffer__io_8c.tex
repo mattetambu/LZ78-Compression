@@ -1,0 +1,381 @@
+\hypertarget{_bit__buffer__io_8c}{\section{Riferimenti per il file C\-:/\-Users/\-Matteo/\-Dropbox/\-Universita/\-Progettazione e Produzione Multimediale/\-Progetto/\-L\-Z78-\/\-Compression/sources/\-Bit\-\_\-buffer\-\_\-io.c}
+\label{_bit__buffer__io_8c}\index{C\-:/\-Users/\-Matteo/\-Dropbox/\-Universita/\-Progettazione e Produzione Multimediale/\-Progetto/\-L\-Z78-\/\-Compression/sources/\-Bit\-\_\-buffer\-\_\-io.\-c@{C\-:/\-Users/\-Matteo/\-Dropbox/\-Universita/\-Progettazione e Produzione Multimediale/\-Progetto/\-L\-Z78-\/\-Compression/sources/\-Bit\-\_\-buffer\-\_\-io.\-c}}
+}
+{\ttfamily \#include \char`\"{}Bit\-\_\-buffer\-\_\-io.\-h\char`\"{}}\\*
+\subsection*{Funzioni}
+\begin{DoxyCompactItemize}
+\item 
+F\-I\-L\-E $\ast$ \hyperlink{_bit__buffer__io_8c_ae71cc686eeaafb6f8ba47f3bcfd131da}{file\-\_\-open} (char $\ast$file\-\_\-name, char $\ast$mode)
+\begin{DoxyCompactList}\small\item\em Procede all'apertura del file specificato richiedendo la conferma di sostituzione all'utente se il file esiste e deve essere aperto in scrittura. \end{DoxyCompactList}\item 
+\hyperlink{_bit__buffer__io_8h_a713e3f0b57038515d796b34e08f48fe0}{bit\-\_\-buffer\-\_\-t} $\ast$ \hyperlink{_bit__buffer__io_8c_a43b727192dac1363565e82d685e020c3}{bit\-\_\-buffer\-\_\-create} ()
+\begin{DoxyCompactList}\small\item\em Crea un oggetto bit buffer. \end{DoxyCompactList}\item 
+int \hyperlink{_bit__buffer__io_8c_a3ddf1ac1858468a44172b5efe7615f56}{bit\-\_\-buffer\-\_\-initialize} (\hyperlink{_bit__buffer__io_8h_a713e3f0b57038515d796b34e08f48fe0}{bit\-\_\-buffer\-\_\-t} $\ast$bit\-\_\-buffer, char $\ast$file\-\_\-name, int file\-\_\-open\-\_\-mode)
+\begin{DoxyCompactList}\small\item\em Inizializza un oggetto bit buffer con i parametri in ingresso. \end{DoxyCompactList}\item 
+int \hyperlink{_bit__buffer__io_8c_a4cef1186a732a8902906d7621d2e128e}{bit\-\_\-buffer\-\_\-destroy} (\hyperlink{_bit__buffer__io_8h_a713e3f0b57038515d796b34e08f48fe0}{bit\-\_\-buffer\-\_\-t} $\ast$bit\-\_\-buffer)
+\begin{DoxyCompactList}\small\item\em Distrugge un oggetto bit buffer precedentemente creato. \end{DoxyCompactList}\item 
+int \hyperlink{_bit__buffer__io_8c_a160fda4e35839eacf67dde535921e5e1}{bit\-\_\-buffer\-\_\-complete\-\_\-writing} (\hyperlink{_bit__buffer__io_8h_a713e3f0b57038515d796b34e08f48fe0}{bit\-\_\-buffer\-\_\-t} $\ast$bit\-\_\-buffer)
+\begin{DoxyCompactList}\small\item\em Richiama la bit\-\_\-buffer\-\_\-flush per scrivere nel file di output tutti i dati contenuti nel buffer (e lo svuota). \end{DoxyCompactList}\item 
+\hyperlink{_bit__buffer__io_8h_a7fb87c298a4b7fa1cd31ccc0096c18a2}{data\-\_\-t} \hyperlink{_bit__buffer__io_8c_a06df0bcda3b9603c97647d1b1fc4bce6}{host\-\_\-to\-\_\-little\-\_\-endian} (\hyperlink{_bit__buffer__io_8h_a7fb87c298a4b7fa1cd31ccc0096c18a2}{data\-\_\-t} data)
+\begin{DoxyCompactList}\small\item\em Converte il dato fornito in ingresso da formato host a formato little endian. \end{DoxyCompactList}\item 
+\hyperlink{_bit__buffer__io_8h_a7fb87c298a4b7fa1cd31ccc0096c18a2}{data\-\_\-t} \hyperlink{_bit__buffer__io_8c_aff22dc96a75a4304c78650dd3b0bf1a7}{little\-\_\-endian\-\_\-to\-\_\-host} (\hyperlink{_bit__buffer__io_8h_a7fb87c298a4b7fa1cd31ccc0096c18a2}{data\-\_\-t} data)
+\begin{DoxyCompactList}\small\item\em Converte il dato fornito in ingresso da formato little endian a formato host. \end{DoxyCompactList}\item 
+int \hyperlink{_bit__buffer__io_8c_a3211fb1c5ece681e992ea11d14f77c1c}{bit\-\_\-buffer\-\_\-write} (\hyperlink{_bit__buffer__io_8h_a713e3f0b57038515d796b34e08f48fe0}{bit\-\_\-buffer\-\_\-t} $\ast$bit\-\_\-buffer, \hyperlink{_bit__buffer__io_8h_a7fb87c298a4b7fa1cd31ccc0096c18a2}{data\-\_\-t} data, int length)
+\begin{DoxyCompactList}\small\item\em Inserisce nel buffer i primi {\itshape length} bit dal dato passato come parametro (preventivamente trasformato in formato little endian). \end{DoxyCompactList}\item 
+int \hyperlink{_bit__buffer__io_8c_ab6e29ef99059e4ffd6b577e86d7d0efb}{bit\-\_\-buffer\-\_\-read} (\hyperlink{_bit__buffer__io_8h_a713e3f0b57038515d796b34e08f48fe0}{bit\-\_\-buffer\-\_\-t} $\ast$bit\-\_\-buffer, \hyperlink{_bit__buffer__io_8h_a7fb87c298a4b7fa1cd31ccc0096c18a2}{data\-\_\-t} $\ast$data, int length)
+\begin{DoxyCompactList}\small\item\em Inserisce in {\itshape data} un totale di {\itshape length} bit letti dal buffer passato come parametro (e ricorvente quanto letto in formato host). \end{DoxyCompactList}\item 
+int \hyperlink{_bit__buffer__io_8c_a528142a3b90b9e219f6360454ad36b15}{bit\-\_\-buffer\-\_\-flush} (\hyperlink{_bit__buffer__io_8h_a713e3f0b57038515d796b34e08f48fe0}{bit\-\_\-buffer\-\_\-t} $\ast$bit\-\_\-buffer, int bytes\-\_\-to\-\_\-write)
+\begin{DoxyCompactList}\small\item\em Scrive sul file i primi {\itshape bytes\-\_\-to\-\_\-write} bytes del buffer e lo svuota. \end{DoxyCompactList}\item 
+int \hyperlink{_bit__buffer__io_8c_a97b3f8006b6604b4d8a72450dcfa36ad}{bit\-\_\-buffer\-\_\-fill} (\hyperlink{_bit__buffer__io_8h_a713e3f0b57038515d796b34e08f48fe0}{bit\-\_\-buffer\-\_\-t} $\ast$bit\-\_\-buffer)
+\begin{DoxyCompactList}\small\item\em Legge da file quanti più bytes possibili (pari al minimo tra la dimesione del buffer e il numero di bytes ancora da leggere) e li inserisce nel buffer. \end{DoxyCompactList}\item 
+int \hyperlink{_bit__buffer__io_8c_a4f4f5675a16104a099e8eb695ae353af}{safe\-\_\-write} (F\-I\-L\-E $\ast$file\-\_\-descriptor, \hyperlink{_bit__buffer__io_8h_a30fe0633adbbaa7a5b6a4fd8d479bf0c}{buffer\-\_\-t} $\ast$buffer, int length)
+\begin{DoxyCompactList}\small\item\em Scrive su file i primi {\itshape length} bytes presente nel buffer. \end{DoxyCompactList}\item 
+int \hyperlink{_bit__buffer__io_8c_a7da4d5d20ae3a487ce2276f57939c4fe}{safe\-\_\-read} (F\-I\-L\-E $\ast$file\-\_\-descriptor, \hyperlink{_bit__buffer__io_8h_a30fe0633adbbaa7a5b6a4fd8d479bf0c}{buffer\-\_\-t} $\ast$buffer, int length)
+\begin{DoxyCompactList}\small\item\em Scrive nel buffer {\itshape length} bytes letti dal file passato come parametro. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variabili}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{_bit__buffer__io_8c_a5768104541c33f9b2cce0b46fb42fc64}{force\-\_\-overwrite\-\_\-flag}
+\end{DoxyCompactItemize}
+
+
+\subsection{Documentazione delle funzioni}
+\hypertarget{_bit__buffer__io_8c_a160fda4e35839eacf67dde535921e5e1}{\index{Bit\-\_\-buffer\-\_\-io.\-c@{Bit\-\_\-buffer\-\_\-io.\-c}!bit\-\_\-buffer\-\_\-complete\-\_\-writing@{bit\-\_\-buffer\-\_\-complete\-\_\-writing}}
+\index{bit\-\_\-buffer\-\_\-complete\-\_\-writing@{bit\-\_\-buffer\-\_\-complete\-\_\-writing}!Bit_buffer_io.c@{Bit\-\_\-buffer\-\_\-io.\-c}}
+\subsubsection[{bit\-\_\-buffer\-\_\-complete\-\_\-writing}]{\setlength{\rightskip}{0pt plus 5cm}int bit\-\_\-buffer\-\_\-complete\-\_\-writing (
+\begin{DoxyParamCaption}
+\item[{{\bf bit\-\_\-buffer\-\_\-t} $\ast$}]{bit\-\_\-buffer}
+\end{DoxyParamCaption}
+)}}\label{_bit__buffer__io_8c_a160fda4e35839eacf67dde535921e5e1}
+
+
+Richiama la bit\-\_\-buffer\-\_\-flush per scrivere nel file di output tutti i dati contenuti nel buffer (e lo svuota). 
+
+
+\begin{DoxyParams}[1]{Parametri}
+\mbox{\tt in}  & {\em bit\-\_\-buffer} & Bit buffer che contiene i dati da scrivere nel file di output. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+Risultato della scrittura sul file, {\ttfamily 0} in caso di successo e {\itshape -\/1} altrimenti. 
+\end{DoxyReturn}
+
+
+Definizione alla linea 79 del file Bit\-\_\-buffer\-\_\-io.\-c.
+
+\hypertarget{_bit__buffer__io_8c_a43b727192dac1363565e82d685e020c3}{\index{Bit\-\_\-buffer\-\_\-io.\-c@{Bit\-\_\-buffer\-\_\-io.\-c}!bit\-\_\-buffer\-\_\-create@{bit\-\_\-buffer\-\_\-create}}
+\index{bit\-\_\-buffer\-\_\-create@{bit\-\_\-buffer\-\_\-create}!Bit_buffer_io.c@{Bit\-\_\-buffer\-\_\-io.\-c}}
+\subsubsection[{bit\-\_\-buffer\-\_\-create}]{\setlength{\rightskip}{0pt plus 5cm}{\bf bit\-\_\-buffer\-\_\-t} $\ast$ bit\-\_\-buffer\-\_\-create (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{_bit__buffer__io_8c_a43b727192dac1363565e82d685e020c3}
+
+
+Crea un oggetto bit buffer. 
+
+\begin{DoxyReturn}{Restituisce}
+Oggetto bit buffer di tipo {\itshape bit\-\_\-buffer\-\_\-t}, o {\itshape N\-U\-L\-L} in caso di fallimento. 
+\end{DoxyReturn}
+
+
+Definizione alla linea 27 del file Bit\-\_\-buffer\-\_\-io.\-c.
+
+\hypertarget{_bit__buffer__io_8c_a4cef1186a732a8902906d7621d2e128e}{\index{Bit\-\_\-buffer\-\_\-io.\-c@{Bit\-\_\-buffer\-\_\-io.\-c}!bit\-\_\-buffer\-\_\-destroy@{bit\-\_\-buffer\-\_\-destroy}}
+\index{bit\-\_\-buffer\-\_\-destroy@{bit\-\_\-buffer\-\_\-destroy}!Bit_buffer_io.c@{Bit\-\_\-buffer\-\_\-io.\-c}}
+\subsubsection[{bit\-\_\-buffer\-\_\-destroy}]{\setlength{\rightskip}{0pt plus 5cm}int bit\-\_\-buffer\-\_\-destroy (
+\begin{DoxyParamCaption}
+\item[{{\bf bit\-\_\-buffer\-\_\-t} $\ast$}]{bit\-\_\-buffer}
+\end{DoxyParamCaption}
+)}}\label{_bit__buffer__io_8c_a4cef1186a732a8902906d7621d2e128e}
+
+
+Distrugge un oggetto bit buffer precedentemente creato. 
+
+
+\begin{DoxyParams}[1]{Parametri}
+\mbox{\tt in}  & {\em bit\-\_\-buffer} & Bit buffer da distruggere. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+Risultato della distruzione del bit buffer, {\ttfamily 0} in caso di successo e {\ttfamily -\/1} altrimenti. 
+\end{DoxyReturn}
+
+
+Definizione alla linea 62 del file Bit\-\_\-buffer\-\_\-io.\-c.
+
+\hypertarget{_bit__buffer__io_8c_a97b3f8006b6604b4d8a72450dcfa36ad}{\index{Bit\-\_\-buffer\-\_\-io.\-c@{Bit\-\_\-buffer\-\_\-io.\-c}!bit\-\_\-buffer\-\_\-fill@{bit\-\_\-buffer\-\_\-fill}}
+\index{bit\-\_\-buffer\-\_\-fill@{bit\-\_\-buffer\-\_\-fill}!Bit_buffer_io.c@{Bit\-\_\-buffer\-\_\-io.\-c}}
+\subsubsection[{bit\-\_\-buffer\-\_\-fill}]{\setlength{\rightskip}{0pt plus 5cm}int bit\-\_\-buffer\-\_\-fill (
+\begin{DoxyParamCaption}
+\item[{{\bf bit\-\_\-buffer\-\_\-t} $\ast$}]{bit\-\_\-buffer}
+\end{DoxyParamCaption}
+)}}\label{_bit__buffer__io_8c_a97b3f8006b6604b4d8a72450dcfa36ad}
+
+
+Legge da file quanti più bytes possibili (pari al minimo tra la dimesione del buffer e il numero di bytes ancora da leggere) e li inserisce nel buffer. 
+
+
+\begin{DoxyParams}[1]{Parametri}
+\mbox{\tt in}  & {\em bit\-\_\-buffer} & Bit buffer dove scrivere i dati letti dal file di input. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+Risultato della lettura da file, {\itshape 0} in caso di successo e {\itshape -\/1} altrimenti. 
+\end{DoxyReturn}
+
+
+Definizione alla linea 199 del file Bit\-\_\-buffer\-\_\-io.\-c.
+
+\hypertarget{_bit__buffer__io_8c_a528142a3b90b9e219f6360454ad36b15}{\index{Bit\-\_\-buffer\-\_\-io.\-c@{Bit\-\_\-buffer\-\_\-io.\-c}!bit\-\_\-buffer\-\_\-flush@{bit\-\_\-buffer\-\_\-flush}}
+\index{bit\-\_\-buffer\-\_\-flush@{bit\-\_\-buffer\-\_\-flush}!Bit_buffer_io.c@{Bit\-\_\-buffer\-\_\-io.\-c}}
+\subsubsection[{bit\-\_\-buffer\-\_\-flush}]{\setlength{\rightskip}{0pt plus 5cm}int bit\-\_\-buffer\-\_\-flush (
+\begin{DoxyParamCaption}
+\item[{{\bf bit\-\_\-buffer\-\_\-t} $\ast$}]{bit\-\_\-buffer, }
+\item[{int}]{bytes\-\_\-to\-\_\-write}
+\end{DoxyParamCaption}
+)}}\label{_bit__buffer__io_8c_a528142a3b90b9e219f6360454ad36b15}
+
+
+Scrive sul file i primi {\itshape bytes\-\_\-to\-\_\-write} bytes del buffer e lo svuota. 
+
+
+\begin{DoxyParams}[1]{Parametri}
+\mbox{\tt in}  & {\em bit\-\_\-buffer} & Bit buffer dove prendere i dati da scrivere nel file di output. \\
+\hline
+\mbox{\tt in}  & {\em bytes\-\_\-to\-\_\-write} & Bytes da scrivere nel file di output. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+Risultato della scrittura su file, {\itshape 0} in caso di successo e {\itshape -\/1} altrimenti. 
+\end{DoxyReturn}
+
+
+Definizione alla linea 190 del file Bit\-\_\-buffer\-\_\-io.\-c.
+
+\hypertarget{_bit__buffer__io_8c_a3ddf1ac1858468a44172b5efe7615f56}{\index{Bit\-\_\-buffer\-\_\-io.\-c@{Bit\-\_\-buffer\-\_\-io.\-c}!bit\-\_\-buffer\-\_\-initialize@{bit\-\_\-buffer\-\_\-initialize}}
+\index{bit\-\_\-buffer\-\_\-initialize@{bit\-\_\-buffer\-\_\-initialize}!Bit_buffer_io.c@{Bit\-\_\-buffer\-\_\-io.\-c}}
+\subsubsection[{bit\-\_\-buffer\-\_\-initialize}]{\setlength{\rightskip}{0pt plus 5cm}int bit\-\_\-buffer\-\_\-initialize (
+\begin{DoxyParamCaption}
+\item[{{\bf bit\-\_\-buffer\-\_\-t} $\ast$}]{bit\-\_\-buffer, }
+\item[{char $\ast$}]{file\-\_\-name, }
+\item[{int}]{file\-\_\-open\-\_\-mode}
+\end{DoxyParamCaption}
+)}}\label{_bit__buffer__io_8c_a3ddf1ac1858468a44172b5efe7615f56}
+
+
+Inizializza un oggetto bit buffer con i parametri in ingresso. 
+
+
+\begin{DoxyParams}[1]{Parametri}
+\mbox{\tt out}  & {\em bit\-\_\-buffer} & Bit buffer da inizializzare. \\
+\hline
+\mbox{\tt in}  & {\em file\-\_\-name} & Nome del file da associare al bit buffer. \\
+\hline
+\mbox{\tt in}  & {\em file\-\_\-open\-\_\-mode} & Modalità di apertura del file (lettura/scritttura). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+Risultato dell'inizializzazione del bit buffer, {\ttfamily 0} in caso di successo e {\ttfamily -\/1} altrimenti. 
+\end{DoxyReturn}
+
+
+Definizione alla linea 37 del file Bit\-\_\-buffer\-\_\-io.\-c.
+
+\hypertarget{_bit__buffer__io_8c_ab6e29ef99059e4ffd6b577e86d7d0efb}{\index{Bit\-\_\-buffer\-\_\-io.\-c@{Bit\-\_\-buffer\-\_\-io.\-c}!bit\-\_\-buffer\-\_\-read@{bit\-\_\-buffer\-\_\-read}}
+\index{bit\-\_\-buffer\-\_\-read@{bit\-\_\-buffer\-\_\-read}!Bit_buffer_io.c@{Bit\-\_\-buffer\-\_\-io.\-c}}
+\subsubsection[{bit\-\_\-buffer\-\_\-read}]{\setlength{\rightskip}{0pt plus 5cm}int bit\-\_\-buffer\-\_\-read (
+\begin{DoxyParamCaption}
+\item[{{\bf bit\-\_\-buffer\-\_\-t} $\ast$}]{bit\-\_\-buffer, }
+\item[{{\bf data\-\_\-t} $\ast$}]{data, }
+\item[{int}]{length}
+\end{DoxyParamCaption}
+)}}\label{_bit__buffer__io_8c_ab6e29ef99059e4ffd6b577e86d7d0efb}
+
+
+Inserisce in {\itshape data} un totale di {\itshape length} bit letti dal buffer passato come parametro (e ricorvente quanto letto in formato host). 
+
+
+\begin{DoxyParams}[1]{Parametri}
+\mbox{\tt in}  & {\em bit\-\_\-buffer} & Bit buffer dove leggere il valore da inserire in {\itshape data}. \\
+\hline
+\mbox{\tt out}  & {\em data} & Dato da ritornare al chiamante. \\
+\hline
+\mbox{\tt in}  & {\em length} & Numero di bits del buffer da scrivere in {\itshape data}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+Totale dei bits letti dal buffer, in caso di successo coincide con {\itshape length}. 
+\end{DoxyReturn}
+
+
+Definizione alla linea 149 del file Bit\-\_\-buffer\-\_\-io.\-c.
+
+\hypertarget{_bit__buffer__io_8c_a3211fb1c5ece681e992ea11d14f77c1c}{\index{Bit\-\_\-buffer\-\_\-io.\-c@{Bit\-\_\-buffer\-\_\-io.\-c}!bit\-\_\-buffer\-\_\-write@{bit\-\_\-buffer\-\_\-write}}
+\index{bit\-\_\-buffer\-\_\-write@{bit\-\_\-buffer\-\_\-write}!Bit_buffer_io.c@{Bit\-\_\-buffer\-\_\-io.\-c}}
+\subsubsection[{bit\-\_\-buffer\-\_\-write}]{\setlength{\rightskip}{0pt plus 5cm}int bit\-\_\-buffer\-\_\-write (
+\begin{DoxyParamCaption}
+\item[{{\bf bit\-\_\-buffer\-\_\-t} $\ast$}]{bit\-\_\-buffer, }
+\item[{{\bf data\-\_\-t}}]{data, }
+\item[{int}]{length}
+\end{DoxyParamCaption}
+)}}\label{_bit__buffer__io_8c_a3211fb1c5ece681e992ea11d14f77c1c}
+
+
+Inserisce nel buffer i primi {\itshape length} bit dal dato passato come parametro (preventivamente trasformato in formato little endian). 
+
+
+\begin{DoxyParams}[1]{Parametri}
+\mbox{\tt in}  & {\em bit\-\_\-buffer} & Bit buffer dove scrivere il dato. \\
+\hline
+\mbox{\tt in}  & {\em data} & Dato da inserire nel buffer. \\
+\hline
+\mbox{\tt in}  & {\em length} & Numero di bits di {\itshape data} da scrivere nel buffer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+Totale dei bits scritti nel buffer, in caso di successo coincide con {\itshape length}. 
+\end{DoxyReturn}
+
+
+Definizione alla linea 108 del file Bit\-\_\-buffer\-\_\-io.\-c.
+
+\hypertarget{_bit__buffer__io_8c_ae71cc686eeaafb6f8ba47f3bcfd131da}{\index{Bit\-\_\-buffer\-\_\-io.\-c@{Bit\-\_\-buffer\-\_\-io.\-c}!file\-\_\-open@{file\-\_\-open}}
+\index{file\-\_\-open@{file\-\_\-open}!Bit_buffer_io.c@{Bit\-\_\-buffer\-\_\-io.\-c}}
+\subsubsection[{file\-\_\-open}]{\setlength{\rightskip}{0pt plus 5cm}F\-I\-L\-E $\ast$ file\-\_\-open (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{file\-\_\-name, }
+\item[{char $\ast$}]{mode}
+\end{DoxyParamCaption}
+)}}\label{_bit__buffer__io_8c_ae71cc686eeaafb6f8ba47f3bcfd131da}
+
+
+Procede all'apertura del file specificato richiedendo la conferma di sostituzione all'utente se il file esiste e deve essere aperto in scrittura. 
+
+
+\begin{DoxyParams}[1]{Parametri}
+\mbox{\tt in}  & {\em file\-\_\-name} & Nome del file da associare al bit buffer. \\
+\hline
+\mbox{\tt in}  & {\em mode} & Modalità di apertura del file (lettura/scritttura). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+Risultato dell'apertura del file, {\ttfamily puntatore} al file in caso di successo e {\ttfamily N\-U\-L\-L} altrimenti. 
+\end{DoxyReturn}
+
+
+Definizione alla linea 7 del file Bit\-\_\-buffer\-\_\-io.\-c.
+
+\hypertarget{_bit__buffer__io_8c_a06df0bcda3b9603c97647d1b1fc4bce6}{\index{Bit\-\_\-buffer\-\_\-io.\-c@{Bit\-\_\-buffer\-\_\-io.\-c}!host\-\_\-to\-\_\-little\-\_\-endian@{host\-\_\-to\-\_\-little\-\_\-endian}}
+\index{host\-\_\-to\-\_\-little\-\_\-endian@{host\-\_\-to\-\_\-little\-\_\-endian}!Bit_buffer_io.c@{Bit\-\_\-buffer\-\_\-io.\-c}}
+\subsubsection[{host\-\_\-to\-\_\-little\-\_\-endian}]{\setlength{\rightskip}{0pt plus 5cm}{\bf data\-\_\-t} host\-\_\-to\-\_\-little\-\_\-endian (
+\begin{DoxyParamCaption}
+\item[{{\bf data\-\_\-t}}]{data}
+\end{DoxyParamCaption}
+)}}\label{_bit__buffer__io_8c_a06df0bcda3b9603c97647d1b1fc4bce6}
+
+
+Converte il dato fornito in ingresso da formato host a formato little endian. 
+
+
+\begin{DoxyParams}[1]{Parametri}
+\mbox{\tt in}  & {\em data} & Dato da convertire da formato host a formato little endian. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+Dato convertito in formato little endian. 
+\end{DoxyReturn}
+
+
+Definizione alla linea 96 del file Bit\-\_\-buffer\-\_\-io.\-c.
+
+\hypertarget{_bit__buffer__io_8c_aff22dc96a75a4304c78650dd3b0bf1a7}{\index{Bit\-\_\-buffer\-\_\-io.\-c@{Bit\-\_\-buffer\-\_\-io.\-c}!little\-\_\-endian\-\_\-to\-\_\-host@{little\-\_\-endian\-\_\-to\-\_\-host}}
+\index{little\-\_\-endian\-\_\-to\-\_\-host@{little\-\_\-endian\-\_\-to\-\_\-host}!Bit_buffer_io.c@{Bit\-\_\-buffer\-\_\-io.\-c}}
+\subsubsection[{little\-\_\-endian\-\_\-to\-\_\-host}]{\setlength{\rightskip}{0pt plus 5cm}{\bf data\-\_\-t} little\-\_\-endian\-\_\-to\-\_\-host (
+\begin{DoxyParamCaption}
+\item[{{\bf data\-\_\-t}}]{data}
+\end{DoxyParamCaption}
+)}}\label{_bit__buffer__io_8c_aff22dc96a75a4304c78650dd3b0bf1a7}
+
+
+Converte il dato fornito in ingresso da formato little endian a formato host. 
+
+
+\begin{DoxyParams}[1]{Parametri}
+\mbox{\tt in}  & {\em data} & Dato da convertire da formato little endian a formato host. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+Dato convertito in formato host. 
+\end{DoxyReturn}
+
+
+Definizione alla linea 102 del file Bit\-\_\-buffer\-\_\-io.\-c.
+
+\hypertarget{_bit__buffer__io_8c_a7da4d5d20ae3a487ce2276f57939c4fe}{\index{Bit\-\_\-buffer\-\_\-io.\-c@{Bit\-\_\-buffer\-\_\-io.\-c}!safe\-\_\-read@{safe\-\_\-read}}
+\index{safe\-\_\-read@{safe\-\_\-read}!Bit_buffer_io.c@{Bit\-\_\-buffer\-\_\-io.\-c}}
+\subsubsection[{safe\-\_\-read}]{\setlength{\rightskip}{0pt plus 5cm}int safe\-\_\-read (
+\begin{DoxyParamCaption}
+\item[{F\-I\-L\-E $\ast$}]{file\-\_\-descriptor, }
+\item[{{\bf buffer\-\_\-t} $\ast$}]{buffer, }
+\item[{int}]{length}
+\end{DoxyParamCaption}
+)}}\label{_bit__buffer__io_8c_a7da4d5d20ae3a487ce2276f57939c4fe}
+
+
+Scrive nel buffer {\itshape length} bytes letti dal file passato come parametro. 
+
+
+\begin{DoxyParams}[1]{Parametri}
+\mbox{\tt in}  & {\em file\-\_\-descriptor} & Descrittore del file dove leggere i dati da scrivere nel buffer. \\
+\hline
+\mbox{\tt in}  & {\em buffer} & Buffer dove inserire i dati letti dal file. \\
+\hline
+\mbox{\tt in}  & {\em length} & Numero di bytes da leggere dal file. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+Totale dei bytes letti dal file, in caso di successo coincide con {\itshape length}. 
+\end{DoxyReturn}
+
+
+Definizione alla linea 220 del file Bit\-\_\-buffer\-\_\-io.\-c.
+
+\hypertarget{_bit__buffer__io_8c_a4f4f5675a16104a099e8eb695ae353af}{\index{Bit\-\_\-buffer\-\_\-io.\-c@{Bit\-\_\-buffer\-\_\-io.\-c}!safe\-\_\-write@{safe\-\_\-write}}
+\index{safe\-\_\-write@{safe\-\_\-write}!Bit_buffer_io.c@{Bit\-\_\-buffer\-\_\-io.\-c}}
+\subsubsection[{safe\-\_\-write}]{\setlength{\rightskip}{0pt plus 5cm}int safe\-\_\-write (
+\begin{DoxyParamCaption}
+\item[{F\-I\-L\-E $\ast$}]{file\-\_\-descriptor, }
+\item[{{\bf buffer\-\_\-t} $\ast$}]{buffer, }
+\item[{int}]{length}
+\end{DoxyParamCaption}
+)}}\label{_bit__buffer__io_8c_a4f4f5675a16104a099e8eb695ae353af}
+
+
+Scrive su file i primi {\itshape length} bytes presente nel buffer. 
+
+
+\begin{DoxyParams}[1]{Parametri}
+\mbox{\tt in}  & {\em file\-\_\-descriptor} & Descrittore del file dove scrivere i dati dal buffer. \\
+\hline
+\mbox{\tt in}  & {\em buffer} & Buffer che contiene i dati da scrivere. \\
+\hline
+\mbox{\tt in}  & {\em length} & Numero di bytes del buffer da scrivere nel file. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+Totale dei bytes scritti nel file, in caso di successo coincide con {\itshape length}. 
+\end{DoxyReturn}
+
+
+Definizione alla linea 212 del file Bit\-\_\-buffer\-\_\-io.\-c.
+
+
+
+\subsection{Documentazione delle variabili}
+\hypertarget{_bit__buffer__io_8c_a5768104541c33f9b2cce0b46fb42fc64}{\index{Bit\-\_\-buffer\-\_\-io.\-c@{Bit\-\_\-buffer\-\_\-io.\-c}!force\-\_\-overwrite\-\_\-flag@{force\-\_\-overwrite\-\_\-flag}}
+\index{force\-\_\-overwrite\-\_\-flag@{force\-\_\-overwrite\-\_\-flag}!Bit_buffer_io.c@{Bit\-\_\-buffer\-\_\-io.\-c}}
+\subsubsection[{force\-\_\-overwrite\-\_\-flag}]{\setlength{\rightskip}{0pt plus 5cm}int force\-\_\-overwrite\-\_\-flag}}\label{_bit__buffer__io_8c_a5768104541c33f9b2cce0b46fb42fc64}
+
+
+Definizione alla linea 37 del file main.\-c.
+

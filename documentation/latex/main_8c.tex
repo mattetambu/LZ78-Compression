@@ -1,0 +1,108 @@
+\hypertarget{main_8c}{\section{Riferimenti per il file C\-:/\-Users/\-Matteo/\-Dropbox/\-Universita/\-Progettazione e Produzione Multimediale/\-Progetto/\-L\-Z78-\/\-Compression/sources/main.c}
+\label{main_8c}\index{C\-:/\-Users/\-Matteo/\-Dropbox/\-Universita/\-Progettazione e Produzione Multimediale/\-Progetto/\-L\-Z78-\/\-Compression/sources/main.\-c@{C\-:/\-Users/\-Matteo/\-Dropbox/\-Universita/\-Progettazione e Produzione Multimediale/\-Progetto/\-L\-Z78-\/\-Compression/sources/main.\-c}}
+}
+{\ttfamily \#include \char`\"{}Common.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}L\-Z78\-\_\-\-Compressor.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}L\-Z78\-\_\-\-Uncompressor.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$getopt.\-h$>$}\\*
+\subsection*{Definizioni}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{main_8c_a453377f3976a717bdd9c2bf0796c643a}{C\-O\-M\-P\-R\-E\-S\-S\-E\-D\-\_\-\-F\-I\-L\-E\-\_\-\-E\-X\-T\-E\-N\-S\-I\-O\-N}~\char`\"{}.lz78\char`\"{}
+\end{DoxyCompactItemize}
+\subsection*{Funzioni}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{main_8c_aa0a3bbfc07d04033798c003423528120}{check\-\_\-arguments} (int argc, char $\ast$$\ast$argv, int $\ast$command, char $\ast$input\-\_\-file\-\_\-name\mbox{[}$\,$\mbox{]}, char $\ast$output\-\_\-file\-\_\-name\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Verifica la correttezza dei parametri forniti e setta le variabili di ambiente necessarie al programma. \end{DoxyCompactList}\item 
+int \hyperlink{main_8c_a3c04138a5bfe5d72780bb7e82a18e627}{main} (int argc, char $\ast$$\ast$argv)
+\begin{DoxyCompactList}\small\item\em Esegue il comando richiesto dall'utente\-: help, compress o uncompress. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variabili}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{main_8c_a5768104541c33f9b2cce0b46fb42fc64}{force\-\_\-overwrite\-\_\-flag} = \hyperlink{_common_8h_a65e9886d74aaee76545e83dd09011727}{false}
+\end{DoxyCompactItemize}
+
+
+\subsection{Documentazione delle definizioni}
+\hypertarget{main_8c_a453377f3976a717bdd9c2bf0796c643a}{\index{main.\-c@{main.\-c}!C\-O\-M\-P\-R\-E\-S\-S\-E\-D\-\_\-\-F\-I\-L\-E\-\_\-\-E\-X\-T\-E\-N\-S\-I\-O\-N@{C\-O\-M\-P\-R\-E\-S\-S\-E\-D\-\_\-\-F\-I\-L\-E\-\_\-\-E\-X\-T\-E\-N\-S\-I\-O\-N}}
+\index{C\-O\-M\-P\-R\-E\-S\-S\-E\-D\-\_\-\-F\-I\-L\-E\-\_\-\-E\-X\-T\-E\-N\-S\-I\-O\-N@{C\-O\-M\-P\-R\-E\-S\-S\-E\-D\-\_\-\-F\-I\-L\-E\-\_\-\-E\-X\-T\-E\-N\-S\-I\-O\-N}!main.c@{main.\-c}}
+\subsubsection[{C\-O\-M\-P\-R\-E\-S\-S\-E\-D\-\_\-\-F\-I\-L\-E\-\_\-\-E\-X\-T\-E\-N\-S\-I\-O\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-O\-M\-P\-R\-E\-S\-S\-E\-D\-\_\-\-F\-I\-L\-E\-\_\-\-E\-X\-T\-E\-N\-S\-I\-O\-N~\char`\"{}.lz78\char`\"{}}}\label{main_8c_a453377f3976a717bdd9c2bf0796c643a}
+
+
+Definizione alla linea 35 del file main.\-c.
+
+
+
+\subsection{Documentazione delle funzioni}
+\hypertarget{main_8c_aa0a3bbfc07d04033798c003423528120}{\index{main.\-c@{main.\-c}!check\-\_\-arguments@{check\-\_\-arguments}}
+\index{check\-\_\-arguments@{check\-\_\-arguments}!main.c@{main.\-c}}
+\subsubsection[{check\-\_\-arguments}]{\setlength{\rightskip}{0pt plus 5cm}int check\-\_\-arguments (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$$\ast$}]{argv, }
+\item[{int $\ast$}]{command, }
+\item[{char $\ast$}]{input\-\_\-file\-\_\-name\mbox{[}$\,$\mbox{]}, }
+\item[{char $\ast$}]{output\-\_\-file\-\_\-name\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{main_8c_aa0a3bbfc07d04033798c003423528120}
+
+
+Verifica la correttezza dei parametri forniti e setta le variabili di ambiente necessarie al programma. 
+
+
+\begin{DoxyParams}[1]{Parametri}
+\mbox{\tt in}  & {\em argc} & Numero di argomenti passati in ingresso al programma. \\
+\hline
+\mbox{\tt in}  & {\em argv} & Argomenti passati in ingresso al programma. \\
+\hline
+\mbox{\tt out}  & {\em command} & Comando richiesto. \\
+\hline
+\mbox{\tt out}  & {\em input\-\_\-file\-\_\-name} & Nome del file in ingresso. \\
+\hline
+\mbox{\tt out}  & {\em output\-\_\-file\-\_\-name} & Nome del file di output. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+Risultato della verifica degli argomenti forniti al programma, {\ttfamily 0} in caso di successo e {\ttfamily -\/1} altrimenti. 
+\end{DoxyReturn}
+
+
+Definizione alla linea 39 del file main.\-c.
+
+\hypertarget{main_8c_a3c04138a5bfe5d72780bb7e82a18e627}{\index{main.\-c@{main.\-c}!main@{main}}
+\index{main@{main}!main.c@{main.\-c}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$$\ast$}]{argv}
+\end{DoxyParamCaption}
+)}}\label{main_8c_a3c04138a5bfe5d72780bb7e82a18e627}
+
+
+Esegue il comando richiesto dall'utente\-: help, compress o uncompress. 
+
+
+\begin{DoxyParams}[1]{Parametri}
+\mbox{\tt in}  & {\em argc} & Numero di argomenti passati in ingresso al programma. \\
+\hline
+\mbox{\tt in}  & {\em argv} & Argomenti passati in ingresso al programma. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+Risultato dell'esecuzione del programma, {\ttfamily 0} in caso di successo e {\ttfamily -\/1} altrimenti. 
+\end{DoxyReturn}
+
+
+Definizione alla linea 206 del file main.\-c.
+
+
+
+\subsection{Documentazione delle variabili}
+\hypertarget{main_8c_a5768104541c33f9b2cce0b46fb42fc64}{\index{main.\-c@{main.\-c}!force\-\_\-overwrite\-\_\-flag@{force\-\_\-overwrite\-\_\-flag}}
+\index{force\-\_\-overwrite\-\_\-flag@{force\-\_\-overwrite\-\_\-flag}!main.c@{main.\-c}}
+\subsubsection[{force\-\_\-overwrite\-\_\-flag}]{\setlength{\rightskip}{0pt plus 5cm}int force\-\_\-overwrite\-\_\-flag = {\bf false}}}\label{main_8c_a5768104541c33f9b2cce0b46fb42fc64}
+
+
+Definizione alla linea 37 del file main.\-c.
+

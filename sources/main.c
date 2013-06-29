@@ -1,5 +1,32 @@
 // main.c
 
+/**
+ \file		main.c
+ \dir		/source/
+ \date		25/06/2013
+ \author	Tamburini Matteo <mattetambu@gmail.com>
+*/
+
+/**
+ \fn		int check_arguments (int argc, char **argv, int *command, char *input_file_name[], char *output_file_name[])
+ \param		[in]	argc				Numero di argomenti passati in ingresso al programma.
+ \param		[in]	argv				Argomenti passati in ingresso al programma.
+ \param		[out]	command				Comando richiesto.
+ \param		[out]	input_file_name		Nome del file in ingresso.
+ \param		[out]	output_file_name	Nome del file di output.
+ \return	Risultato della verifica degli argomenti forniti al programma, \c 0 in caso di successo e \c -1 altrimenti.
+ \brief		Verifica la correttezza dei parametri forniti e setta le variabili di ambiente necessarie al programma.
+*/
+
+/**
+ \fn		int main (int argc, char **argv)
+ \param		[in]	argc				Numero di argomenti passati in ingresso al programma.
+ \param		[in]	argv				Argomenti passati in ingresso al programma.
+ \return	Risultato dell'esecuzione del programma, \c 0 in caso di successo e \c -1 altrimenti.
+ \brief		Esegue il comando richiesto dall'utente: help, compress o uncompress.
+*/
+
+
 #include "Common.h"
 #include "LZ78_Compressor.h"
 #include "LZ78_Uncompressor.h"

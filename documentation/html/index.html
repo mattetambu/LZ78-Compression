@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.3.1"/>
+<title>Compressore LZ78: Progetto di \e Progettazione \e e \e Produzione \e Multimediale.</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Compressore LZ78
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Realizzare un compressore basato sull&#39;algoritmo LZ78</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generato da Doxygen 1.8.3.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Cerca');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li class="current"><a href="index.html"><span>Pagina&#160;Principale</span></a></li>
+      <li><a href="annotated.html"><span>Strutture&#160;dati</span></a></li>
+      <li><a href="files.html"><span>File</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Cerca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tutto</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Strutture dati</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>File</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funzioni</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variabili</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Ridefinizioni di tipo (typedef)</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Definizioni</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pagine</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Progetto di <em>Progettazione</em> <em>e</em> <em>Produzione</em> <em>Multimediale</em>. </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><h1><a class="anchor" id="LZ78_Compression"></a>
+Compressore/decompressore basato sull'algoritmo LZ78</h1>
+<p><b>Autore:</b> Tamburini Matteo <a href="#" onclick="location.href='mai'+'lto:'+'mat'+'te'+'tam'+'bu'+'@gm'+'ai'+'l.c'+'om'; return false;">matte<span style="display: none;">.nosp@m.</span>tamb<span style="display: none;">.nosp@m.</span>u@gma<span style="display: none;">.nosp@m.</span>il.c<span style="display: none;">.nosp@m.</span>om</a> <br/>
+ <b>Data:</b> 25/06/2013 <br/>
+ <b>Versione:</b> 1.0 <br/>
+ <br/>
+</p>
+<h2><a class="anchor" id="Descrizione"></a>
+Descrizione dell'applicazione</h2>
+<p>Realizzare un compressore/decompressore basato sull'algoritmo LZ78. <br/>
+ <br/>
+</p>
+<h2><a class="anchor" id="Compilazione"></a>
+Compilazione dell'applicazione</h2>
+<p>Per la compilazione è presente un makefile quindi è sufficiente eseguire il comando "make". <br/>
+ La lista degli obiettivi presenti nel makefile risulta:</p>
+<ul>
+<li><em>make</em> <em></em>[all]: Build the executable</li>
+<li><em>make</em> <em>archive:</em> Archive the executable, the makefile and all *.c and *.h files</li>
+<li><em>make</em> <em>clean:</em> Remove the excutable, *.lz78 and *.o files</li>
+<li><em>make</em> <em>help:</em> Show this info <br/>
+ <br/>
+</li>
+</ul>
+<h2><a class="anchor" id="Esecuzione"></a>
+Esecuzione dell'applicazione</h2>
+<p>Per lanciare l'applicazione è necessario avviare l'eseguibile "lz78" utilizzando le seguenti opzioni:</p>
+<ul>
+<li>-<em>c</em> &ndash;<em>compress:</em> Compress specified file</li>
+<li>-<em>d</em> -<em>u</em> &ndash;<em>decompress</em> &ndash;<em>uncompress:</em> Uncompress specified file</li>
+<li>-<em>o</em> -<em>n</em> &ndash;<em>output</em> &ndash;<em>name:</em> Set the name for the output file</li>
+<li>-<em>h</em> &ndash;<em>help:</em> Show the help</li>
+<li>-<em>v</em> &ndash;<em>verbose:</em> Display more messages</li>
+<li>-<em>f</em> &ndash;<em>force:</em> Silent overwrite if the output file already exists</li>
+<li>-<em>e</em> &ndash;<em>extension:</em> Use the input file extension for the output file</li>
+<li>-<em>p</em> &ndash;<em>path:</em> Use the input file path for the output file </li>
+</ul>
+</div></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generato Sab 29 Giu 2013 11:30:58 per Compressore LZ78 da &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.3.1
+</small></address>
+</body>
+</html>

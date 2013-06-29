@@ -110,6 +110,12 @@ int bit_buffer_write (bit_buffer_t* bit_buffer, data_t data, int length) {
 	data_t mask;
 	int bits_to_write, total_written = 0, offset;
 	
+	if (length > 8*sizeof(data)) {
+		fprintf (stderr, "Invalid parameter - ");
+		errno = EINVAL;
+		return -1;
+	}
+	
 	data = host_to_little_endian (data);
 	
 	while (length > 0) {									
@@ -145,6 +151,12 @@ int bit_buffer_read (bit_buffer_t *bit_buffer, data_t *data, int length) {
 	buffer_t mask;
 	int bits_to_read, offset = 0, bits_read = 0;
 	
+	if (length > 8*sizeof(*data)) {
+		fprintf (stderr, "Invalid parameter - ");
+		errno = EINVAL;
+		return -1;
+	}
+
 	*data &= (data_t) 0;
 	
 	while (length > 0) {
@@ -155,7 +167,7 @@ int bit_buffer_read (bit_buffer_t *bit_buffer, data_t *data, int length) {
 		mask = (bits_to_read == CELL_SIZE)? mask^(~mask) : (((buffer_t) 1 << bits_to_read) - 1) << bits_already_read;	//mask^(~mask) means all bits setted
 		
 		*data |= (data_t) ((mask & bit_buffer->buffer[offset]) >> bits_already_read) << data_position;
-		if (getenv("VERBOSE")) printf ("\tOffset:%d\tBits_to_read:%d \tMask:%d\n", offset, bits_to_read, mask);
+		if (getenv("VERBOSE")) printf ("\tOffset:%d\tBits_to_read:%d  \tMask:%d\n", offset, bits_to_read, mask);
 		
 		length -= bits_to_read;
 		bit_buffer->position += bits_to_read;

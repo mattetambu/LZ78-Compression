@@ -2,13 +2,13 @@
 
 #include "Compressor_table.h"
 
-hindex_t inline compute_hash (hindex_t parent_label, hvalue_t value) {
+inline hindex_t compute_hash (hindex_t parent_label, hvalue_t value) {
 	hindex_t key = (parent_label + 1) * (value + 1);
 	
 	return floor (HASH_TABLE_ROWS * (key * KNUTH_NUMBER - floor(key * KNUTH_NUMBER)));	//floor (HASH_TABLE_ROWS * ((key * KNUTH_NUMBER) % 1));
 }
 
-hindex_t inline compute_step_hash (hindex_t parent_label, hvalue_t value) {
+inline hindex_t compute_step_hash (hindex_t parent_label, hvalue_t value) {
 	hindex_t key = (parent_label + 1) * (value + 1);
 	
 	return (key % (HASH_TABLE_ROWS - 1)) | 1; // | 1 because double hashing need the step is prime to HASH_TABLE_ROWS (par number)

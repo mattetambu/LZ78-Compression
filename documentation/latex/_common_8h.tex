@@ -1,0 +1,168 @@
+\hypertarget{_common_8h}{\section{Riferimenti per il file C\-:/\-Users/\-Matteo/\-Dropbox/\-Universita/\-Progettazione e Produzione Multimediale/\-Progetto/\-L\-Z78-\/\-Compression/sources/\-Common.h}
+\label{_common_8h}\index{C\-:/\-Users/\-Matteo/\-Dropbox/\-Universita/\-Progettazione e Produzione Multimediale/\-Progetto/\-L\-Z78-\/\-Compression/sources/\-Common.\-h@{C\-:/\-Users/\-Matteo/\-Dropbox/\-Universita/\-Progettazione e Produzione Multimediale/\-Progetto/\-L\-Z78-\/\-Compression/sources/\-Common.\-h}}
+}
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include $<$string.\-h$>$}\\*
+{\ttfamily \#include $<$errno.\-h$>$}\\*
+{\ttfamily \#include $<$math.\-h$>$}\\*
+{\ttfamily \#include $<$sys/stat.\-h$>$}\\*
+{\ttfamily \#include $<$sys/types.\-h$>$}\\*
+{\ttfamily \#include $<$unistd.\-h$>$}\\*
+{\ttfamily \#include $<$fcntl.\-h$>$}\\*
+\subsection*{Definizioni}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_common_8h_a65e9886d74aaee76545e83dd09011727}{false}~0
+\item 
+\#define \hyperlink{_common_8h_a41f9c5fb8b08eb5dc3edce4dcb37fee7}{true}~1
+\item 
+\#define \hyperlink{_common_8h_a8026e8d87908b0239264d643c90183f5}{\-\_\-\-R\-E\-A\-D}~0
+\item 
+\#define \hyperlink{_common_8h_a622e22a8bb12b59a4e14802f6aa1737e}{\-\_\-\-W\-R\-I\-T\-E}~1
+\item 
+\#define \hyperlink{_common_8h_a75666a6f2c5d710b4fa0845c5cf24552}{R\-O\-O\-T\-\_\-\-I\-N\-D\-E\-X}~256
+\item 
+\#define \hyperlink{_common_8h_aca2d241a951204f1f8e2d905f162dcbe}{M\-A\-X\-\_\-\-C\-H\-I\-L\-D\-S}~1048576
+\item 
+\#define \hyperlink{_common_8h_ae19149fe84918a619f57fa43fe7bb3ce}{K\-N\-U\-T\-H\-\_\-\-N\-U\-M\-B\-E\-R}~0.\-6180339887
+\item 
+\#define \hyperlink{_common_8h_ae3f6cff710eb9fad51e0c57d8ac9b3b2}{label\-\_\-length}(label)~(ceil(log(label)/log(2)))
+\item 
+\#define \hyperlink{_common_8h_a5acaf3668badc0c08768810bd955f38d}{min}(x1, x2)~((x1 $<$ x2)? x1 \-: x2)
+\end{DoxyCompactItemize}
+\subsection*{Ridefinizioni di tipo (typedef)}
+\begin{DoxyCompactItemize}
+\item 
+typedef unsigned char \hyperlink{_common_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\-\_\-t}
+\item 
+typedef short unsigned int \hyperlink{_common_8h_ad097ffa75536dc17a0039dfb3781d705}{uint16\-\_\-t}
+\item 
+typedef unsigned int \hyperlink{_common_8h_a435d1572bf3f880d55459d9805097f62}{uint32\-\_\-t}
+\item 
+typedef unsigned long \hyperlink{_common_8h_aa232ecf786a74ce5363c36c10798d2b1}{uint64\-\_\-t}
+\item 
+typedef \hyperlink{_common_8h_a435d1572bf3f880d55459d9805097f62}{uint32\-\_\-t} \hyperlink{_common_8h_a9e5efd01ad4bc79efcef95aee756b06a}{hindex\-\_\-t}
+\item 
+typedef \hyperlink{_common_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\-\_\-t} \hyperlink{_common_8h_a59e7e401edd661023c103ec038bc4ab2}{hvalue\-\_\-t}
+\end{DoxyCompactItemize}
+
+
+\subsection{Documentazione delle definizioni}
+\hypertarget{_common_8h_a8026e8d87908b0239264d643c90183f5}{\index{Common.\-h@{Common.\-h}!\-\_\-\-R\-E\-A\-D@{\-\_\-\-R\-E\-A\-D}}
+\index{\-\_\-\-R\-E\-A\-D@{\-\_\-\-R\-E\-A\-D}!Common.h@{Common.\-h}}
+\subsubsection[{\-\_\-\-R\-E\-A\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define \-\_\-\-R\-E\-A\-D~0}}\label{_common_8h_a8026e8d87908b0239264d643c90183f5}
+
+
+Definizione alla linea 20 del file Common.\-h.
+
+\hypertarget{_common_8h_a622e22a8bb12b59a4e14802f6aa1737e}{\index{Common.\-h@{Common.\-h}!\-\_\-\-W\-R\-I\-T\-E@{\-\_\-\-W\-R\-I\-T\-E}}
+\index{\-\_\-\-W\-R\-I\-T\-E@{\-\_\-\-W\-R\-I\-T\-E}!Common.h@{Common.\-h}}
+\subsubsection[{\-\_\-\-W\-R\-I\-T\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define \-\_\-\-W\-R\-I\-T\-E~1}}\label{_common_8h_a622e22a8bb12b59a4e14802f6aa1737e}
+
+
+Definizione alla linea 21 del file Common.\-h.
+
+\hypertarget{_common_8h_a65e9886d74aaee76545e83dd09011727}{\index{Common.\-h@{Common.\-h}!false@{false}}
+\index{false@{false}!Common.h@{Common.\-h}}
+\subsubsection[{false}]{\setlength{\rightskip}{0pt plus 5cm}\#define false~0}}\label{_common_8h_a65e9886d74aaee76545e83dd09011727}
+
+
+Definizione alla linea 18 del file Common.\-h.
+
+\hypertarget{_common_8h_ae19149fe84918a619f57fa43fe7bb3ce}{\index{Common.\-h@{Common.\-h}!K\-N\-U\-T\-H\-\_\-\-N\-U\-M\-B\-E\-R@{K\-N\-U\-T\-H\-\_\-\-N\-U\-M\-B\-E\-R}}
+\index{K\-N\-U\-T\-H\-\_\-\-N\-U\-M\-B\-E\-R@{K\-N\-U\-T\-H\-\_\-\-N\-U\-M\-B\-E\-R}!Common.h@{Common.\-h}}
+\subsubsection[{K\-N\-U\-T\-H\-\_\-\-N\-U\-M\-B\-E\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define K\-N\-U\-T\-H\-\_\-\-N\-U\-M\-B\-E\-R~0.\-6180339887}}\label{_common_8h_ae19149fe84918a619f57fa43fe7bb3ce}
+
+
+Definizione alla linea 42 del file Common.\-h.
+
+\hypertarget{_common_8h_ae3f6cff710eb9fad51e0c57d8ac9b3b2}{\index{Common.\-h@{Common.\-h}!label\-\_\-length@{label\-\_\-length}}
+\index{label\-\_\-length@{label\-\_\-length}!Common.h@{Common.\-h}}
+\subsubsection[{label\-\_\-length}]{\setlength{\rightskip}{0pt plus 5cm}\#define label\-\_\-length(
+\begin{DoxyParamCaption}
+\item[{}]{label}
+\end{DoxyParamCaption}
+)~(ceil(log(label)/log(2)))}}\label{_common_8h_ae3f6cff710eb9fad51e0c57d8ac9b3b2}
+
+
+Definizione alla linea 44 del file Common.\-h.
+
+\hypertarget{_common_8h_aca2d241a951204f1f8e2d905f162dcbe}{\index{Common.\-h@{Common.\-h}!M\-A\-X\-\_\-\-C\-H\-I\-L\-D\-S@{M\-A\-X\-\_\-\-C\-H\-I\-L\-D\-S}}
+\index{M\-A\-X\-\_\-\-C\-H\-I\-L\-D\-S@{M\-A\-X\-\_\-\-C\-H\-I\-L\-D\-S}!Common.h@{Common.\-h}}
+\subsubsection[{M\-A\-X\-\_\-\-C\-H\-I\-L\-D\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\-A\-X\-\_\-\-C\-H\-I\-L\-D\-S~1048576}}\label{_common_8h_aca2d241a951204f1f8e2d905f162dcbe}
+
+
+Definizione alla linea 24 del file Common.\-h.
+
+\hypertarget{_common_8h_a5acaf3668badc0c08768810bd955f38d}{\index{Common.\-h@{Common.\-h}!min@{min}}
+\index{min@{min}!Common.h@{Common.\-h}}
+\subsubsection[{min}]{\setlength{\rightskip}{0pt plus 5cm}\#define min(
+\begin{DoxyParamCaption}
+\item[{}]{x1, }
+\item[{}]{x2}
+\end{DoxyParamCaption}
+)~((x1 $<$ x2)? x1 \-: x2)}}\label{_common_8h_a5acaf3668badc0c08768810bd955f38d}
+
+
+Definizione alla linea 45 del file Common.\-h.
+
+\hypertarget{_common_8h_a75666a6f2c5d710b4fa0845c5cf24552}{\index{Common.\-h@{Common.\-h}!R\-O\-O\-T\-\_\-\-I\-N\-D\-E\-X@{R\-O\-O\-T\-\_\-\-I\-N\-D\-E\-X}}
+\index{R\-O\-O\-T\-\_\-\-I\-N\-D\-E\-X@{R\-O\-O\-T\-\_\-\-I\-N\-D\-E\-X}!Common.h@{Common.\-h}}
+\subsubsection[{R\-O\-O\-T\-\_\-\-I\-N\-D\-E\-X}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\-O\-O\-T\-\_\-\-I\-N\-D\-E\-X~256}}\label{_common_8h_a75666a6f2c5d710b4fa0845c5cf24552}
+
+
+Definizione alla linea 23 del file Common.\-h.
+
+\hypertarget{_common_8h_a41f9c5fb8b08eb5dc3edce4dcb37fee7}{\index{Common.\-h@{Common.\-h}!true@{true}}
+\index{true@{true}!Common.h@{Common.\-h}}
+\subsubsection[{true}]{\setlength{\rightskip}{0pt plus 5cm}\#define true~1}}\label{_common_8h_a41f9c5fb8b08eb5dc3edce4dcb37fee7}
+
+
+Definizione alla linea 19 del file Common.\-h.
+
+
+
+\subsection{Documentazione delle ridefinizioni di tipo (typedef)}
+\hypertarget{_common_8h_a9e5efd01ad4bc79efcef95aee756b06a}{\index{Common.\-h@{Common.\-h}!hindex\-\_\-t@{hindex\-\_\-t}}
+\index{hindex\-\_\-t@{hindex\-\_\-t}!Common.h@{Common.\-h}}
+\subsubsection[{hindex\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf uint32\-\_\-t} {\bf hindex\-\_\-t}}}\label{_common_8h_a9e5efd01ad4bc79efcef95aee756b06a}
+
+
+Definizione alla linea 53 del file Common.\-h.
+
+\hypertarget{_common_8h_a59e7e401edd661023c103ec038bc4ab2}{\index{Common.\-h@{Common.\-h}!hvalue\-\_\-t@{hvalue\-\_\-t}}
+\index{hvalue\-\_\-t@{hvalue\-\_\-t}!Common.h@{Common.\-h}}
+\subsubsection[{hvalue\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf uint8\-\_\-t} {\bf hvalue\-\_\-t}}}\label{_common_8h_a59e7e401edd661023c103ec038bc4ab2}
+
+
+Definizione alla linea 54 del file Common.\-h.
+
+\hypertarget{_common_8h_ad097ffa75536dc17a0039dfb3781d705}{\index{Common.\-h@{Common.\-h}!uint16\-\_\-t@{uint16\-\_\-t}}
+\index{uint16\-\_\-t@{uint16\-\_\-t}!Common.h@{Common.\-h}}
+\subsubsection[{uint16\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef short unsigned int {\bf uint16\-\_\-t}}}\label{_common_8h_ad097ffa75536dc17a0039dfb3781d705}
+
+
+Definizione alla linea 49 del file Common.\-h.
+
+\hypertarget{_common_8h_a435d1572bf3f880d55459d9805097f62}{\index{Common.\-h@{Common.\-h}!uint32\-\_\-t@{uint32\-\_\-t}}
+\index{uint32\-\_\-t@{uint32\-\_\-t}!Common.h@{Common.\-h}}
+\subsubsection[{uint32\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned int {\bf uint32\-\_\-t}}}\label{_common_8h_a435d1572bf3f880d55459d9805097f62}
+
+
+Definizione alla linea 50 del file Common.\-h.
+
+\hypertarget{_common_8h_aa232ecf786a74ce5363c36c10798d2b1}{\index{Common.\-h@{Common.\-h}!uint64\-\_\-t@{uint64\-\_\-t}}
+\index{uint64\-\_\-t@{uint64\-\_\-t}!Common.h@{Common.\-h}}
+\subsubsection[{uint64\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned long {\bf uint64\-\_\-t}}}\label{_common_8h_aa232ecf786a74ce5363c36c10798d2b1}
+
+
+Definizione alla linea 51 del file Common.\-h.
+
+\hypertarget{_common_8h_aba7bc1797add20fe3efdf37ced1182c5}{\index{Common.\-h@{Common.\-h}!uint8\-\_\-t@{uint8\-\_\-t}}
+\index{uint8\-\_\-t@{uint8\-\_\-t}!Common.h@{Common.\-h}}
+\subsubsection[{uint8\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned char {\bf uint8\-\_\-t}}}\label{_common_8h_aba7bc1797add20fe3efdf37ced1182c5}
+
+
+Definizione alla linea 48 del file Common.\-h.
+

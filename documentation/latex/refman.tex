@@ -1,0 +1,96 @@
+\documentclass{book}
+\usepackage[a4paper,top=2.5cm,bottom=2.5cm,left=2.5cm,right=2.5cm]{geometry}
+\usepackage{makeidx}
+\usepackage{natbib}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{float}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{ifthen}
+\usepackage[table]{xcolor}
+\usepackage{textcomp}
+\usepackage{alltt}
+\usepackage{ifpdf}
+\ifpdf
+\usepackage[pdftex,
+            pagebackref=true,
+            colorlinks=true,
+            linkcolor=blue,
+            unicode
+           ]{hyperref}
+\else
+\usepackage[ps2pdf,
+            pagebackref=true,
+            colorlinks=true,
+            linkcolor=blue,
+            unicode
+           ]{hyperref}
+\usepackage{pspicture}
+\fi
+\usepackage[utf8]{inputenc}
+\usepackage[italian]{babel}
+
+\usepackage{mathptmx}
+\usepackage[scaled=.90]{helvet}
+\usepackage{courier}
+\usepackage{sectsty}
+\usepackage{amssymb}
+\usepackage[titles]{tocloft}
+\usepackage{doxygen}
+\lstset{language=C++,inputencoding=utf8,basicstyle=\footnotesize,breaklines=true,breakatwhitespace=true,tabsize=4,numbers=left }
+\makeindex
+\setcounter{tocdepth}{3}
+\renewcommand{\footrulewidth}{0.4pt}
+\renewcommand{\familydefault}{\sfdefault}
+\hfuzz=15pt
+\setlength{\emergencystretch}{15pt}
+\hbadness=750
+\tolerance=750
+\begin{document}
+\hypersetup{pageanchor=false,citecolor=blue}
+\begin{titlepage}
+\vspace*{7cm}
+\begin{center}
+{\Large Compressore L\-Z78 \\[1ex]\large 1.\-0 }\\
+\vspace*{1cm}
+{\large Generato da Doxygen 1.8.3.1}\\
+\vspace*{0.5cm}
+{\small Sab 29 Giu 2013 11:30:58}\\
+\end{center}
+\end{titlepage}
+\clearemptydoublepage
+\pagenumbering{roman}
+\tableofcontents
+\clearemptydoublepage
+\pagenumbering{arabic}
+\hypersetup{pageanchor=true,citecolor=blue}
+\chapter{Progetto di \textbackslash{}e Progettazione \textbackslash{}e e \textbackslash{}e Produzione \textbackslash{}e Multimediale.}
+\label{index}\hypertarget{index}{}\input{index}
+\chapter{Indice delle strutture dati}
+\input{annotated}
+\chapter{Indice dei file}
+\input{files}
+\chapter{Documentazione delle classi}
+\input{struct__bit__buffer__t}
+\input{struct__compressor__table__row__t}
+\input{struct__lz78__compressor__t}
+\input{struct__lz78__uncompressor__t}
+\input{struct__uncompressor__table__row__t}
+\chapter{Documentazione dei file}
+\input{doxygen__mainpage_8dox}
+\input{_bit__buffer__io_8c}
+\input{_bit__buffer__io_8h}
+\input{_common_8h}
+\input{_compressor__table_8c}
+\input{_compressor__table_8h}
+\input{_l_z78___compressor_8c}
+\input{_l_z78___compressor_8h}
+\input{_l_z78___uncompressor_8c}
+\input{_l_z78___uncompressor_8h}
+\input{main_8c}
+\input{_uncompressor__table_8c}
+\input{_uncompressor__table_8h}
+\addcontentsline{toc}{part}{Indice}
+\printindex
+\end{document}

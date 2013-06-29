@@ -1,0 +1,411 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.3.1"/>
+<title>Compressore LZ78: Elementi globali</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Compressore LZ78
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Realizzare un compressore basato sull&#39;algoritmo LZ78</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generato da Doxygen 1.8.3.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Cerca');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Pagina&#160;Principale</span></a></li>
+      <li><a href="annotated.html"><span>Strutture&#160;dati</span></a></li>
+      <li class="current"><a href="files.html"><span>File</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Cerca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Elenco&#160;dei&#160;file</span></a></li>
+      <li class="current"><a href="globals.html"><span>Elementi&#160;globali</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow3" class="tabs2">
+    <ul class="tablist">
+      <li class="current"><a href="globals.html"><span>Tutto</span></a></li>
+      <li><a href="globals_func.html"><span>Funzioni</span></a></li>
+      <li><a href="globals_vars.html"><span>Variabili</span></a></li>
+      <li><a href="globals_type.html"><span>Ridefinizioni&#160;di&#160;tipo&#160;(typedef)</span></a></li>
+      <li><a href="globals_defs.html"><span>Definizioni</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow4" class="tabs3">
+    <ul class="tablist">
+      <li><a href="#index__"><span>_</span></a></li>
+      <li><a href="#index_b"><span>b</span></a></li>
+      <li><a href="#index_c"><span>c</span></a></li>
+      <li><a href="#index_d"><span>d</span></a></li>
+      <li><a href="#index_e"><span>e</span></a></li>
+      <li><a href="#index_f"><span>f</span></a></li>
+      <li><a href="#index_h"><span>h</span></a></li>
+      <li><a href="#index_k"><span>k</span></a></li>
+      <li><a href="#index_l"><span>l</span></a></li>
+      <li><a href="#index_m"><span>m</span></a></li>
+      <li><a href="#index_r"><span>r</span></a></li>
+      <li><a href="#index_s"><span>s</span></a></li>
+      <li><a href="#index_t"><span>t</span></a></li>
+      <li><a href="#index_u"><span>u</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tutto</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Strutture dati</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>File</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funzioni</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variabili</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Ridefinizioni di tipo (typedef)</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Definizioni</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pagine</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="contents">
+<div class="textblock">Questo è un elenco di tutte le funzioni, variabili, define, tipi enumerati, e ridefinizioni dei tipi (typedef) con collegamenti alla documentazione del file a cui appartengono:</div>
+
+<h3><a class="anchor" id="index__"></a>- _ -</h3><ul>
+<li>_READ
+: <a class="el" href="_common_8h.html#a8026e8d87908b0239264d643c90183f5">Common.h</a>
+</li>
+<li>_WRITE
+: <a class="el" href="_common_8h.html#a622e22a8bb12b59a4e14802f6aa1737e">Common.h</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_b"></a>- b -</h3><ul>
+<li>bit_buffer_complete_writing()
+: <a class="el" href="_bit__buffer__io_8c.html#a160fda4e35839eacf67dde535921e5e1">Bit_buffer_io.c</a>
+, <a class="el" href="_bit__buffer__io_8h.html#ab5391159e307b6c0a9a470ae51b0bd20">Bit_buffer_io.h</a>
+</li>
+<li>bit_buffer_create()
+: <a class="el" href="_bit__buffer__io_8h.html#a9f3661d0482e08ca8ab9af80e2a044d8">Bit_buffer_io.h</a>
+, <a class="el" href="_bit__buffer__io_8c.html#a43b727192dac1363565e82d685e020c3">Bit_buffer_io.c</a>
+</li>
+<li>bit_buffer_destroy()
+: <a class="el" href="_bit__buffer__io_8c.html#a4cef1186a732a8902906d7621d2e128e">Bit_buffer_io.c</a>
+, <a class="el" href="_bit__buffer__io_8h.html#a73ed6b6416773d62923dd009ff00925f">Bit_buffer_io.h</a>
+</li>
+<li>bit_buffer_fill()
+: <a class="el" href="_bit__buffer__io_8h.html#aad71565f02a41f11b96e98cb2282f38e">Bit_buffer_io.h</a>
+, <a class="el" href="_bit__buffer__io_8c.html#a97b3f8006b6604b4d8a72450dcfa36ad">Bit_buffer_io.c</a>
+</li>
+<li>bit_buffer_flush()
+: <a class="el" href="_bit__buffer__io_8c.html#a528142a3b90b9e219f6360454ad36b15">Bit_buffer_io.c</a>
+, <a class="el" href="_bit__buffer__io_8h.html#a1d39c58e0723f581b371fdd4c64a4bc3">Bit_buffer_io.h</a>
+</li>
+<li>bit_buffer_initialize()
+: <a class="el" href="_bit__buffer__io_8c.html#a3ddf1ac1858468a44172b5efe7615f56">Bit_buffer_io.c</a>
+, <a class="el" href="_bit__buffer__io_8h.html#adf7886e441e2e90e7ba45b15316347ec">Bit_buffer_io.h</a>
+</li>
+<li>bit_buffer_read()
+: <a class="el" href="_bit__buffer__io_8c.html#ab6e29ef99059e4ffd6b577e86d7d0efb">Bit_buffer_io.c</a>
+, <a class="el" href="_bit__buffer__io_8h.html#acb1016ab11a7b242e59e165fcc9feb8e">Bit_buffer_io.h</a>
+</li>
+<li>bit_buffer_t
+: <a class="el" href="_bit__buffer__io_8h.html#a713e3f0b57038515d796b34e08f48fe0">Bit_buffer_io.h</a>
+</li>
+<li>bit_buffer_write()
+: <a class="el" href="_bit__buffer__io_8h.html#a1c0ba06627511cf8fe06ccf7c6a88419">Bit_buffer_io.h</a>
+, <a class="el" href="_bit__buffer__io_8c.html#a3211fb1c5ece681e992ea11d14f77c1c">Bit_buffer_io.c</a>
+</li>
+<li>BUFFER_SIZE
+: <a class="el" href="_bit__buffer__io_8h.html#a6b20d41d6252e9871430c242cb1a56e7">Bit_buffer_io.h</a>
+</li>
+<li>buffer_t
+: <a class="el" href="_bit__buffer__io_8h.html#a30fe0633adbbaa7a5b6a4fd8d479bf0c">Bit_buffer_io.h</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_c"></a>- c -</h3><ul>
+<li>CELL_SIZE
+: <a class="el" href="_bit__buffer__io_8h.html#a7a4127f14f16563da90eb3c836bc404f">Bit_buffer_io.h</a>
+</li>
+<li>check_arguments()
+: <a class="el" href="main_8c.html#aa0a3bbfc07d04033798c003423528120">main.c</a>
+</li>
+<li>COMPRESSED_FILE_EXTENSION
+: <a class="el" href="main_8c.html#a453377f3976a717bdd9c2bf0796c643a">main.c</a>
+</li>
+<li>compressor_table_create()
+: <a class="el" href="_compressor__table_8c.html#a5c38d96c9eaa5b554a91b8fb898848de">Compressor_table.c</a>
+, <a class="el" href="_compressor__table_8h.html#a67715bdd1828dbafe055d6e2f3b1118f">Compressor_table.h</a>
+</li>
+<li>compressor_table_destroy()
+: <a class="el" href="_compressor__table_8c.html#a498d938ec93f24a09bd7a589a6ab646d">Compressor_table.c</a>
+, <a class="el" href="_compressor__table_8h.html#add8088737b5a5babab8a73a6ad458530">Compressor_table.h</a>
+</li>
+<li>compressor_table_initialize()
+: <a class="el" href="_compressor__table_8c.html#ac7692ba5768191bb29b1e15dcd30fcb1">Compressor_table.c</a>
+, <a class="el" href="_compressor__table_8h.html#a1a88e331d8e3c6d0c56f1a28ef84df16">Compressor_table.h</a>
+</li>
+<li>compressor_table_insert()
+: <a class="el" href="_compressor__table_8c.html#a2777cb377052d9d711d424d14a286da1">Compressor_table.c</a>
+, <a class="el" href="_compressor__table_8h.html#a6986412c86a688d7692e95fb1ee7529f">Compressor_table.h</a>
+</li>
+<li>compressor_table_rebuild()
+: <a class="el" href="_compressor__table_8c.html#a36243a31800094e69f6780cf047909c9">Compressor_table.c</a>
+, <a class="el" href="_compressor__table_8h.html#abca9a24b6e66dcff536cece2a5eb992f">Compressor_table.h</a>
+</li>
+<li>compressor_table_row_t
+: <a class="el" href="_compressor__table_8h.html#a82bc28c8341cd953b35d0e4dd31ca2a8">Compressor_table.h</a>
+</li>
+<li>compressor_table_search()
+: <a class="el" href="_compressor__table_8c.html#a5565dc7fe54f1093165b858b34ec1658">Compressor_table.c</a>
+, <a class="el" href="_compressor__table_8h.html#acd240fb31713fac6a5ff261f4990b2f0">Compressor_table.h</a>
+</li>
+<li>compressor_table_t
+: <a class="el" href="_compressor__table_8h.html#a529ad42a2b30cf6fa0a4ee97143d38a8">Compressor_table.h</a>
+</li>
+<li>compute_hash()
+: <a class="el" href="_compressor__table_8h.html#af5bb64a5bfd30378c739d32338e664a2">Compressor_table.h</a>
+, <a class="el" href="_compressor__table_8c.html#a873b9821876cc4bd06526d2b5f1e7b3d">Compressor_table.c</a>
+</li>
+<li>compute_step_hash()
+: <a class="el" href="_compressor__table_8c.html#aad1dd3eb85105f30d71865ad5ac50fee">Compressor_table.c</a>
+, <a class="el" href="_compressor__table_8h.html#afa8e00284cca03637129317f080e1ce3">Compressor_table.h</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_d"></a>- d -</h3><ul>
+<li>data_t
+: <a class="el" href="_bit__buffer__io_8h.html#a7fb87c298a4b7fa1cd31ccc0096c18a2">Bit_buffer_io.h</a>
+</li>
+<li>DOUBLE_HASHING
+: <a class="el" href="_compressor__table_8h.html#a89a9b1166e65a986e9b205cdf7cda396">Compressor_table.h</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_e"></a>- e -</h3><ul>
+<li>EXPANSION_FACTOR
+: <a class="el" href="_compressor__table_8h.html#a9623f3de1a3c08ca8858f632d92a2897">Compressor_table.h</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_f"></a>- f -</h3><ul>
+<li>false
+: <a class="el" href="_common_8h.html#a65e9886d74aaee76545e83dd09011727">Common.h</a>
+</li>
+<li>file_open()
+: <a class="el" href="_bit__buffer__io_8c.html#ae71cc686eeaafb6f8ba47f3bcfd131da">Bit_buffer_io.c</a>
+, <a class="el" href="_bit__buffer__io_8h.html#ab33e78faed9203218abbd5918417b33b">Bit_buffer_io.h</a>
+</li>
+<li>force_overwrite_flag
+: <a class="el" href="_bit__buffer__io_8c.html#a5768104541c33f9b2cce0b46fb42fc64">Bit_buffer_io.c</a>
+, <a class="el" href="main_8c.html#a5768104541c33f9b2cce0b46fb42fc64">main.c</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_h"></a>- h -</h3><ul>
+<li>HASH_TABLE_ROWS
+: <a class="el" href="_compressor__table_8h.html#a463b14efe37ec04e58e2076ea0c331ae">Compressor_table.h</a>
+</li>
+<li>hindex_t
+: <a class="el" href="_common_8h.html#a9e5efd01ad4bc79efcef95aee756b06a">Common.h</a>
+</li>
+<li>host_to_little_endian()
+: <a class="el" href="_bit__buffer__io_8h.html#a06df0bcda3b9603c97647d1b1fc4bce6">Bit_buffer_io.h</a>
+, <a class="el" href="_bit__buffer__io_8c.html#a06df0bcda3b9603c97647d1b1fc4bce6">Bit_buffer_io.c</a>
+</li>
+<li>hvalue_t
+: <a class="el" href="_common_8h.html#a59e7e401edd661023c103ec038bc4ab2">Common.h</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_k"></a>- k -</h3><ul>
+<li>KNUTH_NUMBER
+: <a class="el" href="_common_8h.html#ae19149fe84918a619f57fa43fe7bb3ce">Common.h</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_l"></a>- l -</h3><ul>
+<li>label_length
+: <a class="el" href="_common_8h.html#ae3f6cff710eb9fad51e0c57d8ac9b3b2">Common.h</a>
+</li>
+<li>little_endian_to_host()
+: <a class="el" href="_bit__buffer__io_8c.html#aff22dc96a75a4304c78650dd3b0bf1a7">Bit_buffer_io.c</a>
+, <a class="el" href="_bit__buffer__io_8h.html#aff22dc96a75a4304c78650dd3b0bf1a7">Bit_buffer_io.h</a>
+</li>
+<li>lz78_compressor_compress()
+: <a class="el" href="_l_z78___compressor_8c.html#a60c00e61645a5d16d0f4a51952fd42a0">LZ78_Compressor.c</a>
+, <a class="el" href="_l_z78___compressor_8h.html#a754bd7d0c1140dc74c8a3b5380be9a24">LZ78_Compressor.h</a>
+</li>
+<li>lz78_compressor_create()
+: <a class="el" href="_l_z78___compressor_8c.html#acf5e5642a147b3b67521c5d7f50cbac3">LZ78_Compressor.c</a>
+, <a class="el" href="_l_z78___compressor_8h.html#ac3e80923e588a3eea9f0be411c6d0ba2">LZ78_Compressor.h</a>
+</li>
+<li>lz78_compressor_destroy()
+: <a class="el" href="_l_z78___compressor_8c.html#a76d21e4ac44015547dfae32958d7dd08">LZ78_Compressor.c</a>
+, <a class="el" href="_l_z78___compressor_8h.html#a16c9869ed14afebbd3e22694e3aa233a">LZ78_Compressor.h</a>
+</li>
+<li>lz78_compressor_initialize()
+: <a class="el" href="_l_z78___compressor_8c.html#aa542bc8e790a931c5282b2a1f62cb259">LZ78_Compressor.c</a>
+, <a class="el" href="_l_z78___compressor_8h.html#a3d47530723c68e084df1fb9ac022dae4">LZ78_Compressor.h</a>
+</li>
+<li>lz78_compressor_t
+: <a class="el" href="_l_z78___compressor_8h.html#ab1e7070f5d76d126681ddd9251334560">LZ78_Compressor.h</a>
+</li>
+<li>lz78_uncompressor_create()
+: <a class="el" href="_l_z78___uncompressor_8c.html#a851152b9c33b33f7b490e49d6a1c8cc8">LZ78_Uncompressor.c</a>
+, <a class="el" href="_l_z78___uncompressor_8h.html#ab8948cf664b455eb5d51b6247ebc115d">LZ78_Uncompressor.h</a>
+</li>
+<li>lz78_uncompressor_destroy()
+: <a class="el" href="_l_z78___uncompressor_8c.html#a4f9e530c90037f1d1b233fede2a68240">LZ78_Uncompressor.c</a>
+, <a class="el" href="_l_z78___uncompressor_8h.html#a1be6b96b16511bdf852850bc79983ef2">LZ78_Uncompressor.h</a>
+</li>
+<li>lz78_uncompressor_initialize()
+: <a class="el" href="_l_z78___uncompressor_8c.html#a590a315d43695d2081f5f40e2202b3d9">LZ78_Uncompressor.c</a>
+, <a class="el" href="_l_z78___uncompressor_8h.html#ab0d9e8d74f0ff9e4462be3d9618008d3">LZ78_Uncompressor.h</a>
+</li>
+<li>lz78_uncompressor_t
+: <a class="el" href="_l_z78___uncompressor_8h.html#a5bb874b307e8ac82604d5c9357fb3ae0">LZ78_Uncompressor.h</a>
+</li>
+<li>lz78_uncompressor_uncompress()
+: <a class="el" href="_l_z78___uncompressor_8h.html#a088a41c524f312184d3ec06e6a23ee32">LZ78_Uncompressor.h</a>
+, <a class="el" href="_l_z78___uncompressor_8c.html#a1c8bc67bf38831b62b9c2562ae4d132a">LZ78_Uncompressor.c</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_m"></a>- m -</h3><ul>
+<li>main()
+: <a class="el" href="main_8c.html#a3c04138a5bfe5d72780bb7e82a18e627">main.c</a>
+</li>
+<li>MAX_CHILDS
+: <a class="el" href="_common_8h.html#aca2d241a951204f1f8e2d905f162dcbe">Common.h</a>
+</li>
+<li>min
+: <a class="el" href="_common_8h.html#a5acaf3668badc0c08768810bd955f38d">Common.h</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_r"></a>- r -</h3><ul>
+<li>ROOT_INDEX
+: <a class="el" href="_common_8h.html#a75666a6f2c5d710b4fa0845c5cf24552">Common.h</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_s"></a>- s -</h3><ul>
+<li>safe_read()
+: <a class="el" href="_bit__buffer__io_8c.html#a7da4d5d20ae3a487ce2276f57939c4fe">Bit_buffer_io.c</a>
+, <a class="el" href="_bit__buffer__io_8h.html#ab195a38bb43659895bf1a4deb2c480da">Bit_buffer_io.h</a>
+</li>
+<li>safe_write()
+: <a class="el" href="_bit__buffer__io_8c.html#a4f4f5675a16104a099e8eb695ae353af">Bit_buffer_io.c</a>
+, <a class="el" href="_bit__buffer__io_8h.html#a86ace73966a7bd7ccd64ad3fa0a4940f">Bit_buffer_io.h</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_t"></a>- t -</h3><ul>
+<li>true
+: <a class="el" href="_common_8h.html#a41f9c5fb8b08eb5dc3edce4dcb37fee7">Common.h</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_u"></a>- u -</h3><ul>
+<li>uint16_t
+: <a class="el" href="_common_8h.html#ad097ffa75536dc17a0039dfb3781d705">Common.h</a>
+</li>
+<li>uint32_t
+: <a class="el" href="_common_8h.html#a435d1572bf3f880d55459d9805097f62">Common.h</a>
+</li>
+<li>uint64_t
+: <a class="el" href="_common_8h.html#aa232ecf786a74ce5363c36c10798d2b1">Common.h</a>
+</li>
+<li>uint8_t
+: <a class="el" href="_common_8h.html#aba7bc1797add20fe3efdf37ced1182c5">Common.h</a>
+</li>
+<li>uncompressor_table_create()
+: <a class="el" href="_uncompressor__table_8c.html#ae67b966c8c56cc4656803363f57a7d7a">Uncompressor_table.c</a>
+, <a class="el" href="_uncompressor__table_8h.html#a8d393883bb2a022bce5adc6b557c962f">Uncompressor_table.h</a>
+</li>
+<li>uncompressor_table_destroy()
+: <a class="el" href="_uncompressor__table_8h.html#a4b4b294622ac24f3d0ac5d9eea41f0ba">Uncompressor_table.h</a>
+, <a class="el" href="_uncompressor__table_8c.html#a513372d2099b3525f344991cc8f7e66d">Uncompressor_table.c</a>
+</li>
+<li>uncompressor_table_initialize()
+: <a class="el" href="_uncompressor__table_8c.html#acb90919dc6a8c034b43ea4e40df1334e">Uncompressor_table.c</a>
+, <a class="el" href="_uncompressor__table_8h.html#a3c94becc01476f6e2c14e415560f2498">Uncompressor_table.h</a>
+</li>
+<li>uncompressor_table_insert()
+: <a class="el" href="_uncompressor__table_8c.html#a6aadff642949d3047059a7a244ac48e7">Uncompressor_table.c</a>
+, <a class="el" href="_uncompressor__table_8h.html#a7c6f91c84183c063588a8abd08c99411">Uncompressor_table.h</a>
+</li>
+<li>uncompressor_table_lookup()
+: <a class="el" href="_uncompressor__table_8c.html#a1cdd148e8ac17583efaf05094f918b3f">Uncompressor_table.c</a>
+, <a class="el" href="_uncompressor__table_8h.html#a5755d4e0487832ae46421da4e08d5d47">Uncompressor_table.h</a>
+</li>
+<li>uncompressor_table_row_t
+: <a class="el" href="_uncompressor__table_8h.html#a7db39f6b6668177741eeae7231b9fee0">Uncompressor_table.h</a>
+</li>
+<li>uncompressor_table_t
+: <a class="el" href="_uncompressor__table_8h.html#ab0b6b9221a3fbb50deba62687be31e63">Uncompressor_table.h</a>
+</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generato Sab 29 Giu 2013 11:30:59 per Compressore LZ78 da &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.3.1
+</small></address>
+</body>
+</html>

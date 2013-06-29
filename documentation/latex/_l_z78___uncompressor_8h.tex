@@ -1,0 +1,133 @@
+\hypertarget{_l_z78___uncompressor_8h}{\section{Riferimenti per il file C\-:/\-Users/\-Matteo/\-Dropbox/\-Universita/\-Progettazione e Produzione Multimediale/\-Progetto/\-L\-Z78-\/\-Compression/sources/\-L\-Z78\-\_\-\-Uncompressor.h}
+\label{_l_z78___uncompressor_8h}\index{C\-:/\-Users/\-Matteo/\-Dropbox/\-Universita/\-Progettazione e Produzione Multimediale/\-Progetto/\-L\-Z78-\/\-Compression/sources/\-L\-Z78\-\_\-\-Uncompressor.\-h@{C\-:/\-Users/\-Matteo/\-Dropbox/\-Universita/\-Progettazione e Produzione Multimediale/\-Progetto/\-L\-Z78-\/\-Compression/sources/\-L\-Z78\-\_\-\-Uncompressor.\-h}}
+}
+{\ttfamily \#include \char`\"{}Common.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Bit\-\_\-buffer\-\_\-io.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Uncompressor\-\_\-table.\-h\char`\"{}}\\*
+\subsection*{Strutture dati}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct__lz78__uncompressor__t}{\-\_\-lz78\-\_\-uncompressor\-\_\-t}
+\end{DoxyCompactItemize}
+\subsection*{Ridefinizioni di tipo (typedef)}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{struct__lz78__uncompressor__t}{\-\_\-lz78\-\_\-uncompressor\-\_\-t} \hyperlink{_l_z78___uncompressor_8h_a5bb874b307e8ac82604d5c9357fb3ae0}{lz78\-\_\-uncompressor\-\_\-t}
+\end{DoxyCompactItemize}
+\subsection*{Funzioni}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_l_z78___uncompressor_8h_a5bb874b307e8ac82604d5c9357fb3ae0}{lz78\-\_\-uncompressor\-\_\-t} $\ast$ \hyperlink{_l_z78___uncompressor_8h_ab8948cf664b455eb5d51b6247ebc115d}{lz78\-\_\-uncompressor\-\_\-create} ()
+\begin{DoxyCompactList}\small\item\em Crea un oggetto decompressore. \end{DoxyCompactList}\item 
+int \hyperlink{_l_z78___uncompressor_8h_ab0d9e8d74f0ff9e4462be3d9618008d3}{lz78\-\_\-uncompressor\-\_\-initialize} (\hyperlink{_l_z78___uncompressor_8h_a5bb874b307e8ac82604d5c9357fb3ae0}{lz78\-\_\-uncompressor\-\_\-t} $\ast$, char $\ast$, char $\ast$)
+\begin{DoxyCompactList}\small\item\em Inizializza un oggetto decompressore con i parametri passati in ingresso. \end{DoxyCompactList}\item 
+int \hyperlink{_l_z78___uncompressor_8h_a1be6b96b16511bdf852850bc79983ef2}{lz78\-\_\-uncompressor\-\_\-destroy} (\hyperlink{_l_z78___uncompressor_8h_a5bb874b307e8ac82604d5c9357fb3ae0}{lz78\-\_\-uncompressor\-\_\-t} $\ast$)
+\begin{DoxyCompactList}\small\item\em Distrugge un oggetto decompressore precedentemente creato. \end{DoxyCompactList}\item 
+int \hyperlink{_l_z78___uncompressor_8h_a088a41c524f312184d3ec06e6a23ee32}{lz78\-\_\-uncompressor\-\_\-uncompress} (\hyperlink{_l_z78___uncompressor_8h_a5bb874b307e8ac82604d5c9357fb3ae0}{lz78\-\_\-uncompressor\-\_\-t} $\ast$)
+\begin{DoxyCompactList}\small\item\em decomprime il file di input e scrive il risultato della decompressione nel file di output. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Documentazione delle ridefinizioni di tipo (typedef)}
+\hypertarget{_l_z78___uncompressor_8h_a5bb874b307e8ac82604d5c9357fb3ae0}{\index{L\-Z78\-\_\-\-Uncompressor.\-h@{L\-Z78\-\_\-\-Uncompressor.\-h}!lz78\-\_\-uncompressor\-\_\-t@{lz78\-\_\-uncompressor\-\_\-t}}
+\index{lz78\-\_\-uncompressor\-\_\-t@{lz78\-\_\-uncompressor\-\_\-t}!LZ78_Uncompressor.h@{L\-Z78\-\_\-\-Uncompressor.\-h}}
+\subsubsection[{lz78\-\_\-uncompressor\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf \-\_\-lz78\-\_\-uncompressor\-\_\-t} {\bf lz78\-\_\-uncompressor\-\_\-t}}}\label{_l_z78___uncompressor_8h_a5bb874b307e8ac82604d5c9357fb3ae0}
+
+
+Definizione alla linea 57 del file L\-Z78\-\_\-\-Uncompressor.\-h.
+
+
+
+\subsection{Documentazione delle funzioni}
+\hypertarget{_l_z78___uncompressor_8h_ab8948cf664b455eb5d51b6247ebc115d}{\index{L\-Z78\-\_\-\-Uncompressor.\-h@{L\-Z78\-\_\-\-Uncompressor.\-h}!lz78\-\_\-uncompressor\-\_\-create@{lz78\-\_\-uncompressor\-\_\-create}}
+\index{lz78\-\_\-uncompressor\-\_\-create@{lz78\-\_\-uncompressor\-\_\-create}!LZ78_Uncompressor.h@{L\-Z78\-\_\-\-Uncompressor.\-h}}
+\subsubsection[{lz78\-\_\-uncompressor\-\_\-create}]{\setlength{\rightskip}{0pt plus 5cm}{\bf lz78\-\_\-uncompressor\-\_\-t}$\ast$ lz78\-\_\-uncompressor\-\_\-create (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{_l_z78___uncompressor_8h_ab8948cf664b455eb5d51b6247ebc115d}
+
+
+Crea un oggetto decompressore. 
+
+\begin{DoxyReturn}{Restituisce}
+Oggetto decompressore di tipo {\itshape lz78\-\_\-uncompressor\-\_\-t}, o {\itshape N\-U\-L\-L} in caso di fallimento. 
+\end{DoxyReturn}
+
+
+Definizione alla linea 5 del file L\-Z78\-\_\-\-Uncompressor.\-c.
+
+\hypertarget{_l_z78___uncompressor_8h_a1be6b96b16511bdf852850bc79983ef2}{\index{L\-Z78\-\_\-\-Uncompressor.\-h@{L\-Z78\-\_\-\-Uncompressor.\-h}!lz78\-\_\-uncompressor\-\_\-destroy@{lz78\-\_\-uncompressor\-\_\-destroy}}
+\index{lz78\-\_\-uncompressor\-\_\-destroy@{lz78\-\_\-uncompressor\-\_\-destroy}!LZ78_Uncompressor.h@{L\-Z78\-\_\-\-Uncompressor.\-h}}
+\subsubsection[{lz78\-\_\-uncompressor\-\_\-destroy}]{\setlength{\rightskip}{0pt plus 5cm}int lz78\-\_\-uncompressor\-\_\-destroy (
+\begin{DoxyParamCaption}
+\item[{{\bf lz78\-\_\-uncompressor\-\_\-t} $\ast$}]{uncompressor}
+\end{DoxyParamCaption}
+)}}\label{_l_z78___uncompressor_8h_a1be6b96b16511bdf852850bc79983ef2}
+
+
+Distrugge un oggetto decompressore precedentemente creato. 
+
+
+\begin{DoxyParams}[1]{Parametri}
+\mbox{\tt in}  & {\em uncompressor} & Decompressore da distruggere. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+Risultato della distruzione del decompressore, {\ttfamily 0} in caso di successo e {\ttfamily -\/1} altrimenti. 
+\end{DoxyReturn}
+
+
+Definizione alla linea 61 del file L\-Z78\-\_\-\-Uncompressor.\-c.
+
+\hypertarget{_l_z78___uncompressor_8h_ab0d9e8d74f0ff9e4462be3d9618008d3}{\index{L\-Z78\-\_\-\-Uncompressor.\-h@{L\-Z78\-\_\-\-Uncompressor.\-h}!lz78\-\_\-uncompressor\-\_\-initialize@{lz78\-\_\-uncompressor\-\_\-initialize}}
+\index{lz78\-\_\-uncompressor\-\_\-initialize@{lz78\-\_\-uncompressor\-\_\-initialize}!LZ78_Uncompressor.h@{L\-Z78\-\_\-\-Uncompressor.\-h}}
+\subsubsection[{lz78\-\_\-uncompressor\-\_\-initialize}]{\setlength{\rightskip}{0pt plus 5cm}int lz78\-\_\-uncompressor\-\_\-initialize (
+\begin{DoxyParamCaption}
+\item[{{\bf lz78\-\_\-uncompressor\-\_\-t} $\ast$}]{uncompressor, }
+\item[{char $\ast$}]{input\-\_\-file\-\_\-name, }
+\item[{char $\ast$}]{output\-\_\-file\-\_\-name}
+\end{DoxyParamCaption}
+)}}\label{_l_z78___uncompressor_8h_ab0d9e8d74f0ff9e4462be3d9618008d3}
+
+
+Inizializza un oggetto decompressore con i parametri passati in ingresso. 
+
+
+\begin{DoxyParams}[1]{Parametri}
+\mbox{\tt out}  & {\em uncompressor} & Decompressore da inizializzare. \\
+\hline
+\mbox{\tt in}  & {\em input\-\_\-file\-\_\-name} & Nome del file compresso in ingresso da decomprimere. \\
+\hline
+\mbox{\tt in}  & {\em output\-\_\-file\-\_\-name} & Nome del file da creare come risultato della decompressione. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+Risultato dell'inizializzazione del decompressore, {\ttfamily 0} in caso di successo e {\ttfamily -\/1} altrimenti. 
+\end{DoxyReturn}
+
+
+Definizione alla linea 31 del file L\-Z78\-\_\-\-Uncompressor.\-c.
+
+\hypertarget{_l_z78___uncompressor_8h_a088a41c524f312184d3ec06e6a23ee32}{\index{L\-Z78\-\_\-\-Uncompressor.\-h@{L\-Z78\-\_\-\-Uncompressor.\-h}!lz78\-\_\-uncompressor\-\_\-uncompress@{lz78\-\_\-uncompressor\-\_\-uncompress}}
+\index{lz78\-\_\-uncompressor\-\_\-uncompress@{lz78\-\_\-uncompressor\-\_\-uncompress}!LZ78_Uncompressor.h@{L\-Z78\-\_\-\-Uncompressor.\-h}}
+\subsubsection[{lz78\-\_\-uncompressor\-\_\-uncompress}]{\setlength{\rightskip}{0pt plus 5cm}int lz78\-\_\-uncompressor\-\_\-uncompress (
+\begin{DoxyParamCaption}
+\item[{{\bf lz78\-\_\-uncompressor\-\_\-t} $\ast$}]{uncompressor}
+\end{DoxyParamCaption}
+)}}\label{_l_z78___uncompressor_8h_a088a41c524f312184d3ec06e6a23ee32}
+
+
+decomprime il file di input e scrive il risultato della decompressione nel file di output. 
+
+
+\begin{DoxyParams}[1]{Parametri}
+\mbox{\tt in}  & {\em uncompressor} & Decompressore precedentemente inizializzato. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+Risultato della decompressione, {\ttfamily 0} in caso di successo e {\ttfamily -\/1} altrimenti. 
+\end{DoxyReturn}
+
+
+Definizione alla linea 81 del file L\-Z78\-\_\-\-Uncompressor.\-c.
+

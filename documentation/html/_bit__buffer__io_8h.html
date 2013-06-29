@@ -1,0 +1,702 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.3.1"/>
+<title>Compressore LZ78: Riferimenti per il file C:/Users/Matteo/Dropbox/Universita/Progettazione e Produzione Multimediale/Progetto/LZ78-Compression/sources/Bit_buffer_io.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Compressore LZ78
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Realizzare un compressore basato sull&#39;algoritmo LZ78</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generato da Doxygen 1.8.3.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Cerca');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Pagina&#160;Principale</span></a></li>
+      <li><a href="annotated.html"><span>Strutture&#160;dati</span></a></li>
+      <li class="current"><a href="files.html"><span>File</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Cerca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Elenco&#160;dei&#160;file</span></a></li>
+      <li><a href="globals.html"><span>Elementi&#160;globali</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tutto</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Strutture dati</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>File</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funzioni</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variabili</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Ridefinizioni di tipo (typedef)</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Definizioni</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pagine</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_7eb09e58583f359e753ec9733cdd3f32.html">Dropbox</a></li><li class="navelem"><a class="el" href="dir_a948e104c1fdfcd855ccf9bf00731b50.html">Universita</a></li><li class="navelem"><a class="el" href="dir_e6ded805275ad07d9a9977fc81fa8d89.html">Progettazione e Produzione Multimediale</a></li><li class="navelem"><a class="el" href="dir_1b1f365255b2da59b5a5df0e92ae6ac5.html">Progetto</a></li><li class="navelem"><a class="el" href="dir_4e534e49a43b6a33fc16b77990fa7bc0.html">LZ78-Compression</a></li><li class="navelem"><a class="el" href="dir_4d41d3951da9f7069c31359b430cf1c8.html">sources</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Strutture dati</a> &#124;
+<a href="#define-members">Definizioni</a> &#124;
+<a href="#typedef-members">Ridefinizioni di tipo (typedef)</a> &#124;
+<a href="#func-members">Funzioni</a>  </div>
+  <div class="headertitle">
+<div class="title">Riferimenti per il file Bit_buffer_io.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="_common_8h_source.html">Common.h</a>&quot;</code><br/>
+<code>#include &lt;endian.h&gt;</code><br/>
+</div>
+<p><a href="_bit__buffer__io_8h_source.html">Vai al codice sorgente di questo file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Strutture dati</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__bit__buffer__t.html">_bit_buffer_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Definizioni</h2></td></tr>
+<tr class="memitem:a6b20d41d6252e9871430c242cb1a56e7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_bit__buffer__io_8h.html#a6b20d41d6252e9871430c242cb1a56e7">BUFFER_SIZE</a>&#160;&#160;&#160;4096</td></tr>
+<tr class="separator:a6b20d41d6252e9871430c242cb1a56e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a4127f14f16563da90eb3c836bc404f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_bit__buffer__io_8h.html#a7a4127f14f16563da90eb3c836bc404f">CELL_SIZE</a>&#160;&#160;&#160;32</td></tr>
+<tr class="separator:a7a4127f14f16563da90eb3c836bc404f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fb87c298a4b7fa1cd31ccc0096c18a2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_bit__buffer__io_8h.html#a7fb87c298a4b7fa1cd31ccc0096c18a2">data_t</a>&#160;&#160;&#160;<a class="el" href="_common_8h.html#a9e5efd01ad4bc79efcef95aee756b06a">hindex_t</a></td></tr>
+<tr class="separator:a7fb87c298a4b7fa1cd31ccc0096c18a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30fe0633adbbaa7a5b6a4fd8d479bf0c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_bit__buffer__io_8h.html#a30fe0633adbbaa7a5b6a4fd8d479bf0c">buffer_t</a>&#160;&#160;&#160;<a class="el" href="_common_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></td></tr>
+<tr class="separator:a30fe0633adbbaa7a5b6a4fd8d479bf0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Ridefinizioni di tipo (typedef)</h2></td></tr>
+<tr class="memitem:a713e3f0b57038515d796b34e08f48fe0"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct__bit__buffer__t.html">_bit_buffer_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_bit__buffer__io_8h.html#a713e3f0b57038515d796b34e08f48fe0">bit_buffer_t</a></td></tr>
+<tr class="separator:a713e3f0b57038515d796b34e08f48fe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funzioni</h2></td></tr>
+<tr class="memitem:ab33e78faed9203218abbd5918417b33b"><td class="memItemLeft" align="right" valign="top">FILE *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_bit__buffer__io_8h.html#ab33e78faed9203218abbd5918417b33b">file_open</a> (char *, char *)</td></tr>
+<tr class="memdesc:ab33e78faed9203218abbd5918417b33b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Procede all'apertura del file specificato richiedendo la conferma di sostituzione all'utente se il file esiste e deve essere aperto in scrittura.  <a href="#ab33e78faed9203218abbd5918417b33b">Continua...</a><br/></td></tr>
+<tr class="separator:ab33e78faed9203218abbd5918417b33b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f3661d0482e08ca8ab9af80e2a044d8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_bit__buffer__io_8h.html#a713e3f0b57038515d796b34e08f48fe0">bit_buffer_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_bit__buffer__io_8h.html#a9f3661d0482e08ca8ab9af80e2a044d8">bit_buffer_create</a> ()</td></tr>
+<tr class="memdesc:a9f3661d0482e08ca8ab9af80e2a044d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Crea un oggetto bit buffer.  <a href="#a9f3661d0482e08ca8ab9af80e2a044d8">Continua...</a><br/></td></tr>
+<tr class="separator:a9f3661d0482e08ca8ab9af80e2a044d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf7886e441e2e90e7ba45b15316347ec"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_bit__buffer__io_8h.html#adf7886e441e2e90e7ba45b15316347ec">bit_buffer_initialize</a> (<a class="el" href="_bit__buffer__io_8h.html#a713e3f0b57038515d796b34e08f48fe0">bit_buffer_t</a> *, char *, int)</td></tr>
+<tr class="memdesc:adf7886e441e2e90e7ba45b15316347ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inizializza un oggetto bit buffer con i parametri in ingresso.  <a href="#adf7886e441e2e90e7ba45b15316347ec">Continua...</a><br/></td></tr>
+<tr class="separator:adf7886e441e2e90e7ba45b15316347ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73ed6b6416773d62923dd009ff00925f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_bit__buffer__io_8h.html#a73ed6b6416773d62923dd009ff00925f">bit_buffer_destroy</a> (<a class="el" href="_bit__buffer__io_8h.html#a713e3f0b57038515d796b34e08f48fe0">bit_buffer_t</a> *)</td></tr>
+<tr class="memdesc:a73ed6b6416773d62923dd009ff00925f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Distrugge un oggetto bit buffer precedentemente creato.  <a href="#a73ed6b6416773d62923dd009ff00925f">Continua...</a><br/></td></tr>
+<tr class="separator:a73ed6b6416773d62923dd009ff00925f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06df0bcda3b9603c97647d1b1fc4bce6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_bit__buffer__io_8h.html#a7fb87c298a4b7fa1cd31ccc0096c18a2">data_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_bit__buffer__io_8h.html#a06df0bcda3b9603c97647d1b1fc4bce6">host_to_little_endian</a> (<a class="el" href="_bit__buffer__io_8h.html#a7fb87c298a4b7fa1cd31ccc0096c18a2">data_t</a> data)</td></tr>
+<tr class="memdesc:a06df0bcda3b9603c97647d1b1fc4bce6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converte il dato fornito in ingresso da formato host a formato little endian.  <a href="#a06df0bcda3b9603c97647d1b1fc4bce6">Continua...</a><br/></td></tr>
+<tr class="separator:a06df0bcda3b9603c97647d1b1fc4bce6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff22dc96a75a4304c78650dd3b0bf1a7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_bit__buffer__io_8h.html#a7fb87c298a4b7fa1cd31ccc0096c18a2">data_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_bit__buffer__io_8h.html#aff22dc96a75a4304c78650dd3b0bf1a7">little_endian_to_host</a> (<a class="el" href="_bit__buffer__io_8h.html#a7fb87c298a4b7fa1cd31ccc0096c18a2">data_t</a> data)</td></tr>
+<tr class="memdesc:aff22dc96a75a4304c78650dd3b0bf1a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converte il dato fornito in ingresso da formato little endian a formato host.  <a href="#aff22dc96a75a4304c78650dd3b0bf1a7">Continua...</a><br/></td></tr>
+<tr class="separator:aff22dc96a75a4304c78650dd3b0bf1a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5391159e307b6c0a9a470ae51b0bd20"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_bit__buffer__io_8h.html#ab5391159e307b6c0a9a470ae51b0bd20">bit_buffer_complete_writing</a> (<a class="el" href="_bit__buffer__io_8h.html#a713e3f0b57038515d796b34e08f48fe0">bit_buffer_t</a> *)</td></tr>
+<tr class="memdesc:ab5391159e307b6c0a9a470ae51b0bd20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Richiama la bit_buffer_flush per scrivere nel file di output tutti i dati contenuti nel buffer (e lo svuota).  <a href="#ab5391159e307b6c0a9a470ae51b0bd20">Continua...</a><br/></td></tr>
+<tr class="separator:ab5391159e307b6c0a9a470ae51b0bd20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c0ba06627511cf8fe06ccf7c6a88419"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_bit__buffer__io_8h.html#a1c0ba06627511cf8fe06ccf7c6a88419">bit_buffer_write</a> (<a class="el" href="_bit__buffer__io_8h.html#a713e3f0b57038515d796b34e08f48fe0">bit_buffer_t</a> *, <a class="el" href="_bit__buffer__io_8h.html#a7fb87c298a4b7fa1cd31ccc0096c18a2">data_t</a>, int)</td></tr>
+<tr class="memdesc:a1c0ba06627511cf8fe06ccf7c6a88419"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inserisce nel buffer i primi <em>length</em> bit dal dato passato come parametro (preventivamente trasformato in formato little endian).  <a href="#a1c0ba06627511cf8fe06ccf7c6a88419">Continua...</a><br/></td></tr>
+<tr class="separator:a1c0ba06627511cf8fe06ccf7c6a88419"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb1016ab11a7b242e59e165fcc9feb8e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_bit__buffer__io_8h.html#acb1016ab11a7b242e59e165fcc9feb8e">bit_buffer_read</a> (<a class="el" href="_bit__buffer__io_8h.html#a713e3f0b57038515d796b34e08f48fe0">bit_buffer_t</a> *, <a class="el" href="_bit__buffer__io_8h.html#a7fb87c298a4b7fa1cd31ccc0096c18a2">data_t</a> *, int)</td></tr>
+<tr class="memdesc:acb1016ab11a7b242e59e165fcc9feb8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inserisce in <em>data</em> un totale di <em>length</em> bit letti dal buffer passato come parametro (e ricorvente quanto letto in formato host).  <a href="#acb1016ab11a7b242e59e165fcc9feb8e">Continua...</a><br/></td></tr>
+<tr class="separator:acb1016ab11a7b242e59e165fcc9feb8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d39c58e0723f581b371fdd4c64a4bc3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_bit__buffer__io_8h.html#a1d39c58e0723f581b371fdd4c64a4bc3">bit_buffer_flush</a> (<a class="el" href="_bit__buffer__io_8h.html#a713e3f0b57038515d796b34e08f48fe0">bit_buffer_t</a> *, int)</td></tr>
+<tr class="memdesc:a1d39c58e0723f581b371fdd4c64a4bc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scrive sul file i primi <em>bytes_to_write</em> bytes del buffer e lo svuota.  <a href="#a1d39c58e0723f581b371fdd4c64a4bc3">Continua...</a><br/></td></tr>
+<tr class="separator:a1d39c58e0723f581b371fdd4c64a4bc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad71565f02a41f11b96e98cb2282f38e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_bit__buffer__io_8h.html#aad71565f02a41f11b96e98cb2282f38e">bit_buffer_fill</a> (<a class="el" href="_bit__buffer__io_8h.html#a713e3f0b57038515d796b34e08f48fe0">bit_buffer_t</a> *)</td></tr>
+<tr class="memdesc:aad71565f02a41f11b96e98cb2282f38e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Legge da file quanti più bytes possibili (pari al minimo tra la dimesione del buffer e il numero di bytes ancora da leggere) e li inserisce nel buffer.  <a href="#aad71565f02a41f11b96e98cb2282f38e">Continua...</a><br/></td></tr>
+<tr class="separator:aad71565f02a41f11b96e98cb2282f38e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86ace73966a7bd7ccd64ad3fa0a4940f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_bit__buffer__io_8h.html#a86ace73966a7bd7ccd64ad3fa0a4940f">safe_write</a> (FILE *, <a class="el" href="_bit__buffer__io_8h.html#a30fe0633adbbaa7a5b6a4fd8d479bf0c">buffer_t</a> *, int)</td></tr>
+<tr class="memdesc:a86ace73966a7bd7ccd64ad3fa0a4940f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scrive su file i primi <em>length</em> bytes presente nel buffer.  <a href="#a86ace73966a7bd7ccd64ad3fa0a4940f">Continua...</a><br/></td></tr>
+<tr class="separator:a86ace73966a7bd7ccd64ad3fa0a4940f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab195a38bb43659895bf1a4deb2c480da"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_bit__buffer__io_8h.html#ab195a38bb43659895bf1a4deb2c480da">safe_read</a> (FILE *, <a class="el" href="_bit__buffer__io_8h.html#a30fe0633adbbaa7a5b6a4fd8d479bf0c">buffer_t</a> *, int)</td></tr>
+<tr class="memdesc:ab195a38bb43659895bf1a4deb2c480da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scrive nel buffer <em>length</em> bytes letti dal file passato come parametro.  <a href="#ab195a38bb43659895bf1a4deb2c480da">Continua...</a><br/></td></tr>
+<tr class="separator:ab195a38bb43659895bf1a4deb2c480da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentazione delle definizioni</h2>
+<a class="anchor" id="a6b20d41d6252e9871430c242cb1a56e7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BUFFER_SIZE&#160;&#160;&#160;4096</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definizione alla linea <a class="el" href="_bit__buffer__io_8h_source.html#l00122">122</a> del file <a class="el" href="_bit__buffer__io_8h_source.html">Bit_buffer_io.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a30fe0633adbbaa7a5b6a4fd8d479bf0c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define buffer_t&#160;&#160;&#160;<a class="el" href="_common_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definizione alla linea <a class="el" href="_bit__buffer__io_8h_source.html#l00130">130</a> del file <a class="el" href="_bit__buffer__io_8h_source.html">Bit_buffer_io.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7a4127f14f16563da90eb3c836bc404f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CELL_SIZE&#160;&#160;&#160;32</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definizione alla linea <a class="el" href="_bit__buffer__io_8h_source.html#l00123">123</a> del file <a class="el" href="_bit__buffer__io_8h_source.html">Bit_buffer_io.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7fb87c298a4b7fa1cd31ccc0096c18a2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define data_t&#160;&#160;&#160;<a class="el" href="_common_8h.html#a9e5efd01ad4bc79efcef95aee756b06a">hindex_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definizione alla linea <a class="el" href="_bit__buffer__io_8h_source.html#l00125">125</a> del file <a class="el" href="_bit__buffer__io_8h_source.html">Bit_buffer_io.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentazione delle ridefinizioni di tipo (typedef)</h2>
+<a class="anchor" id="a713e3f0b57038515d796b34e08f48fe0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct__bit__buffer__t.html">_bit_buffer_t</a> <a class="el" href="_bit__buffer__io_8h.html#a713e3f0b57038515d796b34e08f48fe0">bit_buffer_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definizione alla linea <a class="el" href="_bit__buffer__io_8h_source.html#l00146">146</a> del file <a class="el" href="_bit__buffer__io_8h_source.html">Bit_buffer_io.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentazione delle funzioni</h2>
+<a class="anchor" id="ab5391159e307b6c0a9a470ae51b0bd20"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int bit_buffer_complete_writing </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_bit__buffer__io_8h.html#a713e3f0b57038515d796b34e08f48fe0">bit_buffer_t</a> *&#160;</td>
+          <td class="paramname"><em>bit_buffer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Richiama la bit_buffer_flush per scrivere nel file di output tutti i dati contenuti nel buffer (e lo svuota). </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">bit_buffer</td><td>Bit buffer che contiene i dati da scrivere nel file di output. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Restituisce</dt><dd>Risultato della scrittura sul file, <code>0</code> in caso di successo e <em>-1</em> altrimenti. </dd></dl>
+
+<p>Definizione alla linea <a class="el" href="_bit__buffer__io_8c_source.html#l00079">79</a> del file <a class="el" href="_bit__buffer__io_8c_source.html">Bit_buffer_io.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9f3661d0482e08ca8ab9af80e2a044d8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_bit__buffer__io_8h.html#a713e3f0b57038515d796b34e08f48fe0">bit_buffer_t</a>* bit_buffer_create </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Crea un oggetto bit buffer. </p>
+<dl class="section return"><dt>Restituisce</dt><dd>Oggetto bit buffer di tipo <em>bit_buffer_t</em>, o <em>NULL</em> in caso di fallimento. </dd></dl>
+
+<p>Definizione alla linea <a class="el" href="_bit__buffer__io_8c_source.html#l00027">27</a> del file <a class="el" href="_bit__buffer__io_8c_source.html">Bit_buffer_io.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a73ed6b6416773d62923dd009ff00925f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int bit_buffer_destroy </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_bit__buffer__io_8h.html#a713e3f0b57038515d796b34e08f48fe0">bit_buffer_t</a> *&#160;</td>
+          <td class="paramname"><em>bit_buffer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Distrugge un oggetto bit buffer precedentemente creato. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">bit_buffer</td><td>Bit buffer da distruggere. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Restituisce</dt><dd>Risultato della distruzione del bit buffer, <code>0</code> in caso di successo e <code>-1</code> altrimenti. </dd></dl>
+
+<p>Definizione alla linea <a class="el" href="_bit__buffer__io_8c_source.html#l00062">62</a> del file <a class="el" href="_bit__buffer__io_8c_source.html">Bit_buffer_io.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aad71565f02a41f11b96e98cb2282f38e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int bit_buffer_fill </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_bit__buffer__io_8h.html#a713e3f0b57038515d796b34e08f48fe0">bit_buffer_t</a> *&#160;</td>
+          <td class="paramname"><em>bit_buffer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Legge da file quanti più bytes possibili (pari al minimo tra la dimesione del buffer e il numero di bytes ancora da leggere) e li inserisce nel buffer. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">bit_buffer</td><td>Bit buffer dove scrivere i dati letti dal file di input. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Restituisce</dt><dd>Risultato della lettura da file, <em>0</em> in caso di successo e <em>-1</em> altrimenti. </dd></dl>
+
+<p>Definizione alla linea <a class="el" href="_bit__buffer__io_8c_source.html#l00199">199</a> del file <a class="el" href="_bit__buffer__io_8c_source.html">Bit_buffer_io.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1d39c58e0723f581b371fdd4c64a4bc3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int bit_buffer_flush </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_bit__buffer__io_8h.html#a713e3f0b57038515d796b34e08f48fe0">bit_buffer_t</a> *&#160;</td>
+          <td class="paramname"><em>bit_buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>bytes_to_write</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Scrive sul file i primi <em>bytes_to_write</em> bytes del buffer e lo svuota. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">bit_buffer</td><td>Bit buffer dove prendere i dati da scrivere nel file di output. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bytes_to_write</td><td>Bytes da scrivere nel file di output. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Restituisce</dt><dd>Risultato della scrittura su file, <em>0</em> in caso di successo e <em>-1</em> altrimenti. </dd></dl>
+
+<p>Definizione alla linea <a class="el" href="_bit__buffer__io_8c_source.html#l00190">190</a> del file <a class="el" href="_bit__buffer__io_8c_source.html">Bit_buffer_io.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="adf7886e441e2e90e7ba45b15316347ec"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int bit_buffer_initialize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_bit__buffer__io_8h.html#a713e3f0b57038515d796b34e08f48fe0">bit_buffer_t</a> *&#160;</td>
+          <td class="paramname"><em>bit_buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>file_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>file_open_mode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inizializza un oggetto bit buffer con i parametri in ingresso. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">bit_buffer</td><td>Bit buffer da inizializzare. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">file_name</td><td>Nome del file da associare al bit buffer. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">file_open_mode</td><td>Modalità di apertura del file (lettura/scritttura). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Restituisce</dt><dd>Risultato dell'inizializzazione del bit buffer, <code>0</code> in caso di successo e <code>-1</code> altrimenti. </dd></dl>
+
+<p>Definizione alla linea <a class="el" href="_bit__buffer__io_8c_source.html#l00037">37</a> del file <a class="el" href="_bit__buffer__io_8c_source.html">Bit_buffer_io.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acb1016ab11a7b242e59e165fcc9feb8e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int bit_buffer_read </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_bit__buffer__io_8h.html#a713e3f0b57038515d796b34e08f48fe0">bit_buffer_t</a> *&#160;</td>
+          <td class="paramname"><em>bit_buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_bit__buffer__io_8h.html#a7fb87c298a4b7fa1cd31ccc0096c18a2">data_t</a> *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inserisce in <em>data</em> un totale di <em>length</em> bit letti dal buffer passato come parametro (e ricorvente quanto letto in formato host). </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">bit_buffer</td><td>Bit buffer dove leggere il valore da inserire in <em>data</em>. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">data</td><td>Dato da ritornare al chiamante. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">length</td><td>Numero di bits del buffer da scrivere in <em>data</em>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Restituisce</dt><dd>Totale dei bits letti dal buffer, in caso di successo coincide con <em>length</em>. </dd></dl>
+
+<p>Definizione alla linea <a class="el" href="_bit__buffer__io_8c_source.html#l00149">149</a> del file <a class="el" href="_bit__buffer__io_8c_source.html">Bit_buffer_io.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1c0ba06627511cf8fe06ccf7c6a88419"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int bit_buffer_write </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_bit__buffer__io_8h.html#a713e3f0b57038515d796b34e08f48fe0">bit_buffer_t</a> *&#160;</td>
+          <td class="paramname"><em>bit_buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_bit__buffer__io_8h.html#a7fb87c298a4b7fa1cd31ccc0096c18a2">data_t</a>&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inserisce nel buffer i primi <em>length</em> bit dal dato passato come parametro (preventivamente trasformato in formato little endian). </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">bit_buffer</td><td>Bit buffer dove scrivere il dato. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>Dato da inserire nel buffer. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">length</td><td>Numero di bits di <em>data</em> da scrivere nel buffer. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Restituisce</dt><dd>Totale dei bits scritti nel buffer, in caso di successo coincide con <em>length</em>. </dd></dl>
+
+<p>Definizione alla linea <a class="el" href="_bit__buffer__io_8c_source.html#l00108">108</a> del file <a class="el" href="_bit__buffer__io_8c_source.html">Bit_buffer_io.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab33e78faed9203218abbd5918417b33b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">FILE* file_open </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>file_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>mode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Procede all'apertura del file specificato richiedendo la conferma di sostituzione all'utente se il file esiste e deve essere aperto in scrittura. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">file_name</td><td>Nome del file da associare al bit buffer. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>Modalità di apertura del file (lettura/scritttura). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Restituisce</dt><dd>Risultato dell'apertura del file, <code>puntatore</code> al file in caso di successo e <code>NULL</code> altrimenti. </dd></dl>
+
+<p>Definizione alla linea <a class="el" href="_bit__buffer__io_8c_source.html#l00007">7</a> del file <a class="el" href="_bit__buffer__io_8c_source.html">Bit_buffer_io.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a06df0bcda3b9603c97647d1b1fc4bce6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_bit__buffer__io_8h.html#a7fb87c298a4b7fa1cd31ccc0096c18a2">data_t</a> host_to_little_endian </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_bit__buffer__io_8h.html#a7fb87c298a4b7fa1cd31ccc0096c18a2">data_t</a>&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Converte il dato fornito in ingresso da formato host a formato little endian. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>Dato da convertire da formato host a formato little endian. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Restituisce</dt><dd>Dato convertito in formato little endian. </dd></dl>
+
+<p>Definizione alla linea <a class="el" href="_bit__buffer__io_8c_source.html#l00096">96</a> del file <a class="el" href="_bit__buffer__io_8c_source.html">Bit_buffer_io.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aff22dc96a75a4304c78650dd3b0bf1a7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_bit__buffer__io_8h.html#a7fb87c298a4b7fa1cd31ccc0096c18a2">data_t</a> little_endian_to_host </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_bit__buffer__io_8h.html#a7fb87c298a4b7fa1cd31ccc0096c18a2">data_t</a>&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Converte il dato fornito in ingresso da formato little endian a formato host. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>Dato da convertire da formato little endian a formato host. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Restituisce</dt><dd>Dato convertito in formato host. </dd></dl>
+
+<p>Definizione alla linea <a class="el" href="_bit__buffer__io_8c_source.html#l00102">102</a> del file <a class="el" href="_bit__buffer__io_8c_source.html">Bit_buffer_io.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab195a38bb43659895bf1a4deb2c480da"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int safe_read </td>
+          <td>(</td>
+          <td class="paramtype">FILE *&#160;</td>
+          <td class="paramname"><em>file_descriptor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_bit__buffer__io_8h.html#a30fe0633adbbaa7a5b6a4fd8d479bf0c">buffer_t</a> *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Scrive nel buffer <em>length</em> bytes letti dal file passato come parametro. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">file_descriptor</td><td>Descrittore del file dove leggere i dati da scrivere nel buffer. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">buffer</td><td>Buffer dove inserire i dati letti dal file. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">length</td><td>Numero di bytes da leggere dal file. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Restituisce</dt><dd>Totale dei bytes letti dal file, in caso di successo coincide con <em>length</em>. </dd></dl>
+
+<p>Definizione alla linea <a class="el" href="_bit__buffer__io_8c_source.html#l00220">220</a> del file <a class="el" href="_bit__buffer__io_8c_source.html">Bit_buffer_io.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a86ace73966a7bd7ccd64ad3fa0a4940f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int safe_write </td>
+          <td>(</td>
+          <td class="paramtype">FILE *&#160;</td>
+          <td class="paramname"><em>file_descriptor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_bit__buffer__io_8h.html#a30fe0633adbbaa7a5b6a4fd8d479bf0c">buffer_t</a> *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Scrive su file i primi <em>length</em> bytes presente nel buffer. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">file_descriptor</td><td>Descrittore del file dove scrivere i dati dal buffer. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">buffer</td><td>Buffer che contiene i dati da scrivere. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">length</td><td>Numero di bytes del buffer da scrivere nel file. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Restituisce</dt><dd>Totale dei bytes scritti nel file, in caso di successo coincide con <em>length</em>. </dd></dl>
+
+<p>Definizione alla linea <a class="el" href="_bit__buffer__io_8c_source.html#l00212">212</a> del file <a class="el" href="_bit__buffer__io_8c_source.html">Bit_buffer_io.c</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generato Sab 29 Giu 2013 11:30:58 per Compressore LZ78 da &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.3.1
+</small></address>
+</body>
+</html>

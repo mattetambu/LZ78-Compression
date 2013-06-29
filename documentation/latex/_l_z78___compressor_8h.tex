@@ -1,0 +1,133 @@
+\hypertarget{_l_z78___compressor_8h}{\section{Riferimenti per il file C\-:/\-Users/\-Matteo/\-Dropbox/\-Universita/\-Progettazione e Produzione Multimediale/\-Progetto/\-L\-Z78-\/\-Compression/sources/\-L\-Z78\-\_\-\-Compressor.h}
+\label{_l_z78___compressor_8h}\index{C\-:/\-Users/\-Matteo/\-Dropbox/\-Universita/\-Progettazione e Produzione Multimediale/\-Progetto/\-L\-Z78-\/\-Compression/sources/\-L\-Z78\-\_\-\-Compressor.\-h@{C\-:/\-Users/\-Matteo/\-Dropbox/\-Universita/\-Progettazione e Produzione Multimediale/\-Progetto/\-L\-Z78-\/\-Compression/sources/\-L\-Z78\-\_\-\-Compressor.\-h}}
+}
+{\ttfamily \#include \char`\"{}Common.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Bit\-\_\-buffer\-\_\-io.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Compressor\-\_\-table.\-h\char`\"{}}\\*
+\subsection*{Strutture dati}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct__lz78__compressor__t}{\-\_\-lz78\-\_\-compressor\-\_\-t}
+\end{DoxyCompactItemize}
+\subsection*{Ridefinizioni di tipo (typedef)}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{struct__lz78__compressor__t}{\-\_\-lz78\-\_\-compressor\-\_\-t} \hyperlink{_l_z78___compressor_8h_ab1e7070f5d76d126681ddd9251334560}{lz78\-\_\-compressor\-\_\-t}
+\end{DoxyCompactItemize}
+\subsection*{Funzioni}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_l_z78___compressor_8h_ab1e7070f5d76d126681ddd9251334560}{lz78\-\_\-compressor\-\_\-t} $\ast$ \hyperlink{_l_z78___compressor_8h_ac3e80923e588a3eea9f0be411c6d0ba2}{lz78\-\_\-compressor\-\_\-create} ()
+\begin{DoxyCompactList}\small\item\em Crea un oggetto compressore. \end{DoxyCompactList}\item 
+int \hyperlink{_l_z78___compressor_8h_a3d47530723c68e084df1fb9ac022dae4}{lz78\-\_\-compressor\-\_\-initialize} (\hyperlink{_l_z78___compressor_8h_ab1e7070f5d76d126681ddd9251334560}{lz78\-\_\-compressor\-\_\-t} $\ast$, char $\ast$, char $\ast$)
+\begin{DoxyCompactList}\small\item\em Inizializza un oggetto compressore con i parametri passati in ingresso. \end{DoxyCompactList}\item 
+int \hyperlink{_l_z78___compressor_8h_a16c9869ed14afebbd3e22694e3aa233a}{lz78\-\_\-compressor\-\_\-destroy} (\hyperlink{_l_z78___compressor_8h_ab1e7070f5d76d126681ddd9251334560}{lz78\-\_\-compressor\-\_\-t} $\ast$)
+\begin{DoxyCompactList}\small\item\em Distrugge un oggetto compressore precedentemente creato. \end{DoxyCompactList}\item 
+int \hyperlink{_l_z78___compressor_8h_a754bd7d0c1140dc74c8a3b5380be9a24}{lz78\-\_\-compressor\-\_\-compress} (\hyperlink{_l_z78___compressor_8h_ab1e7070f5d76d126681ddd9251334560}{lz78\-\_\-compressor\-\_\-t} $\ast$)
+\begin{DoxyCompactList}\small\item\em Comprime il file di input e scrive il risultato della compressione nel file di output. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Documentazione delle ridefinizioni di tipo (typedef)}
+\hypertarget{_l_z78___compressor_8h_ab1e7070f5d76d126681ddd9251334560}{\index{L\-Z78\-\_\-\-Compressor.\-h@{L\-Z78\-\_\-\-Compressor.\-h}!lz78\-\_\-compressor\-\_\-t@{lz78\-\_\-compressor\-\_\-t}}
+\index{lz78\-\_\-compressor\-\_\-t@{lz78\-\_\-compressor\-\_\-t}!LZ78_Compressor.h@{L\-Z78\-\_\-\-Compressor.\-h}}
+\subsubsection[{lz78\-\_\-compressor\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf \-\_\-lz78\-\_\-compressor\-\_\-t} {\bf lz78\-\_\-compressor\-\_\-t}}}\label{_l_z78___compressor_8h_ab1e7070f5d76d126681ddd9251334560}
+
+
+Definizione alla linea 58 del file L\-Z78\-\_\-\-Compressor.\-h.
+
+
+
+\subsection{Documentazione delle funzioni}
+\hypertarget{_l_z78___compressor_8h_a754bd7d0c1140dc74c8a3b5380be9a24}{\index{L\-Z78\-\_\-\-Compressor.\-h@{L\-Z78\-\_\-\-Compressor.\-h}!lz78\-\_\-compressor\-\_\-compress@{lz78\-\_\-compressor\-\_\-compress}}
+\index{lz78\-\_\-compressor\-\_\-compress@{lz78\-\_\-compressor\-\_\-compress}!LZ78_Compressor.h@{L\-Z78\-\_\-\-Compressor.\-h}}
+\subsubsection[{lz78\-\_\-compressor\-\_\-compress}]{\setlength{\rightskip}{0pt plus 5cm}int lz78\-\_\-compressor\-\_\-compress (
+\begin{DoxyParamCaption}
+\item[{{\bf lz78\-\_\-compressor\-\_\-t} $\ast$}]{compressor}
+\end{DoxyParamCaption}
+)}}\label{_l_z78___compressor_8h_a754bd7d0c1140dc74c8a3b5380be9a24}
+
+
+Comprime il file di input e scrive il risultato della compressione nel file di output. 
+
+
+\begin{DoxyParams}[1]{Parametri}
+\mbox{\tt in}  & {\em compressor} & Compressore precedentemente inizializzato. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+Risultato della compressione, {\ttfamily 0} in caso di successo e {\ttfamily -\/1} altrimenti. 
+\end{DoxyReturn}
+
+
+Definizione alla linea 88 del file L\-Z78\-\_\-\-Compressor.\-c.
+
+\hypertarget{_l_z78___compressor_8h_ac3e80923e588a3eea9f0be411c6d0ba2}{\index{L\-Z78\-\_\-\-Compressor.\-h@{L\-Z78\-\_\-\-Compressor.\-h}!lz78\-\_\-compressor\-\_\-create@{lz78\-\_\-compressor\-\_\-create}}
+\index{lz78\-\_\-compressor\-\_\-create@{lz78\-\_\-compressor\-\_\-create}!LZ78_Compressor.h@{L\-Z78\-\_\-\-Compressor.\-h}}
+\subsubsection[{lz78\-\_\-compressor\-\_\-create}]{\setlength{\rightskip}{0pt plus 5cm}{\bf lz78\-\_\-compressor\-\_\-t}$\ast$ lz78\-\_\-compressor\-\_\-create (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{_l_z78___compressor_8h_ac3e80923e588a3eea9f0be411c6d0ba2}
+
+
+Crea un oggetto compressore. 
+
+\begin{DoxyReturn}{Restituisce}
+Oggetto compressore di tipo {\itshape lz78\-\_\-compressor\-\_\-t}, o {\itshape N\-U\-L\-L} in caso di fallimento. 
+\end{DoxyReturn}
+
+
+Definizione alla linea 5 del file L\-Z78\-\_\-\-Compressor.\-c.
+
+\hypertarget{_l_z78___compressor_8h_a16c9869ed14afebbd3e22694e3aa233a}{\index{L\-Z78\-\_\-\-Compressor.\-h@{L\-Z78\-\_\-\-Compressor.\-h}!lz78\-\_\-compressor\-\_\-destroy@{lz78\-\_\-compressor\-\_\-destroy}}
+\index{lz78\-\_\-compressor\-\_\-destroy@{lz78\-\_\-compressor\-\_\-destroy}!LZ78_Compressor.h@{L\-Z78\-\_\-\-Compressor.\-h}}
+\subsubsection[{lz78\-\_\-compressor\-\_\-destroy}]{\setlength{\rightskip}{0pt plus 5cm}int lz78\-\_\-compressor\-\_\-destroy (
+\begin{DoxyParamCaption}
+\item[{{\bf lz78\-\_\-compressor\-\_\-t} $\ast$}]{compressor}
+\end{DoxyParamCaption}
+)}}\label{_l_z78___compressor_8h_a16c9869ed14afebbd3e22694e3aa233a}
+
+
+Distrugge un oggetto compressore precedentemente creato. 
+
+
+\begin{DoxyParams}[1]{Parametri}
+\mbox{\tt in}  & {\em compressor} & Compressore da distruggere. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+Risultato della distruzione del compressore, {\ttfamily 0} in caso di successo e {\ttfamily -\/1} altrimenti. 
+\end{DoxyReturn}
+
+
+Definizione alla linea 68 del file L\-Z78\-\_\-\-Compressor.\-c.
+
+\hypertarget{_l_z78___compressor_8h_a3d47530723c68e084df1fb9ac022dae4}{\index{L\-Z78\-\_\-\-Compressor.\-h@{L\-Z78\-\_\-\-Compressor.\-h}!lz78\-\_\-compressor\-\_\-initialize@{lz78\-\_\-compressor\-\_\-initialize}}
+\index{lz78\-\_\-compressor\-\_\-initialize@{lz78\-\_\-compressor\-\_\-initialize}!LZ78_Compressor.h@{L\-Z78\-\_\-\-Compressor.\-h}}
+\subsubsection[{lz78\-\_\-compressor\-\_\-initialize}]{\setlength{\rightskip}{0pt plus 5cm}int lz78\-\_\-compressor\-\_\-initialize (
+\begin{DoxyParamCaption}
+\item[{{\bf lz78\-\_\-compressor\-\_\-t} $\ast$}]{compressor, }
+\item[{char $\ast$}]{input\-\_\-file\-\_\-name, }
+\item[{char $\ast$}]{output\-\_\-file\-\_\-name}
+\end{DoxyParamCaption}
+)}}\label{_l_z78___compressor_8h_a3d47530723c68e084df1fb9ac022dae4}
+
+
+Inizializza un oggetto compressore con i parametri passati in ingresso. 
+
+
+\begin{DoxyParams}[1]{Parametri}
+\mbox{\tt out}  & {\em compressor} & Compressore da inizializzare. \\
+\hline
+\mbox{\tt in}  & {\em input\-\_\-file\-\_\-name} & Nome del file in ingresso da comprimere. \\
+\hline
+\mbox{\tt in}  & {\em output\-\_\-file\-\_\-name} & Nome del file da creare come risultato della compressione. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+Risultato dell'inizializzazione del compressore, {\ttfamily 0} in caso di successo e {\ttfamily -\/1} altrimenti. 
+\end{DoxyReturn}
+
+
+Definizione alla linea 31 del file L\-Z78\-\_\-\-Compressor.\-c.
+

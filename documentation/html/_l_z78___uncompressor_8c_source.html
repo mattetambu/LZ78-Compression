@@ -1,0 +1,219 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.3.1"/>
+<title>Compressore LZ78:  File sorgente C:/Users/Matteo/Dropbox/Universita/Progettazione e Produzione Multimediale/Progetto/LZ78-Compression/sources/LZ78_Uncompressor.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Compressore LZ78
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Realizzare un compressore basato sull&#39;algoritmo LZ78</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generato da Doxygen 1.8.3.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Cerca');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Pagina&#160;Principale</span></a></li>
+      <li><a href="annotated.html"><span>Strutture&#160;dati</span></a></li>
+      <li class="current"><a href="files.html"><span>File</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Cerca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Elenco&#160;dei&#160;file</span></a></li>
+      <li><a href="globals.html"><span>Elementi&#160;globali</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tutto</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Strutture dati</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>File</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funzioni</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variabili</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Ridefinizioni di tipo (typedef)</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Definizioni</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pagine</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_7eb09e58583f359e753ec9733cdd3f32.html">Dropbox</a></li><li class="navelem"><a class="el" href="dir_a948e104c1fdfcd855ccf9bf00731b50.html">Universita</a></li><li class="navelem"><a class="el" href="dir_e6ded805275ad07d9a9977fc81fa8d89.html">Progettazione e Produzione Multimediale</a></li><li class="navelem"><a class="el" href="dir_1b1f365255b2da59b5a5df0e92ae6ac5.html">Progetto</a></li><li class="navelem"><a class="el" href="dir_4e534e49a43b6a33fc16b77990fa7bc0.html">LZ78-Compression</a></li><li class="navelem"><a class="el" href="dir_4d41d3951da9f7069c31359b430cf1c8.html">sources</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">LZ78_Uncompressor.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_l_z78___uncompressor_8c.html">Vai alla documentazione di questo file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// LZ78_Uncompressor.c</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_l_z78___uncompressor_8h.html">LZ78_Uncompressor.h</a>&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
+<div class="line"><a name="l00005"></a><span class="lineno"><a class="code" href="_l_z78___uncompressor_8h.html#ab8948cf664b455eb5d51b6247ebc115d">    5</a></span>&#160;<a class="code" href="struct__lz78__uncompressor__t.html">lz78_uncompressor_t</a>* <a class="code" href="_l_z78___uncompressor_8c.html#a851152b9c33b33f7b490e49d6a1c8cc8" title="Crea un oggetto decompressore.">lz78_uncompressor_create</a> () {</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    <a class="code" href="struct__lz78__uncompressor__t.html">lz78_uncompressor_t</a> *uncompressor = (<a class="code" href="struct__lz78__uncompressor__t.html">lz78_uncompressor_t</a>*) calloc (1, <span class="keyword">sizeof</span> (<a class="code" href="struct__lz78__uncompressor__t.html">lz78_uncompressor_t</a>));</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <span class="keywordflow">if</span> (uncompressor == NULL) {</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;        fprintf (stderr, <span class="stringliteral">&quot;Can&#39;t allocate the memory for the uncompressor\n&quot;</span>);</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;        errno = ENOMEM;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;        <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    }</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordflow">if</span> ((uncompressor-&gt;<a class="code" href="struct__lz78__uncompressor__t.html#abac9341b52ba2c7b76f924845486179f">hash_table</a> = <a class="code" href="_uncompressor__table_8c.html#ae67b966c8c56cc4656803363f57a7d7a" title="Crea un oggetto tabella hash.">uncompressor_table_create</a> ()) == NULL) {</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        fprintf (stderr, <span class="stringliteral">&quot;Can&#39;t create the hash table\n&quot;</span>);</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        memset (uncompressor, 0, <span class="keyword">sizeof</span> (<a class="code" href="struct__lz78__uncompressor__t.html">lz78_uncompressor_t</a>));</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        free (uncompressor);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    }</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordflow">if</span> ((uncompressor-&gt;<a class="code" href="struct__lz78__uncompressor__t.html#ada27920eeaafe70a2886faddc0f071b1">bit_buffer</a> = <a class="code" href="_bit__buffer__io_8c.html#a43b727192dac1363565e82d685e020c3" title="Crea un oggetto bit buffer.">bit_buffer_create</a> ()) == NULL){</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        fprintf (stderr, <span class="stringliteral">&quot;Can&#39;t create the structure to manage the input file\n&quot;</span>);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <a class="code" href="_uncompressor__table_8c.html#a513372d2099b3525f344991cc8f7e66d" title="Distrugge un oggetto tabella hash precedentemente creato.">uncompressor_table_destroy</a> (uncompressor-&gt;<a class="code" href="struct__lz78__uncompressor__t.html#abac9341b52ba2c7b76f924845486179f">hash_table</a>);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        memset (uncompressor, 0, <span class="keyword">sizeof</span> (<a class="code" href="struct__lz78__uncompressor__t.html">lz78_uncompressor_t</a>));</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        free (uncompressor);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    }</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordflow">return</span> uncompressor;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="code" href="_l_z78___uncompressor_8h.html#ab0d9e8d74f0ff9e4462be3d9618008d3">   31</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="_l_z78___uncompressor_8c.html#a590a315d43695d2081f5f40e2202b3d9" title="Inizializza un oggetto decompressore con i parametri passati in ingresso.">lz78_uncompressor_initialize</a> (<a class="code" href="struct__lz78__uncompressor__t.html">lz78_uncompressor_t</a> *uncompressor, <span class="keywordtype">char</span> *input_file_name, <span class="keywordtype">char</span> *output_file_name) {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordflow">if</span> (input_file_name == NULL || input_file_name[0] == <span class="charliteral">&#39;\0&#39;</span> ||</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        output_file_name == NULL || output_file_name[0] == <span class="charliteral">&#39;\0&#39;</span> ||</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        uncompressor == NULL) {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            fprintf (stderr, <span class="stringliteral">&quot;Invalid parameter - &quot;</span>);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            errno = EINVAL;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    }</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordflow">if</span> ((uncompressor-&gt;<a class="code" href="struct__lz78__uncompressor__t.html#a52a785c913c28c61f56c4aa10e3a1641">file_descriptor</a> = <a class="code" href="_bit__buffer__io_8c.html#ae71cc686eeaafb6f8ba47f3bcfd131da" title="Procede all&#39;apertura del file specificato richiedendo la conferma di sostituzione all&#39;utente se il fi...">file_open</a> (output_file_name, <span class="stringliteral">&quot;w&quot;</span>)) == NULL) {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        fprintf (stderr, <span class="stringliteral">&quot;Can&#39;t open the output file %s\n&quot;</span>, output_file_name);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordflow">return</span> -1;  </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    }</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="comment">//uncompressor-&gt;output_file_name = strdup (output_file_name);</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="_uncompressor__table_8c.html#acb90919dc6a8c034b43ea4e40df1334e" title="Inizializza un oggetto tabella hash inserendo i primi 256 nodi.">uncompressor_table_initialize</a> (uncompressor-&gt;<a class="code" href="struct__lz78__uncompressor__t.html#abac9341b52ba2c7b76f924845486179f">hash_table</a>) == -1) {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        fprintf (stderr, <span class="stringliteral">&quot;Can&#39;t inizialize the hash table\n&quot;</span>);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">if</span> ((<a class="code" href="_bit__buffer__io_8c.html#a3ddf1ac1858468a44172b5efe7615f56" title="Inizializza un oggetto bit buffer con i parametri in ingresso.">bit_buffer_initialize</a> (uncompressor-&gt;<a class="code" href="struct__lz78__uncompressor__t.html#ada27920eeaafe70a2886faddc0f071b1">bit_buffer</a>, input_file_name, <a class="code" href="_common_8h.html#a8026e8d87908b0239264d643c90183f5">_READ</a>)) == -1 ||</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <a class="code" href="_bit__buffer__io_8c.html#a97b3f8006b6604b4d8a72450dcfa36ad" title="Legge da file quanti più bytes possibili (pari al minimo tra la dimesione del buffer e il numero di b...">bit_buffer_fill</a> (uncompressor-&gt;<a class="code" href="struct__lz78__uncompressor__t.html#ada27920eeaafe70a2886faddc0f071b1">bit_buffer</a>) == -1) {</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            fprintf (stderr, <span class="stringliteral">&quot;Can&#39;t initialize the structure to manage the input file\n&quot;</span>);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="comment">//uncompressor-&gt;input_file_name = strdup (input_file_name);</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="code" href="_l_z78___uncompressor_8h.html#a1be6b96b16511bdf852850bc79983ef2">   61</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="_l_z78___uncompressor_8c.html#a4f9e530c90037f1d1b233fede2a68240" title="Distrugge un oggetto decompressore precedentemente creato.">lz78_uncompressor_destroy</a> (<a class="code" href="struct__lz78__uncompressor__t.html">lz78_uncompressor_t</a> *uncompressor) {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordflow">if</span> (uncompressor == NULL) {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        fprintf (stderr, <span class="stringliteral">&quot;Invalid parameter - &quot;</span>);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        errno = EINVAL;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    }</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordflow">if</span> (uncompressor-&gt;<a class="code" href="struct__lz78__uncompressor__t.html#a52a785c913c28c61f56c4aa10e3a1641">file_descriptor</a> != NULL) fclose (uncompressor-&gt;<a class="code" href="struct__lz78__uncompressor__t.html#a52a785c913c28c61f56c4aa10e3a1641">file_descriptor</a>);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">if</span> (uncompressor-&gt;<a class="code" href="struct__lz78__uncompressor__t.html#abac9341b52ba2c7b76f924845486179f">hash_table</a> != NULL) <a class="code" href="_uncompressor__table_8c.html#a513372d2099b3525f344991cc8f7e66d" title="Distrugge un oggetto tabella hash precedentemente creato.">uncompressor_table_destroy</a> (uncompressor-&gt;<a class="code" href="struct__lz78__uncompressor__t.html#abac9341b52ba2c7b76f924845486179f">hash_table</a>);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordflow">if</span> (uncompressor-&gt;<a class="code" href="struct__lz78__uncompressor__t.html#ada27920eeaafe70a2886faddc0f071b1">bit_buffer</a> != NULL) <a class="code" href="_bit__buffer__io_8c.html#a4cef1186a732a8902906d7621d2e128e" title="Distrugge un oggetto bit buffer precedentemente creato.">bit_buffer_destroy</a> (uncompressor-&gt;<a class="code" href="struct__lz78__uncompressor__t.html#ada27920eeaafe70a2886faddc0f071b1">bit_buffer</a>);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="comment">//if (uncompressor-&gt;input_file_name != NULL) free (uncompressor-&gt;input_file_name);</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="comment">//if (uncompressor-&gt;output_file_name != NULL) free (uncompressor-&gt;output_file_name);</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    memset (uncompressor, 0, <span class="keyword">sizeof</span> (<a class="code" href="struct__lz78__uncompressor__t.html">lz78_uncompressor_t</a>));</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    free (uncompressor);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;}</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="code" href="_l_z78___uncompressor_8h.html#a088a41c524f312184d3ec06e6a23ee32">   81</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="_l_z78___uncompressor_8c.html#a1c8bc67bf38831b62b9c2562ae4d132a" title="decomprime il file di input e scrive il risultato della decompressione nel file di output...">lz78_uncompressor_uncompress</a> (<a class="code" href="struct__lz78__uncompressor__t.html">lz78_uncompressor_t</a> *uncompressor) {</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <a class="code" href="_common_8h.html#a9e5efd01ad4bc79efcef95aee756b06a">hindex_t</a> previous_node_label = -1, next_label = <a class="code" href="_common_8h.html#a75666a6f2c5d710b4fa0845c5cf24552">ROOT_INDEX</a> + 1;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <a class="code" href="_common_8h.html#a9e5efd01ad4bc79efcef95aee756b06a">hindex_t</a> current_node_label;    <span class="comment">// read label</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <a class="code" href="_common_8h.html#a59e7e401edd661023c103ec038bc4ab2">hvalue_t</a> current_value;         <span class="comment">// character to insert</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">int</span> bits_to_read;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordflow">for</span> (; 1; previous_node_label = current_node_label) {   </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        bits_to_read = (next_label == <a class="code" href="_common_8h.html#aca2d241a951204f1f8e2d905f162dcbe">MAX_CHILDS</a> - 1)? 9 <span class="comment">/*label_length(ROOT_INDEX + 1)*/</span> : <a class="code" href="_common_8h.html#ae3f6cff710eb9fad51e0c57d8ac9b3b2">label_length</a> (next_label);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="_bit__buffer__io_8c.html#ab6e29ef99059e4ffd6b577e86d7d0efb" title="Inserisce in data un totale di length bit letti dal buffer passato come parametro (e ricorvente quant...">bit_buffer_read</a> (uncompressor-&gt;<a class="code" href="struct__lz78__uncompressor__t.html#ada27920eeaafe70a2886faddc0f071b1">bit_buffer</a>, &amp;current_node_label, bits_to_read) &lt; bits_to_read) {</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            fprintf(stderr, <span class="stringliteral">&quot;Error reading the input file\n&quot;</span>);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        }</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="keywordflow">if</span> (current_node_label == <a class="code" href="_common_8h.html#a75666a6f2c5d710b4fa0845c5cf24552">ROOT_INDEX</a>) <span class="keywordflow">break</span>; <span class="comment">// EOF</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="comment">// emit code</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keywordflow">if</span> (next_label == current_node_label) {</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            current_value = <a class="code" href="_uncompressor__table_8c.html#a1cdd148e8ac17583efaf05094f918b3f" title="Scrive nel file di output la sequenza di caratteri relativa all&#39;ultimo codifica ricevuta e ritorna il...">uncompressor_table_lookup</a> (uncompressor-&gt;<a class="code" href="struct__lz78__uncompressor__t.html#abac9341b52ba2c7b76f924845486179f">hash_table</a>, previous_node_label, uncompressor-&gt;<a class="code" href="struct__lz78__uncompressor__t.html#a52a785c913c28c61f56c4aa10e3a1641">file_descriptor</a>);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            <span class="keywordflow">if</span> (current_value == -1 || fputc (current_value, uncompressor-&gt;<a class="code" href="struct__lz78__uncompressor__t.html#a52a785c913c28c61f56c4aa10e3a1641">file_descriptor</a>) == -1) <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        }</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            current_value = <a class="code" href="_uncompressor__table_8c.html#a1cdd148e8ac17583efaf05094f918b3f" title="Scrive nel file di output la sequenza di caratteri relativa all&#39;ultimo codifica ricevuta e ritorna il...">uncompressor_table_lookup</a> (uncompressor-&gt;<a class="code" href="struct__lz78__uncompressor__t.html#abac9341b52ba2c7b76f924845486179f">hash_table</a>, current_node_label, uncompressor-&gt;<a class="code" href="struct__lz78__uncompressor__t.html#a52a785c913c28c61f56c4aa10e3a1641">file_descriptor</a>);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            <span class="keywordflow">if</span> (current_value == -1) <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        }</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        </div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <span class="keywordflow">if</span> (getenv(<span class="stringliteral">&quot;VERBOSE&quot;</span>)) printf (<span class="stringliteral">&quot;&#39;%c&#39;\tLabel:%d\n&quot;</span>, current_value, current_node_label);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <span class="comment">// hash table update</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <span class="keywordflow">if</span> (previous_node_label == -1) <span class="keywordflow">continue</span>; <span class="comment">// first simbol read (no previous node)</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        <a class="code" href="_uncompressor__table_8c.html#a6aadff642949d3047059a7a244ac48e7" title="Inserisce un nodo all&#39;interno della tabella hash fornita in ingresso.">uncompressor_table_insert</a> (uncompressor-&gt;<a class="code" href="struct__lz78__uncompressor__t.html#abac9341b52ba2c7b76f924845486179f">hash_table</a>, previous_node_label, current_value, next_label);           </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <span class="keywordflow">if</span> (++next_label == <a class="code" href="_common_8h.html#aca2d241a951204f1f8e2d905f162dcbe">MAX_CHILDS</a>) { <span class="comment">// rebuild hash table</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            next_label = <a class="code" href="_common_8h.html#a75666a6f2c5d710b4fa0845c5cf24552">ROOT_INDEX</a> + 1;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            current_node_label = -1;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        }</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    }</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordflow">if</span> (getenv(<span class="stringliteral">&quot;VERBOSE&quot;</span>)) printf (<span class="stringliteral">&quot;&#39;EOF&#39;\tLabel:%d\n\n&quot;</span>, current_node_label);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    </div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;}</div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generato Sab 29 Giu 2013 11:30:58 per Compressore LZ78 da &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.3.1
+</small></address>
+</body>
+</html>

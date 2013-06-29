@@ -1,0 +1,32 @@
+/**
+ \mainpage Progetto di \e Progettazione \e e \e Produzione \e Multimediale.
+ \section LZ78_Compression Compressore/decompressore basato sull'algoritmo LZ78
+	 \b Autore: Tamburini Matteo <mattetambu@gmail.com> <br>
+	 \b Data: 25/06/2013 <br>
+	 \b Versione: 1.0 <br> <br>
+	 
+	 \subsection Descrizione Descrizione dell'applicazione
+		Realizzare un compressore/decompressore basato sull'algoritmo LZ78.
+		<br> <br>
+
+	 \subsection Compilazione Compilazione dell'applicazione
+		Per la compilazione è presente un makefile quindi è sufficiente eseguire il comando "make".
+		<br>
+		La lista degli obiettivi presenti nel makefile risulta:
+			- \e make \e [all]: Build the executable
+			- \e make \e archive: Archive the executable, the makefile and all *.c and *.h files
+			- \e make \e clean: Remove the excutable, *.lz78 and *.o files
+			- \e make \e help: Show this info
+		<br> <br>
+		
+	 \subsection Esecuzione Esecuzione dell'applicazione
+		Per lanciare l'applicazione è necessario avviare l'eseguibile "lz78" utilizzando le seguenti opzioni:
+			- -\e c --\e compress: Compress specified file
+			- -\e d -\e u --\e decompress --\e uncompress: Uncompress specified file
+			- -\e o -\e n --\e output --\e name: Set the name for the output file
+			- -\e h --\e help: Show the help
+			- -\e v --\e verbose: Display more messages
+			- -\e f --\e force: Silent overwrite if the output file already exists
+			- -\e e --\e extension: Use the input file extension for the output file
+			- -\e p --\e path: Use the input file path for the output file
+*/

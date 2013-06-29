@@ -1,0 +1,523 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.3.1"/>
+<title>Compressore LZ78: Riferimenti per il file C:/Users/Matteo/Dropbox/Universita/Progettazione e Produzione Multimediale/Progetto/LZ78-Compression/sources/Compressor_table.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Compressore LZ78
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Realizzare un compressore basato sull&#39;algoritmo LZ78</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generato da Doxygen 1.8.3.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Cerca');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Pagina&#160;Principale</span></a></li>
+      <li><a href="annotated.html"><span>Strutture&#160;dati</span></a></li>
+      <li class="current"><a href="files.html"><span>File</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Cerca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Elenco&#160;dei&#160;file</span></a></li>
+      <li><a href="globals.html"><span>Elementi&#160;globali</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tutto</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Strutture dati</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>File</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funzioni</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variabili</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Ridefinizioni di tipo (typedef)</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Definizioni</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pagine</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_7eb09e58583f359e753ec9733cdd3f32.html">Dropbox</a></li><li class="navelem"><a class="el" href="dir_a948e104c1fdfcd855ccf9bf00731b50.html">Universita</a></li><li class="navelem"><a class="el" href="dir_e6ded805275ad07d9a9977fc81fa8d89.html">Progettazione e Produzione Multimediale</a></li><li class="navelem"><a class="el" href="dir_1b1f365255b2da59b5a5df0e92ae6ac5.html">Progetto</a></li><li class="navelem"><a class="el" href="dir_4e534e49a43b6a33fc16b77990fa7bc0.html">LZ78-Compression</a></li><li class="navelem"><a class="el" href="dir_4d41d3951da9f7069c31359b430cf1c8.html">sources</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Strutture dati</a> &#124;
+<a href="#define-members">Definizioni</a> &#124;
+<a href="#typedef-members">Ridefinizioni di tipo (typedef)</a> &#124;
+<a href="#func-members">Funzioni</a>  </div>
+  <div class="headertitle">
+<div class="title">Riferimenti per il file Compressor_table.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="_common_8h_source.html">Common.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="_bit__buffer__io_8h_source.html">Bit_buffer_io.h</a>&quot;</code><br/>
+</div>
+<p><a href="_compressor__table_8h_source.html">Vai al codice sorgente di questo file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Strutture dati</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__compressor__table__row__t.html">_compressor_table_row_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Definizioni</h2></td></tr>
+<tr class="memitem:a89a9b1166e65a986e9b205cdf7cda396"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_compressor__table_8h.html#a89a9b1166e65a986e9b205cdf7cda396">DOUBLE_HASHING</a>&#160;&#160;&#160;<a class="el" href="_common_8h.html#a65e9886d74aaee76545e83dd09011727">false</a></td></tr>
+<tr class="separator:a89a9b1166e65a986e9b205cdf7cda396"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9623f3de1a3c08ca8858f632d92a2897"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_compressor__table_8h.html#a9623f3de1a3c08ca8858f632d92a2897">EXPANSION_FACTOR</a>&#160;&#160;&#160;4</td></tr>
+<tr class="separator:a9623f3de1a3c08ca8858f632d92a2897"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a463b14efe37ec04e58e2076ea0c331ae"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_compressor__table_8h.html#a463b14efe37ec04e58e2076ea0c331ae">HASH_TABLE_ROWS</a>&#160;&#160;&#160;(<a class="el" href="_compressor__table_8h.html#a9623f3de1a3c08ca8858f632d92a2897">EXPANSION_FACTOR</a> * <a class="el" href="_common_8h.html#aca2d241a951204f1f8e2d905f162dcbe">MAX_CHILDS</a>)</td></tr>
+<tr class="separator:a463b14efe37ec04e58e2076ea0c331ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Ridefinizioni di tipo (typedef)</h2></td></tr>
+<tr class="memitem:a82bc28c8341cd953b35d0e4dd31ca2a8"><td class="memItemLeft" align="right" valign="top">typedef struct <br class="typebreak"/>
+<a class="el" href="struct__compressor__table__row__t.html">_compressor_table_row_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_compressor__table_8h.html#a82bc28c8341cd953b35d0e4dd31ca2a8">compressor_table_row_t</a></td></tr>
+<tr class="separator:a82bc28c8341cd953b35d0e4dd31ca2a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a529ad42a2b30cf6fa0a4ee97143d38a8"><td class="memItemLeft" align="right" valign="top">typedef struct <br class="typebreak"/>
+<a class="el" href="struct__compressor__table__row__t.html">_compressor_table_row_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_compressor__table_8h.html#a529ad42a2b30cf6fa0a4ee97143d38a8">compressor_table_t</a></td></tr>
+<tr class="separator:a529ad42a2b30cf6fa0a4ee97143d38a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funzioni</h2></td></tr>
+<tr class="memitem:af5bb64a5bfd30378c739d32338e664a2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_common_8h.html#a9e5efd01ad4bc79efcef95aee756b06a">hindex_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_compressor__table_8h.html#af5bb64a5bfd30378c739d32338e664a2">compute_hash</a> (<a class="el" href="_common_8h.html#a9e5efd01ad4bc79efcef95aee756b06a">hindex_t</a>, <a class="el" href="_common_8h.html#a59e7e401edd661023c103ec038bc4ab2">hvalue_t</a>)</td></tr>
+<tr class="memdesc:af5bb64a5bfd30378c739d32338e664a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcola l'indice del nodo a partire dal suo valore e dall'indice del padre (sfrutta il Multiplicative hashing).  <a href="#af5bb64a5bfd30378c739d32338e664a2">Continua...</a><br/></td></tr>
+<tr class="separator:af5bb64a5bfd30378c739d32338e664a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa8e00284cca03637129317f080e1ce3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_common_8h.html#a9e5efd01ad4bc79efcef95aee756b06a">hindex_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_compressor__table_8h.html#afa8e00284cca03637129317f080e1ce3">compute_step_hash</a> (<a class="el" href="_common_8h.html#a9e5efd01ad4bc79efcef95aee756b06a">hindex_t</a>, <a class="el" href="_common_8h.html#a59e7e401edd661023c103ec038bc4ab2">hvalue_t</a>)</td></tr>
+<tr class="memdesc:afa8e00284cca03637129317f080e1ce3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcola l'indice del nodo a partire dal suo valore e dall'indice del padre (sfrutta il Division Method). Questa funzione viene utilizzata per calcolare il passo di scansione della tabella e viene richiamata solo se DOUBLE_HASHING è abilitato.  <a href="#afa8e00284cca03637129317f080e1ce3">Continua...</a><br/></td></tr>
+<tr class="separator:afa8e00284cca03637129317f080e1ce3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67715bdd1828dbafe055d6e2f3b1118f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_compressor__table_8h.html#a529ad42a2b30cf6fa0a4ee97143d38a8">compressor_table_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_compressor__table_8h.html#a67715bdd1828dbafe055d6e2f3b1118f">compressor_table_create</a> ()</td></tr>
+<tr class="memdesc:a67715bdd1828dbafe055d6e2f3b1118f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Crea un oggetto tabella hash.  <a href="#a67715bdd1828dbafe055d6e2f3b1118f">Continua...</a><br/></td></tr>
+<tr class="separator:a67715bdd1828dbafe055d6e2f3b1118f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a88e331d8e3c6d0c56f1a28ef84df16"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_compressor__table_8h.html#a1a88e331d8e3c6d0c56f1a28ef84df16">compressor_table_initialize</a> (<a class="el" href="_compressor__table_8h.html#a529ad42a2b30cf6fa0a4ee97143d38a8">compressor_table_t</a> *)</td></tr>
+<tr class="memdesc:a1a88e331d8e3c6d0c56f1a28ef84df16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inizializza un oggetto tabella hash inserendo i primi 256 nodi.  <a href="#a1a88e331d8e3c6d0c56f1a28ef84df16">Continua...</a><br/></td></tr>
+<tr class="separator:a1a88e331d8e3c6d0c56f1a28ef84df16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add8088737b5a5babab8a73a6ad458530"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_compressor__table_8h.html#add8088737b5a5babab8a73a6ad458530">compressor_table_destroy</a> (<a class="el" href="_compressor__table_8h.html#a529ad42a2b30cf6fa0a4ee97143d38a8">compressor_table_t</a> *)</td></tr>
+<tr class="memdesc:add8088737b5a5babab8a73a6ad458530"><td class="mdescLeft">&#160;</td><td class="mdescRight">Distrugge un oggetto tabella hash precedentemente creato.  <a href="#add8088737b5a5babab8a73a6ad458530">Continua...</a><br/></td></tr>
+<tr class="separator:add8088737b5a5babab8a73a6ad458530"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abca9a24b6e66dcff536cece2a5eb992f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_compressor__table_8h.html#abca9a24b6e66dcff536cece2a5eb992f">compressor_table_rebuild</a> (<a class="el" href="_compressor__table_8h.html#a529ad42a2b30cf6fa0a4ee97143d38a8">compressor_table_t</a> *)</td></tr>
+<tr class="memdesc:abca9a24b6e66dcff536cece2a5eb992f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Svuota la tabella hash fornita in ingresso e la inizializza nuovamente.  <a href="#abca9a24b6e66dcff536cece2a5eb992f">Continua...</a><br/></td></tr>
+<tr class="separator:abca9a24b6e66dcff536cece2a5eb992f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6986412c86a688d7692e95fb1ee7529f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_compressor__table_8h.html#a6986412c86a688d7692e95fb1ee7529f">compressor_table_insert</a> (<a class="el" href="_compressor__table_8h.html#a529ad42a2b30cf6fa0a4ee97143d38a8">compressor_table_t</a> *, <a class="el" href="_common_8h.html#a9e5efd01ad4bc79efcef95aee756b06a">hindex_t</a>, <a class="el" href="_common_8h.html#a59e7e401edd661023c103ec038bc4ab2">hvalue_t</a>, <a class="el" href="_common_8h.html#a9e5efd01ad4bc79efcef95aee756b06a">hindex_t</a>)</td></tr>
+<tr class="memdesc:a6986412c86a688d7692e95fb1ee7529f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inserisce un nodo all'interno della tabella hash fornita in ingresso.  <a href="#a6986412c86a688d7692e95fb1ee7529f">Continua...</a><br/></td></tr>
+<tr class="separator:a6986412c86a688d7692e95fb1ee7529f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd240fb31713fac6a5ff261f4990b2f0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_common_8h.html#a9e5efd01ad4bc79efcef95aee756b06a">hindex_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_compressor__table_8h.html#acd240fb31713fac6a5ff261f4990b2f0">compressor_table_search</a> (<a class="el" href="_compressor__table_8h.html#a529ad42a2b30cf6fa0a4ee97143d38a8">compressor_table_t</a> *, <a class="el" href="_common_8h.html#a9e5efd01ad4bc79efcef95aee756b06a">hindex_t</a>, <a class="el" href="_common_8h.html#a59e7e401edd661023c103ec038bc4ab2">hvalue_t</a>)</td></tr>
+<tr class="memdesc:acd240fb31713fac6a5ff261f4990b2f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ricerca un nodo all'interno della tabella hash fornita in ingresso.  <a href="#acd240fb31713fac6a5ff261f4990b2f0">Continua...</a><br/></td></tr>
+<tr class="separator:acd240fb31713fac6a5ff261f4990b2f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentazione delle definizioni</h2>
+<a class="anchor" id="a89a9b1166e65a986e9b205cdf7cda396"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DOUBLE_HASHING&#160;&#160;&#160;<a class="el" href="_common_8h.html#a65e9886d74aaee76545e83dd09011727">false</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definizione alla linea <a class="el" href="_compressor__table_8h_source.html#l00082">82</a> del file <a class="el" href="_compressor__table_8h_source.html">Compressor_table.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9623f3de1a3c08ca8858f632d92a2897"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EXPANSION_FACTOR&#160;&#160;&#160;4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definizione alla linea <a class="el" href="_compressor__table_8h_source.html#l00083">83</a> del file <a class="el" href="_compressor__table_8h_source.html">Compressor_table.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a463b14efe37ec04e58e2076ea0c331ae"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HASH_TABLE_ROWS&#160;&#160;&#160;(<a class="el" href="_compressor__table_8h.html#a9623f3de1a3c08ca8858f632d92a2897">EXPANSION_FACTOR</a> * <a class="el" href="_common_8h.html#aca2d241a951204f1f8e2d905f162dcbe">MAX_CHILDS</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definizione alla linea <a class="el" href="_compressor__table_8h_source.html#l00084">84</a> del file <a class="el" href="_compressor__table_8h_source.html">Compressor_table.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentazione delle ridefinizioni di tipo (typedef)</h2>
+<a class="anchor" id="a82bc28c8341cd953b35d0e4dd31ca2a8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct__compressor__table__row__t.html">_compressor_table_row_t</a> <a class="el" href="_compressor__table_8h.html#a82bc28c8341cd953b35d0e4dd31ca2a8">compressor_table_row_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definizione alla linea <a class="el" href="_compressor__table_8h_source.html#l00092">92</a> del file <a class="el" href="_compressor__table_8h_source.html">Compressor_table.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a529ad42a2b30cf6fa0a4ee97143d38a8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct__compressor__table__row__t.html">_compressor_table_row_t</a> <a class="el" href="_compressor__table_8h.html#a529ad42a2b30cf6fa0a4ee97143d38a8">compressor_table_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definizione alla linea <a class="el" href="_compressor__table_8h_source.html#l00093">93</a> del file <a class="el" href="_compressor__table_8h_source.html">Compressor_table.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentazione delle funzioni</h2>
+<a class="anchor" id="a67715bdd1828dbafe055d6e2f3b1118f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_compressor__table_8h.html#a529ad42a2b30cf6fa0a4ee97143d38a8">compressor_table_t</a>* compressor_table_create </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Crea un oggetto tabella hash. </p>
+<dl class="section return"><dt>Restituisce</dt><dd>Oggetto tabella hash di tipo <em>compressor_table_t</em>, o <em>NULL</em> in caso di fallimento. </dd></dl>
+
+<p>Definizione alla linea <a class="el" href="_compressor__table_8c_source.html#l00018">18</a> del file <a class="el" href="_compressor__table_8c_source.html">Compressor_table.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="add8088737b5a5babab8a73a6ad458530"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int compressor_table_destroy </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_compressor__table_8h.html#a529ad42a2b30cf6fa0a4ee97143d38a8">compressor_table_t</a> *&#160;</td>
+          <td class="paramname"><em>hash_table</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Distrugge un oggetto tabella hash precedentemente creato. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">hash_table</td><td>Tabella hash da distruggere. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Restituisce</dt><dd>Risultato della distruzione della tabella hash, <code>0</code> in caso di successo e <code>-1</code> altrimenti. </dd></dl>
+
+<p>Definizione alla linea <a class="el" href="_compressor__table_8c_source.html#l00036">36</a> del file <a class="el" href="_compressor__table_8c_source.html">Compressor_table.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1a88e331d8e3c6d0c56f1a28ef84df16"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int compressor_table_initialize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_compressor__table_8h.html#a529ad42a2b30cf6fa0a4ee97143d38a8">compressor_table_t</a> *&#160;</td>
+          <td class="paramname"><em>hash_table</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inizializza un oggetto tabella hash inserendo i primi 256 nodi. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">hash_table</td><td>Tabella hash da inizializzare. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Restituisce</dt><dd>Risultato dell'inizializzazione della tabella hash, <code>0</code> in caso di successo e <code>-1</code> altrimenti. </dd></dl>
+
+<p>Definizione alla linea <a class="el" href="_compressor__table_8c_source.html#l00028">28</a> del file <a class="el" href="_compressor__table_8c_source.html">Compressor_table.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6986412c86a688d7692e95fb1ee7529f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int compressor_table_insert </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_compressor__table_8h.html#a529ad42a2b30cf6fa0a4ee97143d38a8">compressor_table_t</a> *&#160;</td>
+          <td class="paramname"><em>hash_table</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_common_8h.html#a9e5efd01ad4bc79efcef95aee756b06a">hindex_t</a>&#160;</td>
+          <td class="paramname"><em>parent_label</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_common_8h.html#a59e7e401edd661023c103ec038bc4ab2">hvalue_t</a>&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_common_8h.html#a9e5efd01ad4bc79efcef95aee756b06a">hindex_t</a>&#160;</td>
+          <td class="paramname"><em>label</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inserisce un nodo all'interno della tabella hash fornita in ingresso. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">hash_table</td><td>Tabella hash dove inserire il nodo. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">parent_label</td><td>Indice del nodo padre del nodo da inserire. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>Valore del nodo da inserire. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">label</td><td>Indice da assegnare al nodo da inserire. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Restituisce</dt><dd>Risultato dell'inserimento nella tabella hash, <code>0</code> in caso di successo (non può fallire). </dd></dl>
+
+<p>Definizione alla linea <a class="el" href="_compressor__table_8c_source.html#l00055">55</a> del file <a class="el" href="_compressor__table_8c_source.html">Compressor_table.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abca9a24b6e66dcff536cece2a5eb992f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int compressor_table_rebuild </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_compressor__table_8h.html#a529ad42a2b30cf6fa0a4ee97143d38a8">compressor_table_t</a> *&#160;</td>
+          <td class="paramname"><em>hash_table</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Svuota la tabella hash fornita in ingresso e la inizializza nuovamente. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">hash_table</td><td>Tabella hash da reinizializzare. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Restituisce</dt><dd>Risultato della reinizializzare della tabella hash, <code>0</code> in caso di successo e <code>-1</code> altrimenti. </dd></dl>
+
+<p>Definizione alla linea <a class="el" href="_compressor__table_8c_source.html#l00048">48</a> del file <a class="el" href="_compressor__table_8c_source.html">Compressor_table.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acd240fb31713fac6a5ff261f4990b2f0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_common_8h.html#a9e5efd01ad4bc79efcef95aee756b06a">hindex_t</a> compressor_table_search </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_compressor__table_8h.html#a529ad42a2b30cf6fa0a4ee97143d38a8">compressor_table_t</a> *&#160;</td>
+          <td class="paramname"><em>hash_table</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_common_8h.html#a9e5efd01ad4bc79efcef95aee756b06a">hindex_t</a>&#160;</td>
+          <td class="paramname"><em>parent_label</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_common_8h.html#a59e7e401edd661023c103ec038bc4ab2">hvalue_t</a>&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ricerca un nodo all'interno della tabella hash fornita in ingresso. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">hash_table</td><td>Tabella hash dove cercare il nodo. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">parent_label</td><td>Indice del nodo padre del nodo da ricercare. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>Valore del nodo da ricercare. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Restituisce</dt><dd>Risultato della ricerca nella tabella hash, <code>indice</code> del nodo in caso di successo e <code>-1</code> altrimenti. </dd></dl>
+
+<p>Definizione alla linea <a class="el" href="_compressor__table_8c_source.html#l00071">71</a> del file <a class="el" href="_compressor__table_8c_source.html">Compressor_table.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af5bb64a5bfd30378c739d32338e664a2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_common_8h.html#a9e5efd01ad4bc79efcef95aee756b06a">hindex_t</a> compute_hash </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_common_8h.html#a9e5efd01ad4bc79efcef95aee756b06a">hindex_t</a>&#160;</td>
+          <td class="paramname"><em>parent_label</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_common_8h.html#a59e7e401edd661023c103ec038bc4ab2">hvalue_t</a>&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calcola l'indice del nodo a partire dal suo valore e dall'indice del padre (sfrutta il Multiplicative hashing). </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">parent_label</td><td>Indice del nodo padre. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>Valore del nodo. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Restituisce</dt><dd><code>Indice</code> del nodo ottenuto calcolando la funzione hash sui parametri in ingresso. </dd></dl>
+
+<p>Definizione alla linea <a class="el" href="_compressor__table_8c_source.html#l00005">5</a> del file <a class="el" href="_compressor__table_8c_source.html">Compressor_table.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afa8e00284cca03637129317f080e1ce3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_common_8h.html#a9e5efd01ad4bc79efcef95aee756b06a">hindex_t</a> compute_step_hash </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_common_8h.html#a9e5efd01ad4bc79efcef95aee756b06a">hindex_t</a>&#160;</td>
+          <td class="paramname"><em>parent_label</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_common_8h.html#a59e7e401edd661023c103ec038bc4ab2">hvalue_t</a>&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calcola l'indice del nodo a partire dal suo valore e dall'indice del padre (sfrutta il Division Method). Questa funzione viene utilizzata per calcolare il passo di scansione della tabella e viene richiamata solo se DOUBLE_HASHING è abilitato. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">parent_label</td><td>Indice del nodo padre. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>Valore del nodo. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Restituisce</dt><dd><code>Indice</code> del nodo ottenuto calcolando la funzione hash sui parametri in ingresso. </dd></dl>
+
+<p>Definizione alla linea <a class="el" href="_compressor__table_8c_source.html#l00011">11</a> del file <a class="el" href="_compressor__table_8c_source.html">Compressor_table.c</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generato Sab 29 Giu 2013 11:30:58 per Compressore LZ78 da &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.3.1
+</small></address>
+</body>
+</html>

@@ -1,0 +1,177 @@
+\hypertarget{_uncompressor__table_8h}{\section{Riferimenti per il file C\-:/\-Users/\-Matteo/\-Dropbox/\-Universita/\-Progettazione e Produzione Multimediale/\-Progetto/\-L\-Z78-\/\-Compression/sources/\-Uncompressor\-\_\-table.h}
+\label{_uncompressor__table_8h}\index{C\-:/\-Users/\-Matteo/\-Dropbox/\-Universita/\-Progettazione e Produzione Multimediale/\-Progetto/\-L\-Z78-\/\-Compression/sources/\-Uncompressor\-\_\-table.\-h@{C\-:/\-Users/\-Matteo/\-Dropbox/\-Universita/\-Progettazione e Produzione Multimediale/\-Progetto/\-L\-Z78-\/\-Compression/sources/\-Uncompressor\-\_\-table.\-h}}
+}
+{\ttfamily \#include \char`\"{}Common.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Bit\-\_\-buffer\-\_\-io.\-h\char`\"{}}\\*
+\subsection*{Strutture dati}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct__uncompressor__table__row__t}{\-\_\-uncompressor\-\_\-table\-\_\-row\-\_\-t}
+\end{DoxyCompactItemize}
+\subsection*{Ridefinizioni di tipo (typedef)}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \\*
+\hyperlink{struct__uncompressor__table__row__t}{\-\_\-uncompressor\-\_\-table\-\_\-row\-\_\-t} \hyperlink{_uncompressor__table_8h_a7db39f6b6668177741eeae7231b9fee0}{uncompressor\-\_\-table\-\_\-row\-\_\-t}
+\item 
+typedef struct \\*
+\hyperlink{struct__uncompressor__table__row__t}{\-\_\-uncompressor\-\_\-table\-\_\-row\-\_\-t} \hyperlink{_uncompressor__table_8h_ab0b6b9221a3fbb50deba62687be31e63}{uncompressor\-\_\-table\-\_\-t}
+\end{DoxyCompactItemize}
+\subsection*{Funzioni}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_uncompressor__table_8h_ab0b6b9221a3fbb50deba62687be31e63}{uncompressor\-\_\-table\-\_\-t} $\ast$ \hyperlink{_uncompressor__table_8h_a8d393883bb2a022bce5adc6b557c962f}{uncompressor\-\_\-table\-\_\-create} ()
+\begin{DoxyCompactList}\small\item\em Crea un oggetto tabella hash. \end{DoxyCompactList}\item 
+int \hyperlink{_uncompressor__table_8h_a3c94becc01476f6e2c14e415560f2498}{uncompressor\-\_\-table\-\_\-initialize} (\hyperlink{_uncompressor__table_8h_ab0b6b9221a3fbb50deba62687be31e63}{uncompressor\-\_\-table\-\_\-t} $\ast$)
+\begin{DoxyCompactList}\small\item\em Inizializza un oggetto tabella hash inserendo i primi 256 nodi. \end{DoxyCompactList}\item 
+int \hyperlink{_uncompressor__table_8h_a4b4b294622ac24f3d0ac5d9eea41f0ba}{uncompressor\-\_\-table\-\_\-destroy} (\hyperlink{_uncompressor__table_8h_ab0b6b9221a3fbb50deba62687be31e63}{uncompressor\-\_\-table\-\_\-t} $\ast$)
+\begin{DoxyCompactList}\small\item\em Distrugge un oggetto tabella hash precedentemente creato. \end{DoxyCompactList}\item 
+int \hyperlink{_uncompressor__table_8h_a7c6f91c84183c063588a8abd08c99411}{uncompressor\-\_\-table\-\_\-insert} (\hyperlink{_uncompressor__table_8h_ab0b6b9221a3fbb50deba62687be31e63}{uncompressor\-\_\-table\-\_\-t} $\ast$, \hyperlink{_common_8h_a9e5efd01ad4bc79efcef95aee756b06a}{hindex\-\_\-t}, \hyperlink{_common_8h_a59e7e401edd661023c103ec038bc4ab2}{hvalue\-\_\-t}, \hyperlink{_common_8h_a9e5efd01ad4bc79efcef95aee756b06a}{hindex\-\_\-t})
+\begin{DoxyCompactList}\small\item\em Inserisce un nodo all'interno della tabella hash fornita in ingresso. \end{DoxyCompactList}\item 
+\hyperlink{_common_8h_a59e7e401edd661023c103ec038bc4ab2}{hvalue\-\_\-t} \hyperlink{_uncompressor__table_8h_a5755d4e0487832ae46421da4e08d5d47}{uncompressor\-\_\-table\-\_\-lookup} (\hyperlink{_uncompressor__table_8h_ab0b6b9221a3fbb50deba62687be31e63}{uncompressor\-\_\-table\-\_\-t} $\ast$, \hyperlink{_common_8h_a9e5efd01ad4bc79efcef95aee756b06a}{hindex\-\_\-t}, F\-I\-L\-E $\ast$)
+\begin{DoxyCompactList}\small\item\em Scrive nel file di output la sequenza di caratteri relativa all'ultimo codifica ricevuta e ritorna il simbolo relativo a tale codifica (per il suo inserimento). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Documentazione delle ridefinizioni di tipo (typedef)}
+\hypertarget{_uncompressor__table_8h_a7db39f6b6668177741eeae7231b9fee0}{\index{Uncompressor\-\_\-table.\-h@{Uncompressor\-\_\-table.\-h}!uncompressor\-\_\-table\-\_\-row\-\_\-t@{uncompressor\-\_\-table\-\_\-row\-\_\-t}}
+\index{uncompressor\-\_\-table\-\_\-row\-\_\-t@{uncompressor\-\_\-table\-\_\-row\-\_\-t}!Uncompressor_table.h@{Uncompressor\-\_\-table.\-h}}
+\subsubsection[{uncompressor\-\_\-table\-\_\-row\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf \-\_\-uncompressor\-\_\-table\-\_\-row\-\_\-t} {\bf uncompressor\-\_\-table\-\_\-row\-\_\-t}}}\label{_uncompressor__table_8h_a7db39f6b6668177741eeae7231b9fee0}
+
+
+Definizione alla linea 63 del file Uncompressor\-\_\-table.\-h.
+
+\hypertarget{_uncompressor__table_8h_ab0b6b9221a3fbb50deba62687be31e63}{\index{Uncompressor\-\_\-table.\-h@{Uncompressor\-\_\-table.\-h}!uncompressor\-\_\-table\-\_\-t@{uncompressor\-\_\-table\-\_\-t}}
+\index{uncompressor\-\_\-table\-\_\-t@{uncompressor\-\_\-table\-\_\-t}!Uncompressor_table.h@{Uncompressor\-\_\-table.\-h}}
+\subsubsection[{uncompressor\-\_\-table\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf \-\_\-uncompressor\-\_\-table\-\_\-row\-\_\-t} {\bf uncompressor\-\_\-table\-\_\-t}}}\label{_uncompressor__table_8h_ab0b6b9221a3fbb50deba62687be31e63}
+
+
+Definizione alla linea 64 del file Uncompressor\-\_\-table.\-h.
+
+
+
+\subsection{Documentazione delle funzioni}
+\hypertarget{_uncompressor__table_8h_a8d393883bb2a022bce5adc6b557c962f}{\index{Uncompressor\-\_\-table.\-h@{Uncompressor\-\_\-table.\-h}!uncompressor\-\_\-table\-\_\-create@{uncompressor\-\_\-table\-\_\-create}}
+\index{uncompressor\-\_\-table\-\_\-create@{uncompressor\-\_\-table\-\_\-create}!Uncompressor_table.h@{Uncompressor\-\_\-table.\-h}}
+\subsubsection[{uncompressor\-\_\-table\-\_\-create}]{\setlength{\rightskip}{0pt plus 5cm}{\bf uncompressor\-\_\-table\-\_\-t}$\ast$ uncompressor\-\_\-table\-\_\-create (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{_uncompressor__table_8h_a8d393883bb2a022bce5adc6b557c962f}
+
+
+Crea un oggetto tabella hash. 
+
+\begin{DoxyReturn}{Restituisce}
+Oggetto tabella hash di tipo {\itshape uncompressor\-\_\-table\-\_\-t}, o {\itshape N\-U\-L\-L} in caso di fallimento. 
+\end{DoxyReturn}
+
+
+Definizione alla linea 6 del file Uncompressor\-\_\-table.\-c.
+
+\hypertarget{_uncompressor__table_8h_a4b4b294622ac24f3d0ac5d9eea41f0ba}{\index{Uncompressor\-\_\-table.\-h@{Uncompressor\-\_\-table.\-h}!uncompressor\-\_\-table\-\_\-destroy@{uncompressor\-\_\-table\-\_\-destroy}}
+\index{uncompressor\-\_\-table\-\_\-destroy@{uncompressor\-\_\-table\-\_\-destroy}!Uncompressor_table.h@{Uncompressor\-\_\-table.\-h}}
+\subsubsection[{uncompressor\-\_\-table\-\_\-destroy}]{\setlength{\rightskip}{0pt plus 5cm}int uncompressor\-\_\-table\-\_\-destroy (
+\begin{DoxyParamCaption}
+\item[{{\bf uncompressor\-\_\-table\-\_\-t} $\ast$}]{hash\-\_\-table}
+\end{DoxyParamCaption}
+)}}\label{_uncompressor__table_8h_a4b4b294622ac24f3d0ac5d9eea41f0ba}
+
+
+Distrugge un oggetto tabella hash precedentemente creato. 
+
+
+\begin{DoxyParams}[1]{Parametri}
+\mbox{\tt in}  & {\em hash\-\_\-table} & Tabella hash da distruggere. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+Risultato della distruzione della tabella hash, {\ttfamily 0} in caso di successo e {\ttfamily -\/1} altrimenti. 
+\end{DoxyReturn}
+
+
+Definizione alla linea 24 del file Uncompressor\-\_\-table.\-c.
+
+\hypertarget{_uncompressor__table_8h_a3c94becc01476f6e2c14e415560f2498}{\index{Uncompressor\-\_\-table.\-h@{Uncompressor\-\_\-table.\-h}!uncompressor\-\_\-table\-\_\-initialize@{uncompressor\-\_\-table\-\_\-initialize}}
+\index{uncompressor\-\_\-table\-\_\-initialize@{uncompressor\-\_\-table\-\_\-initialize}!Uncompressor_table.h@{Uncompressor\-\_\-table.\-h}}
+\subsubsection[{uncompressor\-\_\-table\-\_\-initialize}]{\setlength{\rightskip}{0pt plus 5cm}int uncompressor\-\_\-table\-\_\-initialize (
+\begin{DoxyParamCaption}
+\item[{{\bf uncompressor\-\_\-table\-\_\-t} $\ast$}]{hash\-\_\-table}
+\end{DoxyParamCaption}
+)}}\label{_uncompressor__table_8h_a3c94becc01476f6e2c14e415560f2498}
+
+
+Inizializza un oggetto tabella hash inserendo i primi 256 nodi. 
+
+
+\begin{DoxyParams}[1]{Parametri}
+\mbox{\tt out}  & {\em hash\-\_\-table} & Tabella hash da inizializzare. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+Risultato dell'inizializzazione della tabella hash, {\ttfamily 0} in caso di successo e {\ttfamily -\/1} altrimenti. 
+\end{DoxyReturn}
+
+
+Definizione alla linea 16 del file Uncompressor\-\_\-table.\-c.
+
+\hypertarget{_uncompressor__table_8h_a7c6f91c84183c063588a8abd08c99411}{\index{Uncompressor\-\_\-table.\-h@{Uncompressor\-\_\-table.\-h}!uncompressor\-\_\-table\-\_\-insert@{uncompressor\-\_\-table\-\_\-insert}}
+\index{uncompressor\-\_\-table\-\_\-insert@{uncompressor\-\_\-table\-\_\-insert}!Uncompressor_table.h@{Uncompressor\-\_\-table.\-h}}
+\subsubsection[{uncompressor\-\_\-table\-\_\-insert}]{\setlength{\rightskip}{0pt plus 5cm}int uncompressor\-\_\-table\-\_\-insert (
+\begin{DoxyParamCaption}
+\item[{{\bf uncompressor\-\_\-table\-\_\-t} $\ast$}]{hash\-\_\-table, }
+\item[{{\bf hindex\-\_\-t}}]{parent\-\_\-label, }
+\item[{{\bf hvalue\-\_\-t}}]{value, }
+\item[{{\bf hindex\-\_\-t}}]{label}
+\end{DoxyParamCaption}
+)}}\label{_uncompressor__table_8h_a7c6f91c84183c063588a8abd08c99411}
+
+
+Inserisce un nodo all'interno della tabella hash fornita in ingresso. 
+
+
+\begin{DoxyParams}[1]{Parametri}
+\mbox{\tt in}  & {\em hash\-\_\-table} & Tabella hash dove inserire il nodo. \\
+\hline
+\mbox{\tt in}  & {\em parent\-\_\-label} & Indice del nodo padre del nodo da inserire. \\
+\hline
+\mbox{\tt in}  & {\em value} & Valore del nodo da inserire. \\
+\hline
+\mbox{\tt in}  & {\em label} & Indice del nodo da inserire. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+Risultato dell'inserimento nella tabella hash, {\ttfamily 0} in caso di successo (non può fallire). 
+\end{DoxyReturn}
+
+
+Definizione alla linea 37 del file Uncompressor\-\_\-table.\-c.
+
+\hypertarget{_uncompressor__table_8h_a5755d4e0487832ae46421da4e08d5d47}{\index{Uncompressor\-\_\-table.\-h@{Uncompressor\-\_\-table.\-h}!uncompressor\-\_\-table\-\_\-lookup@{uncompressor\-\_\-table\-\_\-lookup}}
+\index{uncompressor\-\_\-table\-\_\-lookup@{uncompressor\-\_\-table\-\_\-lookup}!Uncompressor_table.h@{Uncompressor\-\_\-table.\-h}}
+\subsubsection[{uncompressor\-\_\-table\-\_\-lookup}]{\setlength{\rightskip}{0pt plus 5cm}{\bf hvalue\-\_\-t} uncompressor\-\_\-table\-\_\-lookup (
+\begin{DoxyParamCaption}
+\item[{{\bf uncompressor\-\_\-table\-\_\-t} $\ast$}]{hash\-\_\-table, }
+\item[{{\bf hindex\-\_\-t}}]{label, }
+\item[{F\-I\-L\-E $\ast$}]{file\-\_\-descriptor}
+\end{DoxyParamCaption}
+)}}\label{_uncompressor__table_8h_a5755d4e0487832ae46421da4e08d5d47}
+
+
+Scrive nel file di output la sequenza di caratteri relativa all'ultimo codifica ricevuta e ritorna il simbolo relativo a tale codifica (per il suo inserimento). 
+
+
+\begin{DoxyParams}[1]{Parametri}
+\mbox{\tt in}  & {\em hash\-\_\-table} & Tabella hash dove cercare il nodo. \\
+\hline
+\mbox{\tt in}  & {\em label} & Indice del nodo dal quale iniziare la risalita verso la radice. \\
+\hline
+\mbox{\tt in}  & {\em file\-\_\-descriptor} & File descriptor relativo al file di output. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+Valore del nodo figlio della radice ottenuto risalendo l'intero albero. 
+\end{DoxyReturn}
+
+
+Definizione alla linea 44 del file Uncompressor\-\_\-table.\-c.
+

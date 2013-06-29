@@ -1,0 +1,226 @@
+\hypertarget{_compressor__table_8c}{\section{Riferimenti per il file C\-:/\-Users/\-Matteo/\-Dropbox/\-Universita/\-Progettazione e Produzione Multimediale/\-Progetto/\-L\-Z78-\/\-Compression/sources/\-Compressor\-\_\-table.c}
+\label{_compressor__table_8c}\index{C\-:/\-Users/\-Matteo/\-Dropbox/\-Universita/\-Progettazione e Produzione Multimediale/\-Progetto/\-L\-Z78-\/\-Compression/sources/\-Compressor\-\_\-table.\-c@{C\-:/\-Users/\-Matteo/\-Dropbox/\-Universita/\-Progettazione e Produzione Multimediale/\-Progetto/\-L\-Z78-\/\-Compression/sources/\-Compressor\-\_\-table.\-c}}
+}
+{\ttfamily \#include \char`\"{}Compressor\-\_\-table.\-h\char`\"{}}\\*
+\subsection*{Funzioni}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_common_8h_a9e5efd01ad4bc79efcef95aee756b06a}{hindex\-\_\-t} \hyperlink{_compressor__table_8c_a873b9821876cc4bd06526d2b5f1e7b3d}{compute\-\_\-hash} (\hyperlink{_common_8h_a9e5efd01ad4bc79efcef95aee756b06a}{hindex\-\_\-t} parent\-\_\-label, \hyperlink{_common_8h_a59e7e401edd661023c103ec038bc4ab2}{hvalue\-\_\-t} value)
+\begin{DoxyCompactList}\small\item\em Calcola l'indice del nodo a partire dal suo valore e dall'indice del padre (sfrutta il Multiplicative hashing). \end{DoxyCompactList}\item 
+\hyperlink{_common_8h_a9e5efd01ad4bc79efcef95aee756b06a}{hindex\-\_\-t} \hyperlink{_compressor__table_8c_aad1dd3eb85105f30d71865ad5ac50fee}{compute\-\_\-step\-\_\-hash} (\hyperlink{_common_8h_a9e5efd01ad4bc79efcef95aee756b06a}{hindex\-\_\-t} parent\-\_\-label, \hyperlink{_common_8h_a59e7e401edd661023c103ec038bc4ab2}{hvalue\-\_\-t} value)
+\begin{DoxyCompactList}\small\item\em Calcola l'indice del nodo a partire dal suo valore e dall'indice del padre (sfrutta il Division Method). Questa funzione viene utilizzata per calcolare il passo di scansione della tabella e viene richiamata solo se D\-O\-U\-B\-L\-E\-\_\-\-H\-A\-S\-H\-I\-N\-G è abilitato. \end{DoxyCompactList}\item 
+\hyperlink{_compressor__table_8h_a529ad42a2b30cf6fa0a4ee97143d38a8}{compressor\-\_\-table\-\_\-t} $\ast$ \hyperlink{_compressor__table_8c_a5c38d96c9eaa5b554a91b8fb898848de}{compressor\-\_\-table\-\_\-create} ()
+\begin{DoxyCompactList}\small\item\em Crea un oggetto tabella hash. \end{DoxyCompactList}\item 
+int \hyperlink{_compressor__table_8c_ac7692ba5768191bb29b1e15dcd30fcb1}{compressor\-\_\-table\-\_\-initialize} (\hyperlink{_compressor__table_8h_a529ad42a2b30cf6fa0a4ee97143d38a8}{compressor\-\_\-table\-\_\-t} $\ast$hash\-\_\-table)
+\begin{DoxyCompactList}\small\item\em Inizializza un oggetto tabella hash inserendo i primi 256 nodi. \end{DoxyCompactList}\item 
+int \hyperlink{_compressor__table_8c_a498d938ec93f24a09bd7a589a6ab646d}{compressor\-\_\-table\-\_\-destroy} (\hyperlink{_compressor__table_8h_a529ad42a2b30cf6fa0a4ee97143d38a8}{compressor\-\_\-table\-\_\-t} $\ast$hash\-\_\-table)
+\begin{DoxyCompactList}\small\item\em Distrugge un oggetto tabella hash precedentemente creato. \end{DoxyCompactList}\item 
+int \hyperlink{_compressor__table_8c_a36243a31800094e69f6780cf047909c9}{compressor\-\_\-table\-\_\-rebuild} (\hyperlink{_compressor__table_8h_a529ad42a2b30cf6fa0a4ee97143d38a8}{compressor\-\_\-table\-\_\-t} $\ast$hash\-\_\-table)
+\begin{DoxyCompactList}\small\item\em Svuota la tabella hash fornita in ingresso e la inizializza nuovamente. \end{DoxyCompactList}\item 
+int \hyperlink{_compressor__table_8c_a2777cb377052d9d711d424d14a286da1}{compressor\-\_\-table\-\_\-insert} (\hyperlink{_compressor__table_8h_a529ad42a2b30cf6fa0a4ee97143d38a8}{compressor\-\_\-table\-\_\-t} $\ast$hash\-\_\-table, \hyperlink{_common_8h_a9e5efd01ad4bc79efcef95aee756b06a}{hindex\-\_\-t} parent\-\_\-label, \hyperlink{_common_8h_a59e7e401edd661023c103ec038bc4ab2}{hvalue\-\_\-t} value, \hyperlink{_common_8h_a9e5efd01ad4bc79efcef95aee756b06a}{hindex\-\_\-t} label)
+\begin{DoxyCompactList}\small\item\em Inserisce un nodo all'interno della tabella hash fornita in ingresso. \end{DoxyCompactList}\item 
+\hyperlink{_common_8h_a9e5efd01ad4bc79efcef95aee756b06a}{hindex\-\_\-t} \hyperlink{_compressor__table_8c_a5565dc7fe54f1093165b858b34ec1658}{compressor\-\_\-table\-\_\-search} (\hyperlink{_compressor__table_8h_a529ad42a2b30cf6fa0a4ee97143d38a8}{compressor\-\_\-table\-\_\-t} $\ast$hash\-\_\-table, \hyperlink{_common_8h_a9e5efd01ad4bc79efcef95aee756b06a}{hindex\-\_\-t} parent\-\_\-label, \hyperlink{_common_8h_a59e7e401edd661023c103ec038bc4ab2}{hvalue\-\_\-t} value)
+\begin{DoxyCompactList}\small\item\em Ricerca un nodo all'interno della tabella hash fornita in ingresso. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Documentazione delle funzioni}
+\hypertarget{_compressor__table_8c_a5c38d96c9eaa5b554a91b8fb898848de}{\index{Compressor\-\_\-table.\-c@{Compressor\-\_\-table.\-c}!compressor\-\_\-table\-\_\-create@{compressor\-\_\-table\-\_\-create}}
+\index{compressor\-\_\-table\-\_\-create@{compressor\-\_\-table\-\_\-create}!Compressor_table.c@{Compressor\-\_\-table.\-c}}
+\subsubsection[{compressor\-\_\-table\-\_\-create}]{\setlength{\rightskip}{0pt plus 5cm}{\bf compressor\-\_\-table\-\_\-t} $\ast$ compressor\-\_\-table\-\_\-create (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{_compressor__table_8c_a5c38d96c9eaa5b554a91b8fb898848de}
+
+
+Crea un oggetto tabella hash. 
+
+\begin{DoxyReturn}{Restituisce}
+Oggetto tabella hash di tipo {\itshape compressor\-\_\-table\-\_\-t}, o {\itshape N\-U\-L\-L} in caso di fallimento. 
+\end{DoxyReturn}
+
+
+Definizione alla linea 18 del file Compressor\-\_\-table.\-c.
+
+\hypertarget{_compressor__table_8c_a498d938ec93f24a09bd7a589a6ab646d}{\index{Compressor\-\_\-table.\-c@{Compressor\-\_\-table.\-c}!compressor\-\_\-table\-\_\-destroy@{compressor\-\_\-table\-\_\-destroy}}
+\index{compressor\-\_\-table\-\_\-destroy@{compressor\-\_\-table\-\_\-destroy}!Compressor_table.c@{Compressor\-\_\-table.\-c}}
+\subsubsection[{compressor\-\_\-table\-\_\-destroy}]{\setlength{\rightskip}{0pt plus 5cm}int compressor\-\_\-table\-\_\-destroy (
+\begin{DoxyParamCaption}
+\item[{{\bf compressor\-\_\-table\-\_\-t} $\ast$}]{hash\-\_\-table}
+\end{DoxyParamCaption}
+)}}\label{_compressor__table_8c_a498d938ec93f24a09bd7a589a6ab646d}
+
+
+Distrugge un oggetto tabella hash precedentemente creato. 
+
+
+\begin{DoxyParams}[1]{Parametri}
+\mbox{\tt in}  & {\em hash\-\_\-table} & Tabella hash da distruggere. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+Risultato della distruzione della tabella hash, {\ttfamily 0} in caso di successo e {\ttfamily -\/1} altrimenti. 
+\end{DoxyReturn}
+
+
+Definizione alla linea 36 del file Compressor\-\_\-table.\-c.
+
+\hypertarget{_compressor__table_8c_ac7692ba5768191bb29b1e15dcd30fcb1}{\index{Compressor\-\_\-table.\-c@{Compressor\-\_\-table.\-c}!compressor\-\_\-table\-\_\-initialize@{compressor\-\_\-table\-\_\-initialize}}
+\index{compressor\-\_\-table\-\_\-initialize@{compressor\-\_\-table\-\_\-initialize}!Compressor_table.c@{Compressor\-\_\-table.\-c}}
+\subsubsection[{compressor\-\_\-table\-\_\-initialize}]{\setlength{\rightskip}{0pt plus 5cm}int compressor\-\_\-table\-\_\-initialize (
+\begin{DoxyParamCaption}
+\item[{{\bf compressor\-\_\-table\-\_\-t} $\ast$}]{hash\-\_\-table}
+\end{DoxyParamCaption}
+)}}\label{_compressor__table_8c_ac7692ba5768191bb29b1e15dcd30fcb1}
+
+
+Inizializza un oggetto tabella hash inserendo i primi 256 nodi. 
+
+
+\begin{DoxyParams}[1]{Parametri}
+\mbox{\tt out}  & {\em hash\-\_\-table} & Tabella hash da inizializzare. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+Risultato dell'inizializzazione della tabella hash, {\ttfamily 0} in caso di successo e {\ttfamily -\/1} altrimenti. 
+\end{DoxyReturn}
+
+
+Definizione alla linea 28 del file Compressor\-\_\-table.\-c.
+
+\hypertarget{_compressor__table_8c_a2777cb377052d9d711d424d14a286da1}{\index{Compressor\-\_\-table.\-c@{Compressor\-\_\-table.\-c}!compressor\-\_\-table\-\_\-insert@{compressor\-\_\-table\-\_\-insert}}
+\index{compressor\-\_\-table\-\_\-insert@{compressor\-\_\-table\-\_\-insert}!Compressor_table.c@{Compressor\-\_\-table.\-c}}
+\subsubsection[{compressor\-\_\-table\-\_\-insert}]{\setlength{\rightskip}{0pt plus 5cm}int compressor\-\_\-table\-\_\-insert (
+\begin{DoxyParamCaption}
+\item[{{\bf compressor\-\_\-table\-\_\-t} $\ast$}]{hash\-\_\-table, }
+\item[{{\bf hindex\-\_\-t}}]{parent\-\_\-label, }
+\item[{{\bf hvalue\-\_\-t}}]{value, }
+\item[{{\bf hindex\-\_\-t}}]{label}
+\end{DoxyParamCaption}
+)}}\label{_compressor__table_8c_a2777cb377052d9d711d424d14a286da1}
+
+
+Inserisce un nodo all'interno della tabella hash fornita in ingresso. 
+
+
+\begin{DoxyParams}[1]{Parametri}
+\mbox{\tt in}  & {\em hash\-\_\-table} & Tabella hash dove inserire il nodo. \\
+\hline
+\mbox{\tt in}  & {\em parent\-\_\-label} & Indice del nodo padre del nodo da inserire. \\
+\hline
+\mbox{\tt in}  & {\em value} & Valore del nodo da inserire. \\
+\hline
+\mbox{\tt in}  & {\em label} & Indice da assegnare al nodo da inserire. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+Risultato dell'inserimento nella tabella hash, {\ttfamily 0} in caso di successo (non può fallire). 
+\end{DoxyReturn}
+
+
+Definizione alla linea 55 del file Compressor\-\_\-table.\-c.
+
+\hypertarget{_compressor__table_8c_a36243a31800094e69f6780cf047909c9}{\index{Compressor\-\_\-table.\-c@{Compressor\-\_\-table.\-c}!compressor\-\_\-table\-\_\-rebuild@{compressor\-\_\-table\-\_\-rebuild}}
+\index{compressor\-\_\-table\-\_\-rebuild@{compressor\-\_\-table\-\_\-rebuild}!Compressor_table.c@{Compressor\-\_\-table.\-c}}
+\subsubsection[{compressor\-\_\-table\-\_\-rebuild}]{\setlength{\rightskip}{0pt plus 5cm}int compressor\-\_\-table\-\_\-rebuild (
+\begin{DoxyParamCaption}
+\item[{{\bf compressor\-\_\-table\-\_\-t} $\ast$}]{hash\-\_\-table}
+\end{DoxyParamCaption}
+)}}\label{_compressor__table_8c_a36243a31800094e69f6780cf047909c9}
+
+
+Svuota la tabella hash fornita in ingresso e la inizializza nuovamente. 
+
+
+\begin{DoxyParams}[1]{Parametri}
+\mbox{\tt in}  & {\em hash\-\_\-table} & Tabella hash da reinizializzare. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+Risultato della reinizializzare della tabella hash, {\ttfamily 0} in caso di successo e {\ttfamily -\/1} altrimenti. 
+\end{DoxyReturn}
+
+
+Definizione alla linea 48 del file Compressor\-\_\-table.\-c.
+
+\hypertarget{_compressor__table_8c_a5565dc7fe54f1093165b858b34ec1658}{\index{Compressor\-\_\-table.\-c@{Compressor\-\_\-table.\-c}!compressor\-\_\-table\-\_\-search@{compressor\-\_\-table\-\_\-search}}
+\index{compressor\-\_\-table\-\_\-search@{compressor\-\_\-table\-\_\-search}!Compressor_table.c@{Compressor\-\_\-table.\-c}}
+\subsubsection[{compressor\-\_\-table\-\_\-search}]{\setlength{\rightskip}{0pt plus 5cm}{\bf hindex\-\_\-t} compressor\-\_\-table\-\_\-search (
+\begin{DoxyParamCaption}
+\item[{{\bf compressor\-\_\-table\-\_\-t} $\ast$}]{hash\-\_\-table, }
+\item[{{\bf hindex\-\_\-t}}]{parent\-\_\-label, }
+\item[{{\bf hvalue\-\_\-t}}]{value}
+\end{DoxyParamCaption}
+)}}\label{_compressor__table_8c_a5565dc7fe54f1093165b858b34ec1658}
+
+
+Ricerca un nodo all'interno della tabella hash fornita in ingresso. 
+
+
+\begin{DoxyParams}[1]{Parametri}
+\mbox{\tt in}  & {\em hash\-\_\-table} & Tabella hash dove cercare il nodo. \\
+\hline
+\mbox{\tt in}  & {\em parent\-\_\-label} & Indice del nodo padre del nodo da ricercare. \\
+\hline
+\mbox{\tt in}  & {\em value} & Valore del nodo da ricercare. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+Risultato della ricerca nella tabella hash, {\ttfamily indice} del nodo in caso di successo e {\ttfamily -\/1} altrimenti. 
+\end{DoxyReturn}
+
+
+Definizione alla linea 71 del file Compressor\-\_\-table.\-c.
+
+\hypertarget{_compressor__table_8c_a873b9821876cc4bd06526d2b5f1e7b3d}{\index{Compressor\-\_\-table.\-c@{Compressor\-\_\-table.\-c}!compute\-\_\-hash@{compute\-\_\-hash}}
+\index{compute\-\_\-hash@{compute\-\_\-hash}!Compressor_table.c@{Compressor\-\_\-table.\-c}}
+\subsubsection[{compute\-\_\-hash}]{\setlength{\rightskip}{0pt plus 5cm}{\bf hindex\-\_\-t} compute\-\_\-hash (
+\begin{DoxyParamCaption}
+\item[{{\bf hindex\-\_\-t}}]{parent\-\_\-label, }
+\item[{{\bf hvalue\-\_\-t}}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{_compressor__table_8c_a873b9821876cc4bd06526d2b5f1e7b3d}
+
+
+Calcola l'indice del nodo a partire dal suo valore e dall'indice del padre (sfrutta il Multiplicative hashing). 
+
+
+\begin{DoxyParams}[1]{Parametri}
+\mbox{\tt in}  & {\em parent\-\_\-label} & Indice del nodo padre. \\
+\hline
+\mbox{\tt in}  & {\em value} & Valore del nodo. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+{\ttfamily Indice} del nodo ottenuto calcolando la funzione hash sui parametri in ingresso. 
+\end{DoxyReturn}
+
+
+Definizione alla linea 5 del file Compressor\-\_\-table.\-c.
+
+\hypertarget{_compressor__table_8c_aad1dd3eb85105f30d71865ad5ac50fee}{\index{Compressor\-\_\-table.\-c@{Compressor\-\_\-table.\-c}!compute\-\_\-step\-\_\-hash@{compute\-\_\-step\-\_\-hash}}
+\index{compute\-\_\-step\-\_\-hash@{compute\-\_\-step\-\_\-hash}!Compressor_table.c@{Compressor\-\_\-table.\-c}}
+\subsubsection[{compute\-\_\-step\-\_\-hash}]{\setlength{\rightskip}{0pt plus 5cm}{\bf hindex\-\_\-t} compute\-\_\-step\-\_\-hash (
+\begin{DoxyParamCaption}
+\item[{{\bf hindex\-\_\-t}}]{parent\-\_\-label, }
+\item[{{\bf hvalue\-\_\-t}}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{_compressor__table_8c_aad1dd3eb85105f30d71865ad5ac50fee}
+
+
+Calcola l'indice del nodo a partire dal suo valore e dall'indice del padre (sfrutta il Division Method). Questa funzione viene utilizzata per calcolare il passo di scansione della tabella e viene richiamata solo se D\-O\-U\-B\-L\-E\-\_\-\-H\-A\-S\-H\-I\-N\-G è abilitato. 
+
+
+\begin{DoxyParams}[1]{Parametri}
+\mbox{\tt in}  & {\em parent\-\_\-label} & Indice del nodo padre. \\
+\hline
+\mbox{\tt in}  & {\em value} & Valore del nodo. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+{\ttfamily Indice} del nodo ottenuto calcolando la funzione hash sui parametri in ingresso. 
+\end{DoxyReturn}
+
+
+Definizione alla linea 11 del file Compressor\-\_\-table.\-c.
+
